@@ -1,0 +1,30 @@
+cask_args appdir: '/Applications'
+
+tap 'caskroom/versions'
+
+brew 'ant'
+brew 'git'
+brew 'gradle'
+brew 'mysql'
+brew 'python'
+brew 'python3'
+#brew 'sbt'
+#brew 'scala'
+#brew 'tig'
+#brew 'wget'
+
+
+
+#cask 'atom'
+#cask 'dashlane'
+cask 'dropbox'
+#cask 'firefox'
+cask 'google-chrome'
+cask 'iterm2'
+#cask 'slack'
+#cask 'spectacle'
+cask 'sublime-text3'
+cask 'vlc'
+
+tap 'thoughtbot/formulae'
+brew 'rcm'

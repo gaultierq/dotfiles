@@ -1,0 +1,32 @@
+# navigation
+alias ..="cd .."
+alias cd..="cd .."
+alias ....="cd ../.."
+
+# ls magic
+alias ls="ls -FGhl"
+alias la="ls -aFGhl"
+alias lsd="ls -FGhl | grep --color=never '^d'"
+
+# file manipulation
+alias cp="cp -iv"
+alias mv="mv -iv"
+
+# file size
+alias fs="stat -f '%z bytes'"
+alias df="df -h"
+
+# update the world
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup'
+
+# other
+alias path='echo -e ${PATH//:/\\n}'
+
+# memory usage
+alias memusage='ps -amcwwwxo "command %mem %cpu" | grep -v grep | head -10'
+
+# connection emulation
+alias slowconn='sudo ipfw pipe 1 config bw 20kbit/s plr 0.3 delay 1000ms; sudo ipfw add pipe 1 dst-port http;'
+alias goodconn='sudo ipfw flush'
+
+alias src='source ~/.bash_profile'

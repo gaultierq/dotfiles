@@ -1,0 +1,14 @@
+# find
+function f() {
+	find . -type f -print0 | xargs -0 grep -i $1;
+}
+
+# find file
+function ff() {
+	list=$(find . -name "*$1*");
+	n=$(echo "$list" | wc -l);
+	printf "$n results found: \n$list\n"
+	if [ $n -eq 1 ]; then
+		sb $list
+	fi
+}

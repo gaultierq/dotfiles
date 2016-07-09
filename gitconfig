@@ -27,7 +27,7 @@
   name = Quentin Gaultier
   email = quentin.gaultier@gmail.com
 [diff]
-    tool = Kaleidoscope
+	tool = vimdiff
 [difftool "Kaleidoscope"]
   cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool "Kaleidoscope"]
@@ -47,3 +47,5 @@ protocol = https
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[merge]
+	tool = vimdiff

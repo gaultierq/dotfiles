@@ -49,3 +49,5 @@ protocol = https
 	required = true
 [merge]
 	tool = vimdiff
+[credential]
+	helper = osxkeychain

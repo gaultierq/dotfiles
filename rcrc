@@ -1,2 +1,2 @@
-EXCLUDES="README.md LICENSE"
+EXCLUDES="README.md LICENSE homebrew .iterm2_profile *.sh rcrc"
 DOTFILES_DIRS="$HOME/dotfiles"

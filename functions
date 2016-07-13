@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # find
 function f() {
 	find . -type f -print0 | xargs -0 grep -i $1;
@@ -11,4 +13,13 @@ function ff() {
 	if [ $n -eq 1 ]; then
 		sb $list
 	fi
+}
+
+function source_profile() {
+	env RCRC=$HOME/dotfiles/rcrc rcup -v && \
+	source ~/.bash_profile
+}
+
+function edit_dotfiles() {
+	subl $DOT_FILES
 }

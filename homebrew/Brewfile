@@ -30,6 +30,7 @@ cask 'iterm2'
 cask 'sublime-text3'
 cask 'vlc'
 cask 'sequel-pro'
+cask 'hyperdock'
 
 tap 'thoughtbot/formulae'
 brew 'rcm'

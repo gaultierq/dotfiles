@@ -1,7 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap 'caskroom/versions'
-brew tap josegonzalez/homebrew-php
+tap 'josegonzalez/homebrew-php'
 
 
 brew 'ant'

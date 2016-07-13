@@ -16,7 +16,6 @@ function ff() {
 }
 
 function source_profile() {
-	env RCRC=$HOME/dotfiles/rcrc rcup -v && \
 	source ~/.bash_profile
 }
 

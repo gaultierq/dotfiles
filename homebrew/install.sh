@@ -6,4 +6,7 @@ if [[ ! "$(type -P brew)" ]]; then
 fi
 
 echo "Installing Homebrew packages"
+PWD="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd $PWD
 brew bundle
+cd -

@@ -67,14 +67,14 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf702-0x320000</key>
+		<key>0xf702-0x380000</key>
 		<dict>
 			<key>Action</key>
 			<integer>2</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf703-0x320000</key>
+		<key>0xf703-0x380000</key>
 		<dict>
 			<key>Action</key>
 			<integer>0</integer>
@@ -169,21 +169,47 @@
 	<key>NSFontPanelPreviewHeight</key>
 	<real>0.0</real>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Dropbox</string>
+	<string>~/dotfiles</string>
+	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
+	<key>NSScrollViewShouldScrollUnderTitlebar</key>
+	<false/>
+	<key>NSTableView Columns KeyBingingTable</key>
+	<array>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
+		hAErATCG
+		</data>
+		<string>198</string>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
+		hAErATGG
+		</data>
+		<string>322</string>
+	</array>
+	<key>NSTableView Hidden Columns KeyBingingTable</key>
+	<array/>
+	<key>NSTableView Sort Ordering KeyBingingTable</key>
+	<array/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1200 149 445 271 0 0 1920 1058 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>334 446 924 485 0 0 1280 1002 </string>
+	<string>484 396 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>154 474 592 584 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 357 1280 645 0 0 1280 1002 </string>
+	<string>0 232 1440 645 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>667 305 586 452 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1051,10 +1077,20 @@
 			<string>/Users/Quentin</string>
 		</dict>
 	</array>
+	<key>NoSyncInstallationId</key>
+	<string>4D99341A-91F9-46C6-9AFF-517C402E0E2A</string>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
+	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
+	<real>489586565.84063202</real>
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>466602763.327353</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>481668474.92468399</real>
+	<real>489081592.51412702</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1101,7 +1137,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/Quentin/Dropbox</string>
+	<string>/Users/q/dotfiles/.iterm2_profile</string>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -1112,14 +1148,18 @@
 	<integer>8</integer>
 	<key>RightOption</key>
 	<integer>3</integer>
+	<key>SUAutomaticallyUpdate</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
+	<key>SUFeedAlternateAppNameKey</key>
+	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing.xml</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=35</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-04-19T15:40:37Z</date>
+	<date>2016-07-11T06:04:05Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -1155,7 +1195,7 @@
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
-	<string>.Lucida Grande UI</string>
+	<string>.Helvetica Neue DeskInterface</string>
 	<key>WindowNumber</key>
 	<true/>
 	<key>WindowStyle</key>
@@ -1167,6 +1207,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.1.4</string>
+	<string>3.0.4</string>
 </dict>
 </plist>

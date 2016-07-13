@@ -1,6 +1,6 @@
 sudo -v
 
-DOT_FILES="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+export DOT_FILES="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 
 echo "Symlink all dot files"

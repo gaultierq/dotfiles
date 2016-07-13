@@ -9,11 +9,13 @@ brew 'git'
 brew 'gradle'
 brew 'mysql'
 brew 'python'
-brew 'python3'
+#brew 'python3'
+brew 'php55'
 #brew 'sbt'
 #brew 'scala'
 #brew 'tig'
 #brew 'wget'
+
 
 # wordpress client
 brew 'wp-cli'

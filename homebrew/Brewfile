@@ -15,6 +15,7 @@ brew 'php55'
 #brew 'scala'
 #brew 'tig'
 #brew 'wget'
+brew 'jpeg'
 
 
 # wordpress client

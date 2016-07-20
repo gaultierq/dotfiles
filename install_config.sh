@@ -1,12 +1,16 @@
+#!/bin/bash
 sudo -v
+set -e
 
-echo "Checking dependencies"
-hash rcup > /dev/null 2>&1 || echo "Please install RCM util: https://github.com/thoughtbot/rcm"; exit 1
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+printf "Checking dependencies..."
+hash rcup > /dev/null 2>&1 || echo "Please install RCM util: https://github.com/thoughtbot/rcm";
+echo " ok"
 echo "Symlink all dot files"
-env RCRC=$DOT_FILES/rcrc rcup -v
+env RCRC=$DIR/rcrc rcup -v
 
-source ~/.bash_profile
+test -f ~/.bash_profile && source ~/.bash_profile
 
 
 #$DOT_FILES/homebrew/install.sh

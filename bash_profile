@@ -10,9 +10,14 @@ PATH=$PATH:$SCRIPTS
 
 source ~/.aliases
 source ~/.functions
+
 # checking last dot files
-(test -d $DOT_FILES && \
-cd $DOT_FILES && \
-n=$(git rev-list HEAD...origin/master --count) && \
-test $n -gt 0 && echo "$n new commits." && \ 
-git pull >> /dev/null 2>&1 )
+update_dotfiles() {
+	test -d $DOT_FILES && \
+	cd $DOT_FILES && \
+	n=$(git rev-list HEAD...origin/master --count) && \
+	test $n -gt 0 && echo "$n new commits." && \ 
+	git pull 
+}
+"update_dotfiles" > /dev/null 2>&1 &
+

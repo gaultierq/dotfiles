@@ -7,17 +7,21 @@ PATH=$PATH:/Users/q/Library/Android/sdk/platform-tools
 PATH=$PATH:$SCRIPTS
 #source `brew --repository`/Library/Contributions/brew_bash_completion.sh
 
-
 source ~/.aliases
 source ~/.functions
 
 # checking last dot files
-update_dotfiles() {
+function update_dotfiles {
 	test -d $DOT_FILES && \
 	cd $DOT_FILES && \
-	n=$(git rev-list HEAD...origin/master --count) && \
-	test $n -gt 0 && echo "$n new commits." && \ 
-	git pull 
+	log "Updating git references" && git remote update && \
+	local n=$(git rev-list HEAD...origin/master --count) && log "local rep is $n behind HEAD" && \
+	test $n -gt 0 && log "$n new commits." && git pull && \
+	"Re-run config install" && test -f ~/install_config.sh && bash install_config.sh;
+	return 0;
 }
-"update_dotfiles" > /dev/null 2>&1 &
+
+ if [ -d $DOT_FILES ]; then
+ 	("update_dotfiles" >> $DOT_FILES/install.log 2>&1 &) # parenthesis for quietness
+ fi
 

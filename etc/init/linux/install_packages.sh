@@ -3,7 +3,7 @@
 sudo -v
 sudo apt-get update &&
 
-sudo apt-get -y  install \
+sudo apt-get -y --force-yes install \
 git \
 tree \
 zsh \
@@ -13,7 +13,7 @@ wget &&
 
 
 echo "Installing zsh"
-sudo apt-get -y install zsh
+sudo apt-get -y --force-yes install zsh
 sudo chsh -s "$(command -v zsh)" "${USER}"
 
 sudo -k

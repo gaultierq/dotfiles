@@ -26,3 +26,7 @@ function edit_dotfiles() {
 function log {
    echo $(date +"%b %d %T") $1
 }
+
+function rm_broken_symlink() {
+	find -L . -name . -o -type d -prune -o -type l -exec rm {} +
+}

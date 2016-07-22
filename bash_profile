@@ -30,7 +30,6 @@ function update_dotfiles {
 				log "install_dotfiles.sh not found"
 			fi
 		fi 
-		
 	fi
 }
 

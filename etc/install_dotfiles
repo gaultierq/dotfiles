@@ -594,8 +594,7 @@ install_packages() {
     e_newline
     e_header "Installing missing packages"
 
-    
-    run_all "$DOTPATH/etc/$PLATFORM"
+    os_detect && run_all "$DOTPATH/etc/$PLATFORM"
 }
 
 # A script for the file named "install"

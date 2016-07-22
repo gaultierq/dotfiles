@@ -2,9 +2,11 @@
 
 source ~/.exports
 
-#homebrew auto completion. TODO: move
+#TODO: move to 'local'
 PATH=$PATH:/Users/q/Library/Android/sdk/platform-tools
 PATH=$PATH:$SCRIPTS
+
+#homebrew auto completion. TODO: move
 #source `brew --repository`/Library/Contributions/brew_bash_completion.sh
 
 source ~/.aliases
@@ -25,10 +27,13 @@ function update_dotfiles {
 			git pull
 			echo "Re-run config install" 
 			if [ -f $DOT_FILES/etc/install_dotfiles.sh ]; then
+				# perform the install
 				cat $DOT_FILES/etc/install_dotfiles.sh | bash
 			else
 				log "install_dotfiles.sh not found"
 			fi
+		else
+			log "Repository up to date. Not re-installing."
 		fi 
 	fi
 }

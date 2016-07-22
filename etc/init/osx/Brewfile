@@ -12,6 +12,7 @@ brew 'python'
 brew 'php55'
 brew 'wget'
 brew 'jpeg'
+brew 'zsh'
 
 
 # wordpress client

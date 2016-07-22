@@ -514,6 +514,7 @@ dotfiles_download() {
             # git submodule init
             # git submodule update
             if -d "$DOTPATH" && is_git_repo "$DOTPATH" ; then
+                log_info "Updating existing dotfiles repo."
                 git pull "$DOTPATH"
             else
                 git clone --recursive git@dev1:dotfiles.git "$DOTPATH"
@@ -598,7 +599,7 @@ install_packages() {
     if is_empty $PLATFORM; then
         e_failure "Platform not detected"
     fi
-    run_all "$DOTPATH/etc/$PLATFORM"
+    run_all "$DOTPATH/etc/init/$PLATFORM"
 }
 
 # A script for the file named "install"

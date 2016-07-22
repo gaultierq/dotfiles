@@ -498,10 +498,10 @@ ________    ________
 
 dotfiles_download() {
 
-    if [ -d "$DOTPATH" ]; then
-        log_fail "$DOTPATH: already exists"
-        exit 1
-    fi
+    # if [ -d "$DOTPATH" ]; then
+    #     log_fail "$DOTPATH: already exists"
+    #     exit 1
+    # fi
 
     e_newline
     e_header "Downloading dotfiles..."
@@ -513,8 +513,11 @@ dotfiles_download() {
             # --recursive equals to ...
             # git submodule init
             # git submodule update
-            git clone --recursive git@dev1:dotfiles.git "$DOTPATH"
-
+            if -d "$DOTPATH" && is_git_repo "$DOTPATH" ; then
+                git pull "$DOTPATH"
+            else
+                git clone --recursive git@dev1:dotfiles.git "$DOTPATH"
+            fi
         elif is_exists "curl" || is_exists "wget"; then
             # curl or wget
             local tarball="https://github.com/b4b4r07/dotfiles/archive/master.tar.gz"

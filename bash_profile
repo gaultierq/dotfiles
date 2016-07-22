@@ -39,6 +39,7 @@ function update_dotfiles {
 }
 
  if [ -d $DOT_FILES ]; then
- 	("update_dotfiles" 1>> $DOT_FILES/install.log &) # parenthesis for quietness
+ 	# ("update_dotfiles" 1>> $DOT_FILES/install.log &) # parenthesis for quietness
+ 	update_dotfiles
  fi
 

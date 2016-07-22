@@ -23,5 +23,5 @@ function update {
 }
 
 function uninstall {
-	#TODO
+	:
 }

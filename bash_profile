@@ -10,7 +10,7 @@ PATH=$PATH:$SCRIPTS
 source ~/.aliases
 source ~/.functions
 
-# checking last dot files
+# Auto update
 function update_dotfiles {
 	test -d $DOT_FILES && \
 	cd $DOT_FILES && \

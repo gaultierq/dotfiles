@@ -24,8 +24,8 @@ function update_dotfiles {
 			log "$n new commits."
 			git pull
 			echo "Re-run config install" 
-			if [ -f ~/install_config.sh ]; then
-				cat etc/install_dotfiles.sh | bash
+			if [ -f $DOT_FILES/etc/install_dotfiles.sh ]; then
+				cat $DOT_FILES/etc/install_dotfiles.sh | bash
 			else
 				log "install_dotfiles.sh not found"
 			fi

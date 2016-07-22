@@ -5,6 +5,7 @@ apt-get update &&
 
 apt-get install \
 git \
+tree \
 zsh \
 htop \
 curl \

@@ -513,7 +513,7 @@ dotfiles_download() {
             # --recursive equals to ...
             # git submodule init
             # git submodule update
-            if [ -d "$DOTPATH" && is_git_repo "$DOTPATH" ] ; then
+            if is_git_repo "$DOTPATH" ; then
                 log_info "Updating existing dotfiles repo."
                 git pull "$DOTPATH"
             else

@@ -1,5 +1,9 @@
 Mash up from multiple dotfiles; will list them later
 <br>
+quick install :
+<br>
+curl -L https://raw.githubusercontent.com/gaultierq/dotfiles/master/etc/install_dotfiles | sh
+<br><br>
 see :
 https://github.com/mscoutermarsh/dotfiles
 <br> or <br>

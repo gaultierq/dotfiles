@@ -517,10 +517,12 @@ dotfiles_download() {
                 log_info "Updating existing dotfiles repo."
                 git pull "$DOTPATH"
             else
-                git clone --recursive git@dev1:dotfiles.git "$DOTPATH"
+                git clone --recursive "https://github.com/gaultierq/dotfiles" "$DOTPATH"
             fi
         elif is_exists "curl" || is_exists "wget"; then
             # curl or wget
+            e_failure "Not supported yet"
+            
             local tarball="https://github.com/b4b4r07/dotfiles/archive/master.tar.gz"
             if is_exists "curl"; then
                 curl -L "$tarball"

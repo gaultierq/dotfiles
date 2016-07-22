@@ -12,13 +12,26 @@ source ~/.functions
 
 # Auto update
 function update_dotfiles {
-	test -d $DOT_FILES && \
-	cd $DOT_FILES && \
-	log "Updating git references" && git remote update && \
-	local n=$(git rev-list HEAD...origin/master --count) && log "local rep is $n behind HEAD" && \
-	test $n -gt 0 && log "$n new commits." && git pull && \
-	"Re-run config install" && test -f ~/install_config.sh && cat etc/install_dotfiles.sh | bash
-	return 0;
+	set -e
+	if [ -d $DOT_FILES ]; then
+		cd $DOT_FILES
+		log "Updating git references" 
+		git remote update
+		local n=$(git rev-list HEAD...origin/master --count)
+		log "local rep is $n behind HEAD"
+
+		if test $n -gt 0; then
+			log "$n new commits."
+			git pull
+			echo "Re-run config install" 
+			if [ -f ~/install_config.sh ]; then
+				cat etc/install_dotfiles.sh | bash
+			else
+				log "install_dotfiles.sh not found"
+			fi
+		fi 
+		
+	fi
 }
 
  if [ -d $DOT_FILES ]; then

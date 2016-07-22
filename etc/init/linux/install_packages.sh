@@ -1,9 +1,9 @@
 #!/bin/bash -e
 
 sudo -v
-apt-get update &&
+sudo apt-get update &&
 
-apt-get install \
+sudo apt-get install \
 git \
 zsh \
 htop \

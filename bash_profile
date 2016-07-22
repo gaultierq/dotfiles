@@ -17,7 +17,7 @@ function update_dotfiles {
 	log "Updating git references" && git remote update && \
 	local n=$(git rev-list HEAD...origin/master --count) && log "local rep is $n behind HEAD" && \
 	test $n -gt 0 && log "$n new commits." && git pull && \
-	"Re-run config install" && test -f ~/install_config.sh && ./etc/install_dotfiles.sh;
+	"Re-run config install" && test -f ~/install_config.sh && cat etc/install_dotfiles.sh | bash
 	return 0;
 }
 

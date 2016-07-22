@@ -615,11 +615,11 @@ dotfiles_install() {
     # 2. Install RCM
     install_rcm &&
 
-    
+
     env RCRC=$DOTPATH/rcrc rcup -v
     e_newline && e_done "Dotfiles created"
 
-    source ~/.bash_profile
+    test -f ~/.bash_profile && source ~/.bash_profile
 
     install_packages
 

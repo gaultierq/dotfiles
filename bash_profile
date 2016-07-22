@@ -17,11 +17,11 @@ function update_dotfiles {
 	log "Updating git references" && git remote update && \
 	local n=$(git rev-list HEAD...origin/master --count) && log "local rep is $n behind HEAD" && \
 	test $n -gt 0 && log "$n new commits." && git pull && \
-	"Re-run config install" && test -f ~/install_config.sh && bash install_config.sh;
+	"Re-run config install" && test -f ~/install_config.sh && ./etc/install_dotfiles.sh;
 	return 0;
 }
 
  if [ -d $DOT_FILES ]; then
- 	("update_dotfiles" >> $DOT_FILES/install.log 2>&1 &) # parenthesis for quietness
+ 	("update_dotfiles" 1>> $DOT_FILES/install.log &) # parenthesis for quietness
  fi
 

@@ -1,0 +1,33 @@
+cask_args appdir: '/Applications'
+
+tap 'caskroom/versions'
+tap 'josegonzalez/homebrew-php'
+
+
+brew 'ant'
+brew 'git'
+brew 'gradle'
+brew 'mysql'
+brew 'python'
+brew 'php55'
+brew 'wget'
+brew 'jpeg'
+brew 'zsh'
+
+
+# wordpress client
+brew 'wp-cli'
+
+
+
+cask 'dropbox'
+cask 'google-drive'
+cask 'google-chrome'
+cask 'iterm2'
+cask 'sublime-text3'
+cask 'vlc'
+cask 'sequel-pro'
+cask 'hyperdock'
+
+tap 'thoughtbot/formulae'
+brew 'rcm'

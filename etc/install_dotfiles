@@ -599,6 +599,7 @@ install_packages() {
     if is_empty $PLATFORM; then
         e_failure "Platform not detected"
     fi
+    run_all "$DOTPATH/etc/init/common"
     run_all "$DOTPATH/etc/init/$PLATFORM"
 }
 
@@ -614,6 +615,7 @@ dotfiles_install() {
     # 2. Install RCM
     install_rcm &&
 
+    
     env RCRC=$DOTPATH/rcrc rcup -v
     e_newline && e_done "Dotfiles created"
 

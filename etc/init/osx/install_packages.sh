@@ -5,8 +5,9 @@ if [[ ! "$(type -P brew)" ]]; then
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-echo "Installing Homebrew packages"
-PWD="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cd $PWD
-brew bundle
+cd $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+if ! brew bundle check; then
+	echo "Installing Homebrew missing packages"
+	brew bundle	
+fi
 cd -

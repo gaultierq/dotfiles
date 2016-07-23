@@ -16,12 +16,14 @@ fi
 # Load vital library that is most important and
 # constructed with many minimal functions
 # For more information, see etc/README.md
-. "$DOTPATH"/etc/lib/vital.sh
+
+export VITAL_PATH="$DOTPATH/etc/lib/vital.sh"
+[ -f $VITAL_PATH ] && . "$VITAL_PATH"
+
 if ! vitalize 2>/dev/null; then
     echo "cannot vitalize, cannot start $SHELL" 1>&2
     return 1
 fi
-
 
 
 

@@ -64,11 +64,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='vim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -115,6 +115,7 @@ fi
 # As a matter of fact, vital.sh is a symbolic link to install, and this script
 # change its behavior depending on the way to have been called.
 export VITAL_PATH="$DOTPATH/etc/lib/vital.sh"
-if [[ -f $VITAL_PATH ]]; then
-    source "$VITAL_PATH"
-fi
+[ -f $VITAL_PATH ] && . "$VITAL_PATH"
+
+# sourcing my own functions and exports etc.
+[ -f "$DOTPATH/etc/lib/login_source.sh" ] && . "$DOTPATH/etc/lib/login_source.sh"

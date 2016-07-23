@@ -101,6 +101,14 @@ dot() {
             echo "${DOTPATH:?not set}"
             return $?
             ;;
+        "-e"|"--edit")
+            $EDITOR "${DOTPATH:?not set}"
+            return $?
+            ;;
+        "-o"|"--open")
+            open "${DOTPATH:?not set}"
+            return $?
+            ;;
         -*|--*)
             echo "$1: unknown option"
             return 1

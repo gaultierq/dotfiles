@@ -7,6 +7,6 @@ if [ ! -f ~/.vim/autoload/plug.vim ]; then
 fi 
 
 
-#echo "Installing oh-my-zsh"
+echo "Installing oh-my-zsh"
 # oh-my-zsh
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

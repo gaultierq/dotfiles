@@ -613,6 +613,9 @@ link_dotfiles() {
 # A script for the file named "install"
 install_all() {
 
+    # 0. install user packages
+    install_packages
+
     # 1. Download the repository
     # ==> downloading
     #
@@ -625,8 +628,6 @@ install_all() {
     # 3. linking all dot files
     link_dotfiles &&
 
-    # 4. install user packages (should be begore 2 and 3 ?)
-    install_packages
 
     return 0
 }

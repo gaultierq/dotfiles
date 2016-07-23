@@ -2,6 +2,6 @@
 export PATH="/usr/local/sbin:$PATH"
 
 # TODO: read doc and move these to exports.local
-export DOT_FILES="$HOME/dotfiles"
+export DOT_PATH="$HOME/dotfiles"
 export PROJECTS="$HOME/projects"
 export SCRIPTS="$PROJECTS/scripts"

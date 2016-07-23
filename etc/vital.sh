@@ -605,8 +605,13 @@ install_packages() {
     run_all "$DOTPATH/etc/init/$PLATFORM"
 }
 
+link_dotfiles() {
+    env RCRC=$DOTPATH/rcrc rcup -v
+    e_newline && e_done "Dotfiles created"
+}
+
 # A script for the file named "install"
-dotfiles_install() {
+install_all() {
 
     # 1. Download the repository
     # ==> downloading
@@ -617,18 +622,17 @@ dotfiles_install() {
     # 2. Install RCM
     install_rcm &&
 
+    # 3. linking all dot files
+    link_dotfiles &&
 
-    env RCRC=$DOTPATH/rcrc rcup -v
-    e_newline && e_done "Dotfiles created"
-
-    test -f ~/.bash_profile && source ~/.bash_profile
-
+    # 4. install user packages (should be begore 2 and 3 ?)
     install_packages
 
     return 0
 }
 
-if echo "$-" | grep -q "i"; then
+# sourced from .bashrc and .zshrc 
+if echo "$-" | grep -q "i"; then # interactive shell
     # -> source a.sh
     VITALIZED=1
     export VITALIZED
@@ -648,14 +652,14 @@ else
     # -> cat a.sh | bash
     # -> bash -c "$(cat a.sh)"
     if [ -n "${BASH_EXECUTION_STRING:-}" ] || [ -p /dev/stdin ]; then
-        # if already vitalized, skip to run dotfiles_install
+        # if already vitalized, skip to run install_all
         if [ "${VITALIZED:=0}" = 1 ]; then
             exit
         fi
 
         trap "e_error 'terminated'; exit 1" INT ERR
         echo "$dotfiles_logo"
-        dotfiles_install "$@"
+        install_all "$@"
 
         # Restart shell if specified "bash -c $(curl -L {URL})"
         # not restart:

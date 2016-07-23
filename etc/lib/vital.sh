@@ -606,7 +606,7 @@ install_packages() {
 }
 
 link_dotfiles() {
-    env RCRC=$DOTPATH/rcrc rcup -v
+    env RCRC=$DOTPATH/rcrc rcup -vf
     e_newline && e_done "Dotfiles created"
 }
 

@@ -622,7 +622,6 @@ install_all() {
     else
         # 0. install user packages
         install_packages
-        :
     fi
 
     # 1. Download the repository

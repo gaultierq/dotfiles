@@ -606,15 +606,25 @@ install_packages() {
 }
 
 link_dotfiles() {
+    # platform dependant tmux.conf
+    ln -s "$DOTPATH/etc/init/$PLATFORM/tmux.conf" "$DOTPATH/tmux.conf"
+
+    # Using rcm to link all dotfiles
     env RCRC=$DOTPATH/rcrc rcup -vf
     e_newline && e_done "Dotfiles created"
 }
 
 # A script for the file named "install"
 install_all() {
-
-    # 0. install user packages
-    install_packages
+    
+    if contains "$@" "--skip-packages"; then
+       log_info "Skipping packages installation"
+    else
+        # 0. install user packages
+        install_packages
+        :
+    fi
+    exit 0
 
     # 1. Download the repository
     # ==> downloading
@@ -659,7 +669,9 @@ else
         fi
 
         trap "e_error 'terminated'; exit 1" INT ERR
+        
         echo "$dotfiles_logo"
+
         install_all "$@"
 
         # Restart shell if specified "bash -c $(curl -L {URL})"

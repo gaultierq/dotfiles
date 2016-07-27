@@ -1,31 +1,33 @@
 #!/bin/sh -e
 
-# It is necessary for the setting of DOTPATH
-[ -f ~/.path ] && . ~/.path
+# # It is necessary for the setting of DOTPATH
+# [ -f ~/.path ] && . ~/.path
 
-# DOTPATH environment variable specifies the location of dotfiles.
-# On Unix, the value is a colon-separated string. On Windows,
-# it is not yet supported.
-# DOTPATH must be set to run make init, make test and shell script library
-# outside the standard dotfiles tree.
-if [ -z "$DOTPATH" ]; then
-    echo "cannot start $SHELL, \$DOTPATH not set" 1>&2
-    return 1
-fi
+# # DOTPATH environment variable specifies the location of dotfiles.
+# # On Unix, the value is a colon-separated string. On Windows,
+# # it is not yet supported.
+# # DOTPATH must be set to run make init, make test and shell script library
+# # outside the standard dotfiles tree.
+# if [ -z "$DOTPATH" ]; then
+#     echo "cannot start $SHELL, \$DOTPATH not set" 1>&2
+#     return 1
+# fi
 
-# Load vital library that is most important and
-# constructed with many minimal functions
-# For more information, see etc/README.md
+# # Load vital library that is most important and
+# # constructed with many minimal functions
+# # For more information, see etc/README.md
 
-export VITAL_PATH="$DOTPATH/etc/lib/vital.sh"
-[ -f $VITAL_PATH ] && . "$VITAL_PATH"
+# export VITAL_PATH="$DOTPATH/etc/lib/vital.sh"
+# [ -f $VITAL_PATH ] && . "$VITAL_PATH"
 
-if ! vitalize 2>/dev/null; then
-    echo "cannot vitalize, cannot start $SHELL" 1>&2
-    return 1
-fi
+# if ! vitalize 2>/dev/null; then
+#     echo "cannot vitalize, cannot start $SHELL" 1>&2
+#     return 1
+# fi
 
+# [ -f ~/.path ] && . ~/.path
 
+[ -f ~/.source_vital ] && . ~/.source_vital
 
 #source ~/.exports
 

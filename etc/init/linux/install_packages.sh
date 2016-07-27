@@ -6,6 +6,7 @@ sudo apt-get update &&
 sudo apt-get -y --force-yes install \
 git \
 tree \
+rsync \
 zsh \
 htop \
 curl \

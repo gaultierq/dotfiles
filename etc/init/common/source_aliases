@@ -32,3 +32,4 @@ alias slowconn='sudo ipfw pipe 1 config bw 20kbit/s plr 0.3 delay 1000ms; sudo i
 alias goodconn='sudo ipfw flush'
 
 alias src='source ~/.bash_profile'
+alias t='tree -d'

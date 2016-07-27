@@ -624,7 +624,6 @@ install_all() {
         install_packages
         :
     fi
-    exit 0
 
     # 1. Download the repository
     # ==> downloading

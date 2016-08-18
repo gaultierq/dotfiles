@@ -33,3 +33,4 @@ alias goodconn='sudo ipfw flush'
 
 alias src='source ~/.bash_profile'
 alias t='tree -d'
+alias v='vim'

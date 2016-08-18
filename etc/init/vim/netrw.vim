@@ -3,7 +3,7 @@
 
 
 " netrw files stay on the left
-" let g:netrw_altv=1
+let g:netrw_altv=1
 
 " enable mouse usage. makes it easier to browse multiple tabs
 " hide netrw top message

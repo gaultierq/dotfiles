@@ -6,7 +6,7 @@ sudo -v
 ###############################################################################
 
 # Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
+sudo nvram SystemAudioVolume=%01
 
 # Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false

@@ -1,20 +1,21 @@
-Mash up from multiple dotfiles; will list them later
-<br>
-quick install :
-<br>
-curl -L https://raw.githubusercontent.com/gaultierq/dotfiles/master/etc/lib/vital.sh | bash
-<br><br>
-skip packages installation :
-<br>
-curl -L https://raw.githubusercontent.com/gaultierq/dotfiles/master/etc/lib/vital.sh | bash -s - --skip-packages
+Mash up from multiple dotfiles.   
 
-<br><br>
-see :
-https://github.com/mscoutermarsh/dotfiles
-<br> or <br>
+
+### Light install:
+Do not install my fav packages.  
+```bash
+curl -L https://raw.githubusercontent.com/gaultierq/dotfiles/master/etc/lib/vital.sh | bash -s - --skip-packages
+```
+
+### Full install:
+```bash
+curl -L https://raw.githubusercontent.com/gaultierq/dotfiles/master/etc/lib/vital.sh | bash
+```
+
+### Copied from
+https://github.com/b4b4r07/dotfiles/  
+https://github.com/mscoutermarsh/dotfiles  
 https://github.com/Homebrew/homebrew-bundle
 
-run: <br>
-./homebrew/install.sh
-./osx_setup.sh
-env RCRC=$HOME/dotfiles/rcrc rcup -v
+### TODOs
+- auto-update on login

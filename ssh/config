@@ -1,0 +1,10 @@
+Host *
+  ServerAliveInterval 240
+
+Host baan
+	HostName 198.252.101.230 
+    User baanbang
+
+Host dev1
+	HostName 92.222.67.134  
+	User qg

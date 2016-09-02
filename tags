@@ -1,0 +1,611 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/55d0686/
+0x2a-0x200000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x2a-0x200000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x2b-0x200000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x2b-0x200000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x2d-0x200000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x2d-0x200000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x2d-0x40000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x2d-0x40000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x2e-0x200000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x2e-0x200000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x2f-0x200000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x2f-0x200000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x3-0x200000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x3-0x200000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x30-0x200000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x30-0x200000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x31-0x200000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x31-0x200000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x32-0x200000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x32-0x200000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x32-0x40000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x32-0x40000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x33-0x200000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x33-0x200000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x33-0x40000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x33-0x40000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x34-0x200000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x34-0x200000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x34-0x40000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x34-0x40000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x35-0x200000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x35-0x200000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x35-0x40000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x35-0x40000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x36-0x200000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x36-0x200000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x36-0x40000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x36-0x40000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x37-0x200000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x37-0x200000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x37-0x40000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x37-0x40000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x38-0x200000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x38-0x200000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x38-0x40000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x38-0x40000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x39-0x200000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x39-0x200000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x7f-0x80000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0x7f-0x80000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0x9-0x40000	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>0x9-0x40000<\/key>$/;"	k	key:GlobalKeyMap
+0xf700-0x220000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf700-0x220000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf700-0x240000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf700-0x240000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf700-0x260000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf700-0x260000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf700-0x300000	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>0xf700-0x300000<\/key>$/;"	k	key:GlobalKeyMap
+0xf701-0x220000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf701-0x220000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf701-0x240000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf701-0x240000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf701-0x260000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf701-0x260000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf701-0x300000	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>0xf701-0x300000<\/key>$/;"	k	key:GlobalKeyMap
+0xf702-0x220000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf702-0x220000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf702-0x240000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf702-0x240000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf702-0x260000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf702-0x260000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf702-0x280000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf702-0x280000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf702-0x300000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf702-0x300000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf702-0x380000	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>0xf702-0x380000<\/key>$/;"	k	key:GlobalKeyMap
+0xf703-0x220000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf703-0x220000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf703-0x240000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf703-0x240000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf703-0x260000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf703-0x260000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf703-0x280000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf703-0x280000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf703-0x300000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf703-0x300000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf703-0x380000	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>0xf703-0x380000<\/key>$/;"	k	key:GlobalKeyMap
+0xf704-0x20000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf704-0x20000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf705-0x20000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf705-0x20000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf706-0x20000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf706-0x20000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf707-0x20000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf707-0x20000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf708-0x20000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf708-0x20000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf709-0x20000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf709-0x20000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf70a-0x20000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf70a-0x20000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf70b-0x20000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf70b-0x20000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf70c-0x20000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf70c-0x20000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf70d-0x20000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf70d-0x20000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf70e-0x20000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf70e-0x20000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf70f-0x20000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf70f-0x20000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf728-0x80000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf728-0x80000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf729-0x100000	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>0xf729-0x100000<\/key>$/;"	k	key:GlobalKeyMap
+0xf729-0x20000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf729-0x20000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf729-0x40000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf729-0x40000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf72b-0x100000	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>0xf72b-0x100000<\/key>$/;"	k	key:GlobalKeyMap
+0xf72b-0x20000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf72b-0x20000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf72b-0x40000	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf72b-0x40000<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+0xf72c-0x100000	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>0xf72c-0x100000<\/key>$/;"	k	key:GlobalKeyMap
+0xf72c-0x20000	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>0xf72c-0x20000<\/key>$/;"	k	key:GlobalKeyMap
+0xf72d-0x100000	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>0xf72d-0x100000<\/key>$/;"	k	key:GlobalKeyMap
+0xf72d-0x20000	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>0xf72d-0x20000<\/key>$/;"	k	key:GlobalKeyMap
+0xf739-0x0	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>0xf739-0x0<\/key>$/;"	k	key:New Bookmarks.Keyboard Map
+<BS>	vimrc	/^nnoremap <BS> i<BS>$/;"	m
+<C-Left>	vimrc	/^map  <C-Left> :tabp<CR>$/;"	m
+<C-Right>	vimrc	/^map  <C-Right> :tabn<CR>$/;"	m
+<C-h>	vimrc	/^map  <C-h> :tabp<CR>$/;"	m
+<C-l>	vimrc	/^map  <C-l> :tabn<CR>$/;"	m
+<C-n>	vimrc	/^map  <C-n> :tabnew<CR>$/;"	m
+<C-n>	vimrc	/^map <C-n> :NERDTreeToggle<CR>$/;"	m
+<Enter>	vimrc	/^map <Enter> o<ESC>$/;"	m
+<S-Enter>	vimrc	/^map <S-Enter> O<ESC>$/;"	m
+<space>	vimrc	/^nnoremap <space> i<space>$/;"	m
+<tab>	vimrc	/^nnoremap <tab> i<tab>$/;"	m
+ASCII Anti Aliased	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>ASCII Anti Aliased<\/key>$/;"	k	key:New Bookmarks
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x2a-0x200000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x2b-0x200000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x2d-0x200000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x2d-0x40000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x2e-0x200000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x2f-0x200000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x3-0x200000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x30-0x200000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x31-0x200000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x32-0x200000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x32-0x40000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x33-0x200000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x33-0x40000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x34-0x200000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x34-0x40000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x35-0x200000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x35-0x40000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x36-0x200000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x36-0x40000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x37-0x200000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x37-0x40000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x38-0x200000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x38-0x40000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x39-0x200000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x7f-0x80000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf700-0x220000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf700-0x240000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf700-0x260000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf701-0x220000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf701-0x240000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf701-0x260000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf702-0x220000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf702-0x240000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf702-0x260000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf702-0x280000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf702-0x300000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf703-0x220000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf703-0x240000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf703-0x260000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf703-0x280000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf703-0x300000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf704-0x20000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf705-0x20000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf706-0x20000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf707-0x20000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf708-0x20000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf709-0x20000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf70a-0x20000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf70b-0x20000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf70c-0x20000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf70d-0x20000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf70e-0x20000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf70f-0x20000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf728-0x80000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf729-0x20000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf729-0x40000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf72b-0x20000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf72b-0x40000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Action<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf739-0x0
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Action<\/key>$/;"	k	key:GlobalKeyMap.0x9-0x40000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Action<\/key>$/;"	k	key:GlobalKeyMap.0xf700-0x300000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Action<\/key>$/;"	k	key:GlobalKeyMap.0xf701-0x300000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Action<\/key>$/;"	k	key:GlobalKeyMap.0xf702-0x380000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Action<\/key>$/;"	k	key:GlobalKeyMap.0xf703-0x380000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Action<\/key>$/;"	k	key:GlobalKeyMap.0xf729-0x100000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Action<\/key>$/;"	k	key:GlobalKeyMap.0xf72b-0x100000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Action<\/key>$/;"	k	key:GlobalKeyMap.0xf72c-0x100000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Action<\/key>$/;"	k	key:GlobalKeyMap.0xf72c-0x20000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Action<\/key>$/;"	k	key:GlobalKeyMap.0xf72d-0x100000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Action<\/key>$/;"	k	key:GlobalKeyMap.0xf72d-0x20000
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Action<\/key>$/;"	k	key:PointerActions.Button,1,1,,
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Action<\/key>$/;"	k	key:PointerActions.Button,2,1,,
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Action<\/key>$/;"	k	key:PointerActions.Gesture,ThreeFingerSwipeDown,,
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Action<\/key>$/;"	k	key:PointerActions.Gesture,ThreeFingerSwipeLeft,,
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Action<\/key>$/;"	k	key:PointerActions.Gesture,ThreeFingerSwipeRight,,
+Action	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Action<\/key>$/;"	k	key:PointerActions.Gesture,ThreeFingerSwipeUp,,
+AdjustWindowForFontSizeChange	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>AdjustWindowForFontSizeChange<\/key>$/;"	k
+Allow Title Reporting	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Allow Title Reporting<\/key>$/;"	k	key:New Bookmarks
+AllowClipboardAccess	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>AllowClipboardAccess<\/key>$/;"	k
+Alpha Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Alpha Component<\/key>$/;"	k	key:New Bookmarks.Badge Color
+Alpha Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Alpha Component<\/key>$/;"	k	key:New Bookmarks.Cursor Guide Color
+Alpha Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Alpha Component<\/key>$/;"	k	key:New Bookmarks.Link Color
+Ambiguous Double Width	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Ambiguous Double Width<\/key>$/;"	k	key:New Bookmarks
+AnimateDimming	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>AnimateDimming<\/key>$/;"	k
+Ansi 0 Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Ansi 0 Color<\/key>$/;"	k	key:New Bookmarks
+Ansi 1 Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Ansi 1 Color<\/key>$/;"	k	key:New Bookmarks
+Ansi 10 Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Ansi 10 Color<\/key>$/;"	k	key:New Bookmarks
+Ansi 11 Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Ansi 11 Color<\/key>$/;"	k	key:New Bookmarks
+Ansi 12 Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Ansi 12 Color<\/key>$/;"	k	key:New Bookmarks
+Ansi 13 Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Ansi 13 Color<\/key>$/;"	k	key:New Bookmarks
+Ansi 14 Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Ansi 14 Color<\/key>$/;"	k	key:New Bookmarks
+Ansi 15 Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Ansi 15 Color<\/key>$/;"	k	key:New Bookmarks
+Ansi 2 Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Ansi 2 Color<\/key>$/;"	k	key:New Bookmarks
+Ansi 3 Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Ansi 3 Color<\/key>$/;"	k	key:New Bookmarks
+Ansi 4 Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Ansi 4 Color<\/key>$/;"	k	key:New Bookmarks
+Ansi 5 Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Ansi 5 Color<\/key>$/;"	k	key:New Bookmarks
+Ansi 6 Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Ansi 6 Color<\/key>$/;"	k	key:New Bookmarks
+Ansi 7 Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Ansi 7 Color<\/key>$/;"	k	key:New Bookmarks
+Ansi 8 Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Ansi 8 Color<\/key>$/;"	k	key:New Bookmarks
+Ansi 9 Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Ansi 9 Color<\/key>$/;"	k	key:New Bookmarks
+AppleAntiAliasingThreshold	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>AppleAntiAliasingThreshold<\/key>$/;"	k
+AppleScrollAnimationEnabled	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>AppleScrollAnimationEnabled<\/key>$/;"	k
+AppleSmoothFixedFontsSizeThreshold	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>AppleSmoothFixedFontsSizeThreshold<\/key>$/;"	k
+AutoHideTmuxClientSession	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>AutoHideTmuxClientSession<\/key>$/;"	k
+Automatically Log	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Automatically Log<\/key>$/;"	k	key:New Bookmarks
+BM Growl	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>BM Growl<\/key>$/;"	k	key:New Bookmarks
+Background Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Background Color<\/key>$/;"	k	key:New Bookmarks
+Background Image Is Tiled	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Background Image Is Tiled<\/key>$/;"	k	key:New Bookmarks
+Background Image Location	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Background Image Location<\/key>$/;"	k	key:New Bookmarks
+Badge Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Badge Color<\/key>$/;"	k	key:New Bookmarks
+Blend	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Blend<\/key>$/;"	k	key:New Bookmarks
+Blink Allowed	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Blink Allowed<\/key>$/;"	k	key:New Bookmarks
+Blinking Cursor	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Blinking Cursor<\/key>$/;"	k	key:New Bookmarks
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Ansi 0 Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Ansi 1 Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Ansi 10 Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Ansi 11 Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Ansi 12 Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Ansi 13 Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Ansi 14 Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Ansi 15 Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Ansi 2 Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Ansi 3 Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Ansi 4 Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Ansi 5 Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Ansi 6 Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Ansi 7 Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Ansi 8 Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Ansi 9 Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Background Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Badge Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Bold Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Cursor Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Cursor Guide Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Cursor Text Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Foreground Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Link Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Selected Text Color
+Blue Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Blue Component<\/key>$/;"	k	key:New Bookmarks.Selection Color
+Blur	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Blur<\/key>$/;"	k	key:New Bookmarks
+Blur Radius	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Blur Radius<\/key>$/;"	k	key:New Bookmarks
+Bold Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Bold Color<\/key>$/;"	k	key:New Bookmarks
+Button,1,1,,	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>Button,1,1,,<\/key>$/;"	k	key:PointerActions
+Button,2,1,,	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>Button,2,1,,<\/key>$/;"	k	key:PointerActions
+Character Encoding	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Character Encoding<\/key>$/;"	k	key:New Bookmarks
+CheckTestRelease	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>CheckTestRelease<\/key>$/;"	k
+Close Sessions On End	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Close Sessions On End<\/key>$/;"	k	key:New Bookmarks
+ClosingHotkeySwitchesSpaces	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>ClosingHotkeySwitchesSpaces<\/key>$/;"	k
+Color Space	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Color Space<\/key>$/;"	k	key:New Bookmarks.Badge Color
+Color Space	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Color Space<\/key>$/;"	k	key:New Bookmarks.Cursor Guide Color
+Color Space	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Color Space<\/key>$/;"	k	key:New Bookmarks.Link Color
+Columns	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Columns<\/key>$/;"	k	key:New Bookmarks
+Command	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Command<\/key>$/;"	k	key:New Bookmarks
+CommandSelection	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>CommandSelection<\/key>$/;"	k
+Control	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>Control<\/key>$/;"	k
+CopyLastNewline	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>CopyLastNewline<\/key>$/;"	k
+CopySelection	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>CopySelection<\/key>$/;"	k
+Cursor Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Cursor Color<\/key>$/;"	k	key:New Bookmarks
+Cursor Guide Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Cursor Guide Color<\/key>$/;"	k	key:New Bookmarks
+Cursor Text Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Cursor Text Color<\/key>$/;"	k	key:New Bookmarks
+Cursor Type	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Cursor Type<\/key>$/;"	k	key:New Bookmarks
+Custom Command	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Custom Command<\/key>$/;"	k	key:New Bookmarks
+Custom Directory	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Custom Directory<\/key>$/;"	k	key:New Bookmarks
+Default Bookmark	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Default Bookmark<\/key>$/;"	k	key:New Bookmarks
+Default Bookmark Guid	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>Default Bookmark Guid<\/key>$/;"	k
+DimBackgroundWindows	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>DimBackgroundWindows<\/key>$/;"	k
+DimInactiveSplitPanes	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>DimInactiveSplitPanes<\/key>$/;"	k
+DimOnlyText	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>DimOnlyText<\/key>$/;"	k
+Disable Printing	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Disable Printing<\/key>$/;"	k	key:New Bookmarks
+Disable Smcup Rmcup	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Disable Smcup Rmcup<\/key>$/;"	k	key:New Bookmarks
+Disable Window Resizing	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Disable Window Resizing<\/key>$/;"	k	key:New Bookmarks
+DisableFullscreenTransparency	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>DisableFullscreenTransparency<\/key>$/;"	k
+EnableRendezvous	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>EnableRendezvous<\/key>$/;"	k
+Flashing Bell	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Flashing Bell<\/key>$/;"	k	key:New Bookmarks
+FocusFollowsMouse	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>FocusFollowsMouse<\/key>$/;"	k
+Foreground Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Foreground Color<\/key>$/;"	k	key:New Bookmarks
+FsTabDelay	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>FsTabDelay<\/key>$/;"	k
+Gesture,ThreeFingerSwipeDown,,	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>Gesture,ThreeFingerSwipeDown,,<\/key>$/;"	k	key:PointerActions
+Gesture,ThreeFingerSwipeLeft,,	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>Gesture,ThreeFingerSwipeLeft,,<\/key>$/;"	k	key:PointerActions
+Gesture,ThreeFingerSwipeRight,,	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>Gesture,ThreeFingerSwipeRight,,<\/key>$/;"	k	key:PointerActions
+Gesture,ThreeFingerSwipeUp,,	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>Gesture,ThreeFingerSwipeUp,,<\/key>$/;"	k	key:PointerActions
+GlobalKeyMap	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>GlobalKeyMap<\/key>$/;"	k
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Ansi 0 Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Ansi 1 Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Ansi 10 Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Ansi 11 Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Ansi 12 Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Ansi 13 Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Ansi 14 Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Ansi 15 Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Ansi 2 Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Ansi 3 Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Ansi 4 Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Ansi 5 Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Ansi 6 Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Ansi 7 Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Ansi 8 Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Ansi 9 Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Background Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Badge Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Bold Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Cursor Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Cursor Guide Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Cursor Text Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Foreground Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Link Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Selected Text Color
+Green Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Green Component<\/key>$/;"	k	key:New Bookmarks.Selection Color
+Guid	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Guid<\/key>$/;"	k	key:New Bookmarks
+HiddenAFRStrokeThickness	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>HiddenAFRStrokeThickness<\/key>$/;"	k
+HiddenAdvancedFontRendering	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>HiddenAdvancedFontRendering<\/key>$/;"	k
+Hide After Opening	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Hide After Opening<\/key>$/;"	k	key:New Bookmarks
+HideActivityIndicator	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>HideActivityIndicator<\/key>$/;"	k
+HideMenuBarInFullscreen	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>HideMenuBarInFullscreen<\/key>$/;"	k
+HideScrollbar	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>HideScrollbar<\/key>$/;"	k
+HideTab	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>HideTab<\/key>$/;"	k
+HighlightTabLabels	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>HighlightTabLabels<\/key>$/;"	k
+Horizontal Spacing	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Horizontal Spacing<\/key>$/;"	k	key:New Bookmarks
+HotKeyBookmark	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>HotKeyBookmark<\/key>$/;"	k
+HotKeyTogglesWindow	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>HotKeyTogglesWindow<\/key>$/;"	k
+Hotkey	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>Hotkey<\/key>$/;"	k
+HotkeyChar	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>HotkeyChar<\/key>$/;"	k
+HotkeyCode	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>HotkeyCode<\/key>$/;"	k
+HotkeyModifiers	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>HotkeyModifiers<\/key>$/;"	k
+HotkeyTermAnimationDuration	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>HotkeyTermAnimationDuration<\/key>$/;"	k
+IRMemory	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>IRMemory<\/key>$/;"	k
+Idle Code	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Idle Code<\/key>$/;"	k	key:New Bookmarks
+Initial Text	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Initial Text<\/key>$/;"	k	key:New Bookmarks
+JobName	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>JobName<\/key>$/;"	k
+Jobs to Ignore	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Jobs to Ignore<\/key>$/;"	k	key:New Bookmarks
+Keyboard Map	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Keyboard Map<\/key>$/;"	k	key:New Bookmarks
+LeftCommand	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>LeftCommand<\/key>$/;"	k
+LeftOption	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>LeftOption<\/key>$/;"	k
+Link Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Link Color<\/key>$/;"	k	key:New Bookmarks
+LoadPrefsFromCustomFolder	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>LoadPrefsFromCustomFolder<\/key>$/;"	k
+Log Directory	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Log Directory<\/key>$/;"	k	key:New Bookmarks
+MaxVertically	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>MaxVertically<\/key>$/;"	k
+Minimum Contrast	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Minimum Contrast<\/key>$/;"	k	key:New Bookmarks
+Mouse Reporting	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Mouse Reporting<\/key>$/;"	k	key:New Bookmarks
+NSNavLastRootDirectory	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NSNavLastRootDirectory<\/key>$/;"	k
+NSNavPanelExpandedSizeForOpenMode	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NSNavPanelExpandedSizeForOpenMode<\/key>$/;"	k
+NSQuotedKeystrokeBinding	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NSQuotedKeystrokeBinding<\/key>$/;"	k
+NSRepeatCountBinding	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NSRepeatCountBinding<\/key>$/;"	k
+NSScrollAnimationEnabled	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NSScrollAnimationEnabled<\/key>$/;"	k
+NSScrollViewShouldScrollUnderTitlebar	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NSScrollViewShouldScrollUnderTitlebar<\/key>$/;"	k
+NSTableView Columns KeyBingingTable	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NSTableView Columns KeyBingingTable<\/key>$/;"	k
+NSTableView Hidden Columns KeyBingingTable	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NSTableView Hidden Columns KeyBingingTable<\/key>$/;"	k
+NSTableView Sort Ordering KeyBingingTable	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NSTableView Sort Ordering KeyBingingTable<\/key>$/;"	k
+NSToolbar Configuration com.apple.NSColorPanel	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NSToolbar Configuration com.apple.NSColorPanel<\/key>$/;"	k
+NSWindow Frame Preferences	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NSWindow Frame Preferences<\/key>$/;"	k
+NSWindow Frame SharedPreferences	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NSWindow Frame SharedPreferences<\/key>$/;"	k
+NSWindow Frame UKCrashReporter	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NSWindow Frame UKCrashReporter<\/key>$/;"	k
+NSWindow Frame iTerm Window 0	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NSWindow Frame iTerm Window 0<\/key>$/;"	k
+Name	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Name<\/key>$/;"	k	key:New Bookmarks
+New Bookmarks	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>New Bookmarks<\/key>$/;"	k
+NoSyncDoNotWarnBeforeMultilinePaste	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NoSyncDoNotWarnBeforeMultilinePaste<\/key>$/;"	k
+NoSyncDoNotWarnBeforeMultilinePaste_selection	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection<\/key>$/;"	k
+NoSyncHaveShownPromoWithId_4	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NoSyncHaveShownPromoWithId_4<\/key>$/;"	k
+NoSyncInstallationId	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NoSyncInstallationId<\/key>$/;"	k
+NoSyncNeverRemindPrefsChangesLostForFile	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NoSyncNeverRemindPrefsChangesLostForFile<\/key>$/;"	k
+NoSyncNeverRemindPrefsChangesLostForFile_selection	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection<\/key>$/;"	k
+NoSyncPermissionToShowTip	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NoSyncPermissionToShowTip<\/key>$/;"	k
+NoSyncTimeOfFirstLaunchOfVersionWithTip	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip<\/key>$/;"	k
+NoSyncTimeOfLastPromo	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NoSyncTimeOfLastPromo<\/key>$/;"	k
+NoSyncTimeOfLastPromoDownload	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>NoSyncTimeOfLastPromoDownload<\/key>$/;"	k
+Non Ascii Font	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Non Ascii Font<\/key>$/;"	k	key:New Bookmarks
+Non-ASCII Anti Aliased	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Non-ASCII Anti Aliased<\/key>$/;"	k	key:New Bookmarks
+Normal Font	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Normal Font<\/key>$/;"	k	key:New Bookmarks
+OnlyWhenMoreTabs	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>OnlyWhenMoreTabs<\/key>$/;"	k
+OpenArrangementAtStartup	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>OpenArrangementAtStartup<\/key>$/;"	k
+OpenBookmark	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>OpenBookmark<\/key>$/;"	k
+OpenTmuxWindowsIn	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>OpenTmuxWindowsIn<\/key>$/;"	k
+Option Key Sends	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Option Key Sends<\/key>$/;"	k	key:New Bookmarks
+PassOnControlClick	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>PassOnControlClick<\/key>$/;"	k
+PasteFromClipboard	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>PasteFromClipboard<\/key>$/;"	k
+PointerActions	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>PointerActions<\/key>$/;"	k
+PrefsCustomFolder	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>PrefsCustomFolder<\/key>$/;"	k
+Prompt Before Closing 2	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Prompt Before Closing 2<\/key>$/;"	k	key:New Bookmarks
+PromptOnClose	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>PromptOnClose<\/key>$/;"	k
+PromptOnQuit	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>PromptOnQuit<\/key>$/;"	k
+QuitWhenAllWindowsClosed	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>QuitWhenAllWindowsClosed<\/key>$/;"	k
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Ansi 0 Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Ansi 1 Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Ansi 10 Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Ansi 11 Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Ansi 12 Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Ansi 13 Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Ansi 14 Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Ansi 15 Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Ansi 2 Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Ansi 3 Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Ansi 4 Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Ansi 5 Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Ansi 6 Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Ansi 7 Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Ansi 8 Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Ansi 9 Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Background Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Badge Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Bold Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Cursor Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Cursor Guide Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Cursor Text Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Foreground Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Link Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Selected Text Color
+Red Component	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>Red Component<\/key>$/;"	k	key:New Bookmarks.Selection Color
+Right Option Key Sends	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Right Option Key Sends<\/key>$/;"	k	key:New Bookmarks
+RightCommand	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>RightCommand<\/key>$/;"	k
+RightOption	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>RightOption<\/key>$/;"	k
+Rows	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Rows<\/key>$/;"	k	key:New Bookmarks
+SUAutomaticallyUpdate	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>SUAutomaticallyUpdate<\/key>$/;"	k
+SUEnableAutomaticChecks	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>SUEnableAutomaticChecks<\/key>$/;"	k
+SUFeedAlternateAppNameKey	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>SUFeedAlternateAppNameKey<\/key>$/;"	k
+SUFeedURL	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>SUFeedURL<\/key>$/;"	k
+SUHasLaunchedBefore	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>SUHasLaunchedBefore<\/key>$/;"	k
+SULastCheckTime	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>SULastCheckTime<\/key>$/;"	k
+SUSkippedVersion	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>SUSkippedVersion<\/key>$/;"	k
+SavePasteHistory	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>SavePasteHistory<\/key>$/;"	k
+Screen	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Screen<\/key>$/;"	k	key:New Bookmarks
+Scrollback Lines	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Scrollback Lines<\/key>$/;"	k	key:New Bookmarks
+Scrollback With Status Bar	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Scrollback With Status Bar<\/key>$/;"	k	key:New Bookmarks
+Scrollback in Alternate Screen	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Scrollback in Alternate Screen<\/key>$/;"	k	key:New Bookmarks
+Selected Text Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Selected Text Color<\/key>$/;"	k	key:New Bookmarks
+Selection Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Selection Color<\/key>$/;"	k	key:New Bookmarks
+Semantic History	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Semantic History<\/key>$/;"	k	key:New Bookmarks
+Send Code When Idle	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Send Code When Idle<\/key>$/;"	k	key:New Bookmarks
+Set Local Environment Vars	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Set Local Environment Vars<\/key>$/;"	k	key:New Bookmarks
+Shortcut	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Shortcut<\/key>$/;"	k	key:New Bookmarks
+Show Toolbelt	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>Show Toolbelt<\/key>$/;"	k
+ShowBookmarkName	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>ShowBookmarkName<\/key>$/;"	k
+ShowPaneTitles	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>ShowPaneTitles<\/key>$/;"	k
+Silence Bell	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Silence Bell<\/key>$/;"	k	key:New Bookmarks
+Smart Cursor Color	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Smart Cursor Color<\/key>$/;"	k	key:New Bookmarks
+Smart Selection Rules	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Smart Selection Rules<\/key>$/;"	k	key:New Bookmarks
+SmartPlacement	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>SmartPlacement<\/key>$/;"	k
+Space	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Space<\/key>$/;"	k	key:New Bookmarks
+SplitPaneDimmingAmount	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>SplitPaneDimmingAmount<\/key>$/;"	k
+SwitchTabModifier	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>SwitchTabModifier<\/key>$/;"	k
+SwitchWindowModifier	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>SwitchWindowModifier<\/key>$/;"	k
+Sync Title	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Sync Title<\/key>$/;"	k	key:New Bookmarks
+TB Is Shown	.iterm2_profile/com.googlecode.iterm2.plist	/^		<key>TB Is Shown<\/key>$/;"	k	key:NSToolbar Configuration com.apple.NSColorPanel
+TabViewType	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>TabViewType<\/key>$/;"	k
+Tags	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Tags<\/key>$/;"	k	key:New Bookmarks
+Terminal Type	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Terminal Type<\/key>$/;"	k	key:New Bookmarks
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x2a-0x200000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x2b-0x200000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x2d-0x200000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x2d-0x40000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x2e-0x200000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x2f-0x200000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x3-0x200000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x30-0x200000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x31-0x200000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x32-0x200000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x32-0x40000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x33-0x200000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x33-0x40000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x34-0x200000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x34-0x40000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x35-0x200000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x35-0x40000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x36-0x200000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x36-0x40000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x37-0x200000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x37-0x40000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x38-0x200000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x38-0x40000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x39-0x200000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0x7f-0x80000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf700-0x220000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf700-0x240000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf700-0x260000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf701-0x220000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf701-0x240000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf701-0x260000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf702-0x220000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf702-0x240000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf702-0x260000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf702-0x280000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf702-0x300000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf703-0x220000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf703-0x240000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf703-0x260000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf703-0x280000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf703-0x300000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf704-0x20000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf705-0x20000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf706-0x20000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf707-0x20000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf708-0x20000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf709-0x20000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf70a-0x20000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf70b-0x20000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf70c-0x20000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf70d-0x20000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf70e-0x20000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf70f-0x20000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf728-0x80000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf729-0x20000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf729-0x40000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf72b-0x20000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf72b-0x40000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>Text<\/key>$/;"	k	key:New Bookmarks.Keyboard Map.0xf739-0x0
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Text<\/key>$/;"	k	key:GlobalKeyMap.0x9-0x40000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Text<\/key>$/;"	k	key:GlobalKeyMap.0xf700-0x300000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Text<\/key>$/;"	k	key:GlobalKeyMap.0xf701-0x300000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Text<\/key>$/;"	k	key:GlobalKeyMap.0xf702-0x380000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Text<\/key>$/;"	k	key:GlobalKeyMap.0xf703-0x380000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Text<\/key>$/;"	k	key:GlobalKeyMap.0xf729-0x100000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Text<\/key>$/;"	k	key:GlobalKeyMap.0xf72b-0x100000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Text<\/key>$/;"	k	key:GlobalKeyMap.0xf72c-0x100000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Text<\/key>$/;"	k	key:GlobalKeyMap.0xf72c-0x20000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Text<\/key>$/;"	k	key:GlobalKeyMap.0xf72d-0x100000
+Text	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Text<\/key>$/;"	k	key:GlobalKeyMap.0xf72d-0x20000
+ThreeFingerEmulates	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>ThreeFingerEmulates<\/key>$/;"	k
+TmuxDashboardLimit	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>TmuxDashboardLimit<\/key>$/;"	k
+Transparency	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Transparency<\/key>$/;"	k	key:New Bookmarks
+Triggers	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Triggers<\/key>$/;"	k	key:New Bookmarks
+TripleClickSelectsFullWrappedLines	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>TripleClickSelectsFullWrappedLines<\/key>$/;"	k
+UKCrashReporterLastCrashReportDate	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>UKCrashReporterLastCrashReportDate<\/key>$/;"	k
+URLHandlersByGuid	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>URLHandlersByGuid<\/key>$/;"	k
+Unlimited Scrollback	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Unlimited Scrollback<\/key>$/;"	k	key:New Bookmarks
+Use Bold Font	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Use Bold Font<\/key>$/;"	k	key:New Bookmarks
+Use Bright Bold	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Use Bright Bold<\/key>$/;"	k	key:New Bookmarks
+Use Canonical Parser	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Use Canonical Parser<\/key>$/;"	k	key:New Bookmarks
+Use Italic Font	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Use Italic Font<\/key>$/;"	k	key:New Bookmarks
+UseBorder	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>UseBorder<\/key>$/;"	k
+UseCompactLabel	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>UseCompactLabel<\/key>$/;"	k
+UseLionStyleFullscreen	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>UseLionStyleFullscreen<\/key>$/;"	k
+Vertical Spacing	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Vertical Spacing<\/key>$/;"	k	key:New Bookmarks
+Visual Bell	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Visual Bell<\/key>$/;"	k	key:New Bookmarks
+WebKitDefaultFontSize	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>WebKitDefaultFontSize<\/key>$/;"	k
+WebKitStandardFont	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>WebKitStandardFont<\/key>$/;"	k
+Window Type	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Window Type<\/key>$/;"	k	key:New Bookmarks
+WindowNumber	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>WindowNumber<\/key>$/;"	k
+WindowStyle	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>WindowStyle<\/key>$/;"	k
+WordCharacters	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>WordCharacters<\/key>$/;"	k
+Working Directory	.iterm2_profile/com.googlecode.iterm2.plist	/^			<key>Working Directory<\/key>$/;"	k	key:New Bookmarks
+action	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>action<\/key>$/;"	k	key:New Bookmarks.Semantic History
+contains	etc/lib/vital.sh	/^contains() {$/;"	f
+die	etc/lib/vital.sh	/^die() {$/;"	f
+dotfiles_download	etc/lib/vital.sh	/^dotfiles_download() {$/;"	f
+e_arrow	etc/lib/vital.sh	/^e_arrow() {$/;"	f
+e_done	etc/lib/vital.sh	/^e_done() {$/;"	f
+e_error	etc/lib/vital.sh	/^e_error() {$/;"	f
+e_failure	etc/lib/vital.sh	/^e_failure() {$/;"	f
+e_header	etc/lib/vital.sh	/^e_header() {$/;"	f
+e_indent	etc/lib/vital.sh	/^e_indent() {$/;"	f
+e_newline	etc/lib/vital.sh	/^e_newline() {$/;"	f
+e_success	etc/lib/vital.sh	/^e_success() {$/;"	f
+e_warning	etc/lib/vital.sh	/^e_warning() {$/;"	f
+echon	etc/lib/vital.sh	/^echon() {$/;"	f
+editor	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>editor<\/key>$/;"	k	key:New Bookmarks.Semantic History
+findIgnoreCase_iTerm	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>findIgnoreCase_iTerm<\/key>$/;"	k
+findRegex_iTerm	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>findRegex_iTerm<\/key>$/;"	k
+g:SuperTabDefaultCompletionType	vimrc	/^let g:SuperTabDefaultCompletionType = ""$/;"	v
+g:netrw_altfile	etc/init/vim/netrw.vim	/^let g:netrw_altfile=1           " last edited file '#'$/;"	v
+g:netrw_alto	etc/init/vim/netrw.vim	/^let g:netrw_alto=0              " open files on right$/;"	v
+g:netrw_altv	etc/init/vim/netrw.vim	/^let g:netrw_altv=1$/;"	v
+g:netrw_dirhistmax	etc/init/vim/netrw.vim	/^let g:netrw_dirhistmax=100      " keep more history$/;"	v
+g:netrw_liststyle	vimrc	/^let g:netrw_liststyle=3$/;"	v
+g:netrw_preview	etc/init/vim/netrw.vim	/^let g:netrw_preview=1           " open previews vertically$/;"	v
+g:netrw_winsize	etc/init/vim/netrw.vim	/^let g:netrw_winsize=20          " preview winsize$/;"	v
+g:solarized_bold	vimrc	/^let g:solarized_bold      =   1$/;"	v
+g:solarized_contrast	vimrc	/^let g:solarized_contrast  =   "high" | "normal"|   "high" or "low"$/;"	v
+g:solarized_degrade	vimrc	/^let g:solarized_degrade   =   0$/;"	v
+g:solarized_italic	vimrc	/^let g:solarized_italic    =   1$/;"	v
+g:solarized_termtrans	vimrc	/^let g:solarized_termtrans =   1$/;"	v
+g:solarized_underline	vimrc	/^let g:solarized_underline =   1$/;"	v
+g:solarized_visibility	vimrc	/^let g:solarized_visibility=   "high" | "normal"|   "high" or "low"$/;"	v
+get_os	etc/lib/vital.sh	/^get_os() {$/;"	f
+has	etc/lib/vital.sh	/^has() {$/;"	f
+iTerm Version	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>iTerm Version<\/key>$/;"	k
+ink	etc/lib/vital.sh	/^ink() {$/;"	f
+install	etc/lib/rcm_helper.sh	/^function install {$/;"	f
+install_all	etc/lib/vital.sh	/^install_all() {$/;"	f
+install_packages	etc/lib/vital.sh	/^install_packages() {$/;"	f
+install_rcm	etc/lib/vital.sh	/^install_rcm() {$/;"	f
+is_at_least	etc/lib/vital.sh	/^is_at_least() {$/;"	f
+is_bash	etc/lib/vital.sh	/^is_bash() {$/;"	f
+is_bsd	etc/lib/vital.sh	/^is_bsd() {$/;"	f
+is_debian	etc/lib/vital.sh	/^is_debian() {$/;"	f
+is_debug	etc/lib/vital.sh	/^is_debug() {$/;"	f
+is_empty	etc/lib/vital.sh	/^is_empty() {$/;"	f
+is_exists	etc/lib/vital.sh	/^is_exists() {$/;"	f
+is_git_repo	etc/lib/vital.sh	/^is_git_repo() {$/;"	f
+is_int	etc/lib/vital.sh	/^alias is_int=is_number$/;"	a
+is_interactive	etc/lib/vital.sh	/^is_interactive() {$/;"	f
+is_linux	etc/lib/vital.sh	/^is_linux() {$/;"	f
+is_login_shell	etc/lib/vital.sh	/^is_login_shell() {$/;"	f
+is_mac	etc/lib/vital.sh	/^alias is_mac=is_osx$/;"	a
+is_num	etc/lib/vital.sh	/^alias is_num=is_number$/;"	a
+is_number	etc/lib/vital.sh	/^is_number() {$/;"	f
+is_osx	etc/lib/vital.sh	/^is_osx() {$/;"	f
+is_screen_or_tmux_running	etc/lib/vital.sh	/^is_screen_or_tmux_running() {$/;"	f
+is_screen_running	etc/lib/vital.sh	/^is_screen_running() {$/;"	f
+is_ssh_running	etc/lib/vital.sh	/^is_ssh_running() {$/;"	f
+is_tmux_runnning	etc/lib/vital.sh	/^is_tmux_runnning() {$/;"	f
+is_zsh	etc/lib/vital.sh	/^is_zsh() {$/;"	f
+len	etc/lib/vital.sh	/^len() {$/;"	f
+link_dotfiles	etc/lib/vital.sh	/^link_dotfiles() {$/;"	f
+log_echo	etc/lib/vital.sh	/^log_echo() {$/;"	f
+log_fail	etc/lib/vital.sh	/^log_fail() {$/;"	f
+log_info	etc/lib/vital.sh	/^log_info() {$/;"	f
+log_pass	etc/lib/vital.sh	/^log_pass() {$/;"	f
+logging	etc/lib/vital.sh	/^logging() {$/;"	f
+lower	etc/lib/vital.sh	/^lower() {$/;"	f
+noecho	etc/lib/vital.sh	/^noecho() {$/;"	f
+notes	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>notes<\/key>$/;"	k	key:New Bookmarks.Smart Selection Rules
+os_detect	etc/lib/vital.sh	/^os_detect() {$/;"	f
+ostype	etc/lib/vital.sh	/^ostype() {$/;"	f
+path_remove	etc/lib/vital.sh	/^path_remove() {$/;"	f
+precision	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>precision<\/key>$/;"	k	key:New Bookmarks.Smart Selection Rules
+regex	.iterm2_profile/com.googlecode.iterm2.plist	/^					<key>regex<\/key>$/;"	k	key:New Bookmarks.Smart Selection Rules
+run_all	etc/lib/vital.sh	/^run_all() {$/;"	f
+shell_has_started_interactively	etc/lib/vital.sh	/^shell_has_started_interactively() {$/;"	f
+text	.iterm2_profile/com.googlecode.iterm2.plist	/^				<key>text<\/key>$/;"	k	key:New Bookmarks.Semantic History
+timestamp	etc/lib/vital.sh	/^    timestamp() {$/;"	f
+uninstall	etc/lib/rcm_helper.sh	/^function uninstall {$/;"	f
+update	etc/lib/rcm_helper.sh	/^function update {$/;"	f
+upper	etc/lib/vital.sh	/^upper() {$/;"	f
+vitalize	etc/lib/vital.sh	/^vitalize() {$/;"	f

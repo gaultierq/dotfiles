@@ -201,11 +201,11 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>269 110 924 485 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>302 284 918 381 0 0 1440 877 </string>
+	<string>302 468 918 381 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 232 1440 645 0 0 1440 877 </string>
+	<string>0 210 1440 667 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1085,7 +1085,7 @@
 			<key>Terminal Type</key>
 			<string>xterm</string>
 			<key>Transparency</key>
-			<real>0.10417899489402771</real>
+			<real>0.032347911314146056</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -1196,7 +1196,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-08-15T03:58:28Z</date>
+	<date>2016-09-01T07:40:53Z</date>
 	<key>SUSkippedVersion</key>
 	<string>3.0.4</string>
 	<key>SavePasteHistory</key>
@@ -1248,6 +1248,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.5</string>
+	<string>3.0.8</string>
 </dict>
 </plist>

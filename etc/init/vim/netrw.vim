@@ -2,6 +2,7 @@
 
 
 
+
 " netrw files stay on the left
 let g:netrw_altv=1
 
@@ -17,8 +18,6 @@ let g:netrw_altv=1
 " nmap <silent> <C-CR> t :rightbelow 20vs<CR>:e .<CR>:wincmd h<CR>
 " the same remap as above - may be necessary in some distros
 " nmap <silent> <NL> t :rightbelow 20vs<CR>:e .<CR>:wincmd h<CR>
-
-set mouse=a
 
 let g:netrw_dirhistmax=100      " keep more history
 let g:netrw_altfile=1           " last edited file '#'

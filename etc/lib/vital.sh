@@ -471,6 +471,7 @@ path_remove() {
 }
 
 
+
 # Dotfiles {{{1
 
 # Set DOTPATH as default variable
@@ -615,14 +616,7 @@ link_dotfiles() {
 }
 
 # A script for the file named "install"
-install_all() {
-    
-    if contains "$@" "--skip-packages"; then
-       log_info "Skipping packages installation"
-    else
-        # 0. install user packages
-        install_packages
-    fi
+install_dotfiles() {
 
     # 1. Download the repository
     # ==> downloading
@@ -669,8 +663,14 @@ else
         trap "e_error 'terminated'; exit 1" INT ERR
         
         echo "$dotfiles_logo"
-
-        install_all "$@"
+		
+    
+    	if contains "$@" "--packages"; then
+        	install_packages
+    	else
+			:
+    	fi
+        install_dotfiles "$@"
 
         # Restart shell if specified "bash -c $(curl -L {URL})"
         # not restart:
@@ -684,6 +684,3 @@ else
         fi
     fi
 fi
-
-# __END__ {{{1
-# vim:fdm=marker

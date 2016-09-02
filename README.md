@@ -12,10 +12,13 @@ curl -L https://raw.githubusercontent.com/gaultierq/dotfiles/master/etc/lib/vita
 curl -L https://raw.githubusercontent.com/gaultierq/dotfiles/master/etc/lib/vital.sh | bash
 ```
 
-### Copied from
+### Copied from / using
 https://github.com/b4b4r07/dotfiles/  
 https://github.com/mscoutermarsh/dotfiles  
 https://github.com/Homebrew/homebrew-bundle
+https://github.com/thoughtbot/rcm
 
 ### TODOs
 - auto-update on login
+- skip-packages as default
+- minify urls

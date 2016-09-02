@@ -1,15 +1,14 @@
 Mash up from multiple dotfiles.   
 
 
-### Light install:
-Do not install my fav packages.  
+### Install my dotfiles:
 ```bash
-curl -L https://raw.githubusercontent.com/gaultierq/dotfiles/master/etc/lib/vital.sh | bash -s - --skip-packages
+curl -L https://git.io/viqoU | bash
 ```
 
-### Full install:
+### Install my dotfiles + my favorites packages:
 ```bash
-curl -L https://raw.githubusercontent.com/gaultierq/dotfiles/master/etc/lib/vital.sh | bash
+curl -L https://git.io/viqoU | bash -s - --packages
 ```
 
 ### Copied from / using
@@ -20,5 +19,3 @@ https://github.com/thoughtbot/rcm
 
 ### TODOs
 - auto-update on login
-- skip-packages as default
-- minify urls

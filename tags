@@ -562,7 +562,7 @@ has	etc/lib/vital.sh	/^has() {$/;"	f
 iTerm Version	.iterm2_profile/com.googlecode.iterm2.plist	/^	<key>iTerm Version<\/key>$/;"	k
 ink	etc/lib/vital.sh	/^ink() {$/;"	f
 install	etc/lib/rcm_helper.sh	/^function install {$/;"	f
-install_all	etc/lib/vital.sh	/^install_all() {$/;"	f
+install_dotfiles	etc/lib/vital.sh	/^install_dotfiles() {$/;"	f
 install_packages	etc/lib/vital.sh	/^install_packages() {$/;"	f
 install_rcm	etc/lib/vital.sh	/^install_rcm() {$/;"	f
 is_at_least	etc/lib/vital.sh	/^is_at_least() {$/;"	f

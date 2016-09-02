@@ -655,12 +655,13 @@ else
     # -> cat a.sh | bash
     # -> bash -c "$(cat a.sh)"
     if [ -n "${BASH_EXECUTION_STRING:-}" ] || [ -p /dev/stdin ]; then
-        # if already vitalized, skip to run install_all
-        if [ "${VITALIZED:=0}" = 1 ]; then
-            exit
-        fi
-
-        trap "e_error 'terminated'; exit 1" INT ERR
+# why ?
+#         # if already vitalized, skip to run install_all
+#         if [ "${VITALIZED:=0}" = 1 ]; then
+#             exit
+#         fi
+# 
+#         trap "e_error 'terminated'; exit 1" INT ERR
         
         echo "$dotfiles_logo"
 		

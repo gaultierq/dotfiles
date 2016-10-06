@@ -14,6 +14,7 @@ Plug 'joonty/vim-phpqa'
 Plug 'shawncplus/phpcomplete.vim'
 Plug 'ervandew/supertab' " tab auto completion
 Plug 'ludovicchabant/vim-gutentags' " ctags generation
+Plug 'tpope/vim-surround' " braces etc.
 
 call plug#end()
 
@@ -74,9 +75,9 @@ let g:SuperTabDefaultCompletionType = ""
 set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4 
 
 " [TEST]: spaces in nno => insert mode
-nnoremap <space> i<space>
-nnoremap <tab> i<tab>
-nnoremap <BS> i<BS>
+"nnoremap <space> i<space>
+"nnoremap <tab> i<tab>
+"nnoremap <BS> i<BS>
 
 set incsearch "incremental search
 set hlsearch "highlight search
@@ -90,3 +91,14 @@ endif
 
 " guten-tags & ctags management
 let g:gutentags_tagfile = ".tags"
+
+" rm search highligth
+" nnoremap <esc> :noh<return><esc>
+
+" hard mode
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+"set foldmethod=indent

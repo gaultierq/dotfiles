@@ -10,7 +10,10 @@ rsync \
 zsh \
 htop \
 curl \
+openvpn \
+unzip \
 wget && 
+
 
 
 echo "Installing zsh"

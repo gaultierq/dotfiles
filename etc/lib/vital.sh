@@ -634,6 +634,15 @@ install_dotfiles() {
     return 0
 }
 
+install_vim_plugins() {
+
+    e_newline
+    e_header "Installing missing vim plugins"
+
+	vim -e +PlugInstall +qall
+	e_done
+}
+
 # sourced from .bashrc and .zshrc 
 if echo "$-" | grep -q "i"; then # interactive shell
     # -> source a.sh
@@ -672,6 +681,9 @@ else
 			:
     	fi
         install_dotfiles "$@"
+
+		install_vim_plugins	
+		
 
         # Restart shell if specified "bash -c $(curl -L {URL})"
         # not restart:

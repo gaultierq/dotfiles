@@ -1,3 +1,5 @@
+
+"set runtimepath+=~/dotfiles
 call plug#begin()
 
 Plug 'tpope/vim-sensible'
@@ -15,8 +17,12 @@ Plug 'shawncplus/phpcomplete.vim'
 Plug 'ervandew/supertab' " tab auto completion
 Plug 'ludovicchabant/vim-gutentags' " ctags generation
 Plug 'tpope/vim-surround' " braces etc.
+Plug 'schickling/vim-bufonly' " braces etc.
 
 call plug#end()
+
+set runtimepath+=~/dotfiles
+runtime! etc/init/vim/**.vim
 
 set clipboard=unnamed
 
@@ -44,8 +50,7 @@ filetype plugin on
 " ::::::::: Initialization ::::::::::::::::
 syntax enable
 
-set runtimepath+=~/dotfiles
-runtime! etc/init/vim/**.vim
+
 
 " display line numbers
 set number
@@ -102,3 +107,9 @@ noremap <Left> <NOP>
 noremap <Right> <NOP>
 
 "set foldmethod=indent
+noremap 4 :BufOnly<CR>
+
+"nerdtree reveal in tree
+nmap ,n :NERDTreeFind<CR>
+"toggle nerdtree
+nmap ,m :NERDTreeToggle<CR>

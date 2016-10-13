@@ -17,6 +17,8 @@ alias mv="mv -iv"
 # file size
 alias fs="stat -f '%z bytes'"
 alias df="df -h"
+alias du="du -h -d 1"
+
 
 # update the world
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup'

@@ -1,8 +1,18 @@
+#!/bin/bash
 
-export PATH="/Users/qg/.rbenv/shims:${PATH}"
+RBENV_DIR="$HOME/.rbenv"
+
+if [ ! -d $RBENV_DIR ]; then
+	return;
+fi
+
+export PATH="$RBENV_DIR/shims:${PATH}"
 export RBENV_SHELL=zsh
-source '/Users/qg/.rbenv/libexec/../completions/rbenv.zsh'
+
+. $RBENV_DIR/libexec/../completions/rbenv.zsh
+
 command rbenv rehash 2>/dev/null
+
 rbenv() {
   local command
   command="$1"

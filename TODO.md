@@ -5,3 +5,4 @@ A list of things to make my dotfiles more awesomer. A ✓ indicates done and cro
 
 - auto-update on login
 - [RSS Reader](https://github.com/swanson/stringer)
+- brew bundle rbenv

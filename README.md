@@ -3,12 +3,12 @@ Mash up from multiple dotfiles.
 
 ### Install my dotfiles:
 ```bash
-curl -L https://git.io/viqoU | bash
+curl -sL https://git.io/viqoU | bash
 ```
 
 ### Install my dotfiles + my favorites packages:
 ```bash
-curl -L https://git.io/viqoU | bash -s - --packages
+curl -sL https://git.io/viqoU | bash -s - --packages
 ```
 
 ### Copied from / using

@@ -640,11 +640,11 @@ install_vim_plugins() {
     e_header "Installing missing vim plugins"
 	
 	# todo: lazyness
-	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+	curl -sfLo ~/.vim/autoload/plug.vim --create-dirs \
     	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
-	vim +PlugInstall
+	vim +PlugInstall +qall
 	#vim -e +PlugInstall +qall
 	e_done
 }

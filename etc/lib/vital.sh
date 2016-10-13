@@ -644,8 +644,11 @@ install_vim_plugins() {
     	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
-	vim +PlugInstall +qall
-	#vim -e +PlugInstall +qall
+	vim +PlugInstall
+
+
+	# TODO: fix qa kill async installs...
+	#vim +PlugInstall +qall
 	e_done
 }
 

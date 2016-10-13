@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash"
 
 # readlink emulates GNU readlink -f option
 readlink() {
@@ -30,7 +30,9 @@ readlink() {
 }
 
 # get dotpath as full path
-dotpath="$(dirname "$(readlink "$0")")"
+
+path_file=${BASH_SOURCE[0]:-${(%):-%N}} 
+dotpath="$(dirname "$(readlink "$path_file")")"
 
 # check if the current shell is run with the interactive mode
 if echo "$-" | grep -q "i"; then

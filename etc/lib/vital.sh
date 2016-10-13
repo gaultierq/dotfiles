@@ -643,8 +643,9 @@ install_vim_plugins() {
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-	
-	vim -e +PlugInstall +qall
+
+	vim +PlugInstall
+	#vim -e +PlugInstall +qall
 	e_done
 }
 

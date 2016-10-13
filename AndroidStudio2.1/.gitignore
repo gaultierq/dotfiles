@@ -6,3 +6,5 @@ options/recentProjects.xml
 options/dimensions.xml
 options/statistics.application.usages.xml
 options/window.manager.xml
+options/options.xml
+options/jdk.table.xml

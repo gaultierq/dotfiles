@@ -2,3 +2,6 @@ port
 port.lock
 user.token
 tasks
+options/recentProjects.xml
+options/statistics.application.usages.xml
+options/window.manager.xml

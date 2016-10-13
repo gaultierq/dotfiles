@@ -1,0 +1,27 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/projects/memori" />
+        <option value="$USER_HOME$/projects/MyFreedomGrocerAndroid-2" />
+        <option value="$USER_HOME$/projects/memori/Memori" />
+      </list>
+    </option>
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/projects/memori">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="AI-143.2915827" />
+              <option name="productionCode" value="AI" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1476346444410" />
+              <option name="buildTimestamp" value="1464192000000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/projects" />
+  </component>
+</application>

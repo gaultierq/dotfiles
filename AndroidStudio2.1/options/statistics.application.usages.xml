@@ -1,0 +1,56 @@
+<application>
+  <component name="StatisticsApplicationUsages">
+    <group name="run-configuration-type">
+      <project id="Memori" values="AndroidRunConfigurationType" collectionTime="1456164551220" />
+      <project id="MyFreedomGrocerAndroid-2" values="AndroidRunConfigurationType" collectionTime="1460731151546" />
+      <project id="memori" values="AndroidRunConfigurationType" collectionTime="1476346450539" />
+    </group>
+    <group name="module type">
+      <project id="Memori" values="JAVA_MODULE" collectionTime="1456164551219" />
+      <project id="MyFreedomGrocerAndroid-2" values="JAVA_MODULE" collectionTime="1460731151545" />
+      <project id="memori" values="JAVA_MODULE" collectionTime="1476346450539" />
+    </group>
+    <group name="vcs">
+      <project id="Memori" values="Git" collectionTime="1456164551218" />
+      <project id="MyFreedomGrocerAndroid-2" values="Git" collectionTime="1460731151545" />
+      <project id="memori" values="Git" collectionTime="1476346450538" />
+    </group>
+    <group name="file-type">
+      <project id="Memori" values="Properties,AIDL,Groovy,UNKNOWN,Images,JAVA,PLAIN_TEXT,XML,ProGuard File,ARCHIVE,IDEA_MODULE" collectionTime="1456164551318" />
+      <project id="MyFreedomGrocerAndroid-2" values="UNKNOWN,Images,JAVA,IDEA_MODULE,Properties,AIDL,Groovy,ARCHIVE,PLAIN_TEXT,XML,ProGuard File" collectionTime="1460731151657" />
+      <project id="memori" values="ARCHIVE,ProGuard File,IDEA_MODULE,XML,JAVA,Properties,Groovy,PLAIN_TEXT,JSON,UNKNOWN,AIDL,Images" collectionTime="1476346450619" />
+    </group>
+    <group name="Git">
+      <project id="memori" values="data.remotes.in.project.1,config.force.push.enabled,data.remote.branches.count.1,config.warn.about.detached.enabled,config.update.type.BRANCH_DEFAULT,config.cherry-pick.autocommit.disabled,data.local.branches.count.1,config.repo.sync.NOT_DECIDED,config.warn.about.crlf.enabled,config.save.policy.STASH,config.ssh.enabled,config.push.autoupdate.disabled,config.push.update.all.roots.enabled" collectionTime="1476346450631" />
+    </group>
+    <group name="frameworks">
+      <project id="Memori" values="android,java-gradle,android-gradle" collectionTime="1456164551219" />
+      <project id="MyFreedomGrocerAndroid-2" values="android-gradle,android,java-gradle" collectionTime="1460731151545" />
+      <project id="memori" values="android,java-gradle,android-gradle" collectionTime="1476346450538" />
+    </group>
+    <group name="language-level">
+      <project id="Memori" values="JDK_1_7" collectionTime="1456164551331" />
+      <project id="MyFreedomGrocerAndroid-2" values="JDK_1_7" collectionTime="1460731151682" />
+      <project id="memori" values="JDK_1_7" collectionTime="1476346450628" />
+    </group>
+  </component>
+  <component name="UsageTrigger">
+    <counts>
+      <entry feature="execute.AndroidRunConfigurationType.Debug" count="44" />
+      <entry feature="execute.AndroidRunConfigurationType.Run" count="418" />
+      <entry feature="execute.GradleRunConfiguration.Run" count="2" />
+      <entry feature="execute.Remote.Debug" count="4" />
+      <entry feature="ide.help.editing.templates.defineTemplates.editTemplVars" count="1" />
+      <entry feature="ide.settings.Android_SDK" count="5" />
+      <entry feature="ide.settings.Appearance" count="1" />
+      <entry feature="ide.settings.Auto_Import" count="1" />
+      <entry feature="ide.settings.Editor_Tabs" count="1" />
+      <entry feature="ide.settings.General" count="1" />
+      <entry feature="ide.settings.Keymap" count="13" />
+      <entry feature="ide.settings.Live_Templates" count="1" />
+      <entry feature="ide.settings.Smart_Keys" count="1" />
+      <entry feature="ideaapp.started" count="29" />
+      <entry feature="terminal.mac" count="1" />
+    </counts>
+  </component>
+</application>

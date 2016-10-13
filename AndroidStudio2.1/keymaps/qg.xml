@@ -1,4 +1,4 @@
-<keymap version="1" name="Eclipse (Mac OS X) copy" parent="Eclipse (Mac OS X)">
+<keymap version="1" name="qg" parent="Eclipse (Mac OS X)">
   <action id="Back">
     <keyboard-shortcut first-keystroke="meta open_bracket" />
     <mouse-shortcut keystroke="button4" />

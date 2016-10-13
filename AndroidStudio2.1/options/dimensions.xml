@@ -4,7 +4,7 @@
     <location key="WELCOME_SCREEN.0.0.1440.900" x="719" y="230" />
     <location key="com.intellij.ide.util.TipDialog.0.0.1440.900" x="438" y="257" />
     <location key="OptionsEditor.0.0.1440.900" x="310" y="52" />
-    <location key="SettingsEditor.0.0.1440.900" x="-8" y="90" />
+    <location key="SettingsEditor.0.0.1440.900" x="45" y="121" />
     <location key="AndroidExtendedDeviceChooserDialog.0.0.1440.900" x="433" y="223" />
     <location key="#Scopes.0.0.1440.900" x="520" y="287" />
     <location key="replaceTextDialog.0.0.1440.900" x="511" y="138" />
@@ -40,14 +40,14 @@
     <location key="ProcessPopupWindow.0.0.1440.900" x="1075" y="764" />
     <location key="#com.intellij.ide.actions.ChooseComponentsToExportDialog.0.0.1440.900" x="435" y="306" />
     <size key="AndroidExtendedDeviceChooserDialog.0.0.1440.900" width="730" height="411" />
-    <size key="GridCell.Tab.0.left.0.0.1440.900" width="1398" height="184" />
-    <size key="GridCell.Tab.0.center.0.0.1440.900" width="1398" height="184" />
-    <size key="GridCell.Tab.0.right.0.0.1440.900" width="1398" height="184" />
-    <size key="GridCell.Tab.0.bottom.0.0.1440.900" width="1398" height="184" />
-    <size key="GridCell.Tab.1.left.0.0.1440.900" width="1398" height="184" />
-    <size key="GridCell.Tab.1.center.0.0.1440.900" width="1398" height="184" />
-    <size key="GridCell.Tab.1.right.0.0.1440.900" width="1398" height="184" />
-    <size key="GridCell.Tab.1.bottom.0.0.1440.900" width="1398" height="184" />
+    <size key="GridCell.Tab.0.left.0.0.1440.900" width="1397" height="184" />
+    <size key="GridCell.Tab.0.center.0.0.1440.900" width="1397" height="184" />
+    <size key="GridCell.Tab.0.right.0.0.1440.900" width="1397" height="184" />
+    <size key="GridCell.Tab.0.bottom.0.0.1440.900" width="1397" height="184" />
+    <size key="GridCell.Tab.1.left.0.0.1440.900" width="1397" height="184" />
+    <size key="GridCell.Tab.1.center.0.0.1440.900" width="1397" height="184" />
+    <size key="GridCell.Tab.1.right.0.0.1440.900" width="1397" height="184" />
+    <size key="GridCell.Tab.1.bottom.0.0.1440.900" width="1397" height="184" />
     <size key="GridCell.Tab.2.left.0.0.1440.900" width="1398" height="182" />
     <size key="GridCell.Tab.2.center.0.0.1440.900" width="1398" height="182" />
     <size key="GridCell.Tab.2.right.0.0.1440.900" width="1398" height="182" />

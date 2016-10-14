@@ -637,22 +637,27 @@ install_dotfiles() {
 }
 
 install_vim_plugins() {
-
-    e_newline
-    e_header "Installing missing vim plugins"
-	
-	# todo: lazyness
-	curl -sfLo ~/.vim/autoload/plug.vim --create-dirs \
-    	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-
-	vim +PlugInstall
-
-
-	# TODO: fix qa kill async installs...
-	#vim +PlugInstall +qall
-	e_done
+	local plug_dir="~/.vim/autoload/plug.vim"
+	if [ ! -d $plug_dir ]; then
+		e_newline
+		e_header "Installing plug vim"
+		curl -sfLo ~/.vim/autoload/plug.vim --create-dirs \
+			https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+		
+		e_done
+	fi
+	#vim +PlugInstall
 }
+
+# plugins installed on login
+install_zplug() {	
+	if [ ! -d ~/.zplug ]; then
+		e_newline
+		e_header "Installing zplug"
+		curl -sL zplug.sh/installer | zsh
+	fi
+}
+
 
 # sourced from .bashrc and .zshrc 
 if echo "$-" | grep -q "i"; then # interactive shell
@@ -694,7 +699,10 @@ else
         install_dotfiles "$@"
 
 		install_vim_plugins	
+
 		
+		install_zplug
+
 
         # Restart shell if specified "bash -c $(curl -L {URL})"
         # not restart:

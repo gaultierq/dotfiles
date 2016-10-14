@@ -3,4 +3,6 @@ install.log
 # platform dependant
 tmux.conf
 
+*.local
+
 .DS_Store

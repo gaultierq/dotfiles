@@ -146,5 +146,7 @@ fi
 # sourcing my own functions and exports etc.
 [ -f "$DOTPATH/etc/lib/login_source.sh" ] && . "$DOTPATH/etc/lib/login_source.sh"
 
+if [ ! -z ${WELCOME_FOLDER+x} ] && [ -d $WELCOME_FOLDER ]; then
+	cd $WELCOME_FOLDER 
+fi
 
-cd /Users/qg/projects/babysittor/bbs_android

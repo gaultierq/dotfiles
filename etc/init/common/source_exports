@@ -5,8 +5,3 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 
 # TODO: read doc and move these to exports.local
-export DOT_PATH="$HOME/dotfiles"
-export PROJECTS="$HOME/projects"
-export SCRIPTS="$PROJECTS/scripts"
-export PATH="${SCRIPTS}:$PATH"
-export ANDROID_HOME="/usr/local/Cellar/android-sdk/24.4.1_1/"

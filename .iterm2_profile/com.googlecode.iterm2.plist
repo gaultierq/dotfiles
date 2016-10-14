@@ -30,6 +30,9 @@
 	<integer>1</integer>
 	<key>Coprocess MRU</key>
 	<array>
+		<string>echo vim /Users/qg/projects/babysittor/bbs_android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml +184</string>
+		<string>echo vim /Users/qg/projects/babysittor/bbs_android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml +</string>
+		<string>echo vim /Users/qg/projects/babysittor/bbs_android/app/src/debug/google-services.json +</string>
 		<string>echo vim /Users/qg/hts-log.txt +</string>
 	</array>
 	<key>CopyLastNewline</key>
@@ -219,7 +222,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 232 1440 645 0 0 1440 877 </string>
+	<string>0 0 1440 900 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1122,6 +1125,8 @@
 			<string>/Users/Quentin</string>
 		</dict>
 	</array>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
+	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>1</integer>
 	<key>NoSyncHaveShownPromoWithId_4</key>

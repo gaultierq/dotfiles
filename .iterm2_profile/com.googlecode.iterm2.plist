@@ -22,10 +22,16 @@
 	<true/>
 	<key>ClosingHotkeySwitchesSpaces</key>
 	<false/>
+	<key>CmdClickWhenInactiveInvokesSemanticHistory</key>
+	<true/>
 	<key>CommandSelection</key>
-	<false/>
+	<true/>
 	<key>Control</key>
 	<integer>1</integer>
+	<key>Coprocess MRU</key>
+	<array>
+		<string>echo vim /Users/qg/hts-log.txt +</string>
+	</array>
 	<key>CopyLastNewline</key>
 	<true/>
 	<key>CopySelection</key>
@@ -40,6 +46,8 @@
 	<false/>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
+	<key>DoubleClickPerformsSmartSelection</key>
+	<true/>
 	<key>EnableRendezvous</key>
 	<false/>
 	<key>FindUrlsRegex</key>
@@ -139,7 +147,7 @@
 	<key>HideScrollbar</key>
 	<false/>
 	<key>HideTab</key>
-	<true/>
+	<false/>
 	<key>HighlightTabLabels</key>
 	<true/>
 	<key>HotKeyBookmark</key>
@@ -204,12 +212,14 @@
 	</dict>
 	<key>NSWindow Frame Preferences</key>
 	<string>269 110 924 485 0 0 1440 877 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 139 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>302 337 918 512 0 0 1440 877 </string>
+	<string>302 343 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 210 1440 667 0 0 1440 877 </string>
+	<string>0 232 1440 645 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -973,11 +983,11 @@
 			<key>Semantic History</key>
 			<dict>
 				<key>action</key>
-				<string>best editor</string>
+				<string>coprocess</string>
 				<key>editor</key>
 				<string>com.sublimetext.3</string>
 				<key>text</key>
-				<string></string>
+				<string>echo vim \1 +\2</string>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -1179,6 +1189,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/qg/dotfiles/.iterm2_profile</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -1200,7 +1212,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-09-24T01:56:02Z</date>
+	<date>2016-10-14T03:07:10Z</date>
 	<key>SUSkippedVersion</key>
 	<string>3.0.4</string>
 	<key>SavePasteHistory</key>
@@ -1226,7 +1238,7 @@
 	<key>TmuxDashboardLimit</key>
 	<integer>10</integer>
 	<key>TripleClickSelectsFullWrappedLines</key>
-	<false/>
+	<true/>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1470151936</real>
 	<key>URLHandlersByGuid</key>
@@ -1252,6 +1264,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.9</string>
+	<string>3.0.10</string>
 </dict>
 </plist>

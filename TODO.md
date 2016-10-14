@@ -7,3 +7,5 @@ A list of things to make my dotfiles more awesomer. A ✓ indicates done and cro
 - [RSS Reader](https://github.com/swanson/stringer)
 - brew bundle rbenv
 - [TerminalVim.app](http://thepugautomatic.com/2015/02/open-in-iterm-vim-from-finder/)
+- pre-push brew bundle hook
+

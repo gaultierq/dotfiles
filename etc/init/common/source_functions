@@ -10,9 +10,7 @@ function ff() {
 	list=$(find . -name "*$1*");
 	n=$(echo "$list" | wc -l);
 	printf "$n results found: \n$list\n"
-	if [ $n -eq 1 ]; then
-		sb $list
-	fi
+	cat $list
 }
 
 function source_profile() {

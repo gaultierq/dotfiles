@@ -57,7 +57,6 @@ plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
-
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -70,6 +69,29 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='vim'
   export VISUAL='vim'
+fi
+
+if [ -d ~/.zplug ]; then
+	export ZPLUG_HOME=~/.zplug
+	source $ZPLUG_HOME/init.zsh
+
+	zplug "b4b4r07/enhancd", use:init.sh
+
+    if ! zplug check --verbose; then
+        printf "Install? [y/N]: "
+        if read -q; then
+            echo; zplug install
+        else
+            echo
+        fi
+    fi
+
+	zplug load 
+	# zplug check returns true if the given repository exists
+	if zplug check b4b4r07/enhancd; then
+		# setting if enhancd is available
+		export ENHANCD_FILTER=fzf-tmux
+	fi
 fi
 
 # Compilation flags
@@ -123,3 +145,6 @@ fi
 
 # sourcing my own functions and exports etc.
 [ -f "$DOTPATH/etc/lib/login_source.sh" ] && . "$DOTPATH/etc/lib/login_source.sh"
+
+
+cd /Users/qg/projects/babysittor/bbs_android

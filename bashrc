@@ -75,3 +75,4 @@
 #  	update_dotfiles
 #  fi
 
+cd /Users/qg/projects/babysittor/bbs_android

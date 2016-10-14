@@ -1,2 +1,2 @@
-EXCLUDES="README.md LICENSE etc .iterm2_profile *.sh rcrc"
+EXCLUDES="README.md LICENSE etc .iterm2_profile *.sh rcrc Android*"
 DOTFILES_DIRS="$HOME/dotfiles"

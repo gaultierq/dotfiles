@@ -1,2 +1,0 @@
-com.vladsch.idea.multimarkdown
-org.intellij.plugins.markdown

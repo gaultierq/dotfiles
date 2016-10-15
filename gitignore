@@ -2,6 +2,7 @@
 
 # vim opened files
 *.swp
+*.swo
 
 # unversion ctags
 .tags

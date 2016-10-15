@@ -1,0 +1,4 @@
+#!/bash/bin
+
+# allow to send ctrl-o in terminal
+stty discard undef

@@ -30,6 +30,7 @@
 	<integer>1</integer>
 	<key>Coprocess MRU</key>
 	<array>
+		<string>echo vim /Users/qg/projects/scripts/monitored_offlineimap +</string>
 		<string>echo vim /Users/qg/projects/babysittor/bbs_android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml +184</string>
 		<string>echo vim /Users/qg/projects/babysittor/bbs_android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml +</string>
 		<string>echo vim /Users/qg/projects/babysittor/bbs_android/app/src/debug/google-services.json +</string>
@@ -218,11 +219,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>302 343 796 473 0 0 1440 877 </string>
+	<string>302 314 1016 502 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 900 0 0 1440 877 </string>
+	<string>0 210 1440 667 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1125,8 +1126,6 @@
 			<string>/Users/Quentin</string>
 		</dict>
 	</array>
-	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
-	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>1</integer>
 	<key>NoSyncHaveShownPromoWithId_4</key>
@@ -1217,7 +1216,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-10-14T03:07:10Z</date>
+	<date>2016-10-15T05:08:54Z</date>
 	<key>SUSkippedVersion</key>
 	<string>3.0.4</string>
 	<key>SavePasteHistory</key>

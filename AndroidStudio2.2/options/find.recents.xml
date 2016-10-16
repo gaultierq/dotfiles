@@ -1,0 +1,46 @@
+<application>
+  <component name="FindRecents">
+    <findStrings>
+      <find>user</find>
+      <find>authListener</find>
+      <find>datab</find>
+      <find>quiz</find>
+      <find>Datab</find>
+      <find>databa</find>
+      <find>quizz</find>
+      <find>oldqu</find>
+      <find>databas</find>
+      <find>DatabaseReference</find>
+      <find>push</find>
+      <find>retri</find>
+      <find>retr</find>
+      <find>retreived</find>
+      <find>retreived dat</find>
+      <find>new</find>
+      <find>HashMap</find>
+      <find>find</find>
+      <find>read</find>
+      <find>api_key</find>
+      <find>worko</find>
+      <find>android</find>
+      <find>com.getkeepsafe.dexcount.DexMethodCountTask.</find>
+      <find>dex</find>
+      <find>apac</find>
+      <find>def</find>
+      <find>coni</find>
+      <find>config</find>
+      <find>launch</find>
+      <find>spa</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>recollection</replace>
+      <replace>QUIZZ_</replace>
+      <replace>;</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$USER_HOME$/projects/MyFreedomGrocerAndroid-2/cam2</dir>
+      <dir>$USER_HOME$/projects/MyFreedomGrocerAndroid-2/cam2/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-af</dir>
+      <dir>$USER_HOME$/projects/MyFreedomGrocerAndroid-2/app</dir>
+    </dirStrings>
+  </component>
+</application>

@@ -6,3 +6,5 @@
 
 # unversion ctags
 .tags
+
+.idea

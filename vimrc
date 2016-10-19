@@ -18,6 +18,9 @@ Plug 'ervandew/supertab' " tab auto completion
 Plug 'ludovicchabant/vim-gutentags' " ctags generation
 Plug 'tpope/vim-surround' " braces etc.
 Plug 'schickling/vim-bufonly' " braces etc.
+Plug 'tpope/vim-fugitive'
+
+
 
 call plug#end()
 

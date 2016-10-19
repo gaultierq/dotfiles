@@ -68,11 +68,11 @@ map <Enter> o<ESC>
 map <S-Enter> O<ESC>
 
 " Tab navigation (broken)
-map  <C-l> :tabn<CR>
-map  <C-h> :tabp<CR>
-map  <C-n> :tabnew<CR>
-map  <C-Right> :tabn<CR>
-map  <C-Left> :tabp<CR>
+"map  <C-l> :tabn<CR>
+"map  <C-h> :tabp<CR>
+"map  <C-n> :tabnew<CR>
+"map  <C-Right> :tabn<CR>
+"map  <C-Left> :tabp<CR>
 
 " SuperTab recommended settings (no explanation...)
 let g:SuperTabDefaultCompletionType = ""

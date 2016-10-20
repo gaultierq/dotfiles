@@ -19,7 +19,7 @@
 	<key>AutoHideTmuxClientSession</key>
 	<false/>
 	<key>CheckTestRelease</key>
-	<false/>
+	<true/>
 	<key>ClosingHotkeySwitchesSpaces</key>
 	<false/>
 	<key>CmdClickWhenInactiveInvokesSemanticHistory</key>
@@ -30,8 +30,9 @@
 	<integer>1</integer>
 	<key>Coprocess MRU</key>
 	<array>
-		<string>echo vim /Users/q/projects/Pearldroid/PearlDroid +</string>
-		<string>echo vim /Users/q/Library/Preferences/AndroidStudio2.2 +</string>
+		<string>echo vim /Users/qg/projects/babysittor/sittor-android-api/.gradle +</string>
+		<string>echo vim /Users/qg/projects/babysittor/sittor-android-api/build.gradle +</string>
+		<string>echo vim /Users/qg/projects/scripts/monitored_offlineimap +</string>
 		<string>echo vim /Users/qg/projects/babysittor/bbs_android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml +184</string>
 		<string>echo vim /Users/qg/projects/babysittor/bbs_android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml +</string>
 		<string>echo vim /Users/qg/projects/babysittor/bbs_android/app/src/debug/google-services.json +</string>
@@ -40,7 +41,7 @@
 	<key>CopyLastNewline</key>
 	<true/>
 	<key>CopySelection</key>
-	<false/>
+	<true/>
 	<key>Default Bookmark Guid</key>
 	<string>3EF45CD7-2912-431A-BB28-A13BECEE13C9</string>
 	<key>DimBackgroundWindows</key>
@@ -147,8 +148,6 @@
 	<false/>
 	<key>HideActivityIndicator</key>
 	<false/>
-	<key>HideFromDockAndAppSwitcher</key>
-	<true/>
 	<key>HideMenuBarInFullscreen</key>
 	<true/>
 	<key>HideScrollbar</key>
@@ -183,14 +182,10 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 1</string>
-	<key>NSFontPanelPreviewHeight</key>
-	<real>0.0</real>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/dotfiles</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
+	<string>{712, 459}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -221,18 +216,16 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>1200 149 445 271 0 0 1920 1058 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>484 396 606 456 0 0 1440 877 </string>
+	<string>269 110 924 485 0 0 1440 877 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 139 606 456 0 0 1440 877 </string>
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>302 314 1016 502 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
-	<string>154 474 592 584 0 0 1920 1058 </string>
+	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 210 1440 667 0 0 1440 877 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
-	<string>667 305 586 452 0 0 1920 1058 </string>
-	<key>NSWindow Frame iTerm Window 2</key>
-	<string>317 55 572 452 0 0 1920 1058 </string>
+	<string>0 0 1440 900 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1135,8 +1128,12 @@
 			<string>/Users/Quentin</string>
 		</dict>
 	</array>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
+	<integer>1</integer>
+	<key>NoSyncHaveShownPromoWithId_4</key>
+	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>4D99341A-91F9-46C6-9AFF-517C402E0E2A</string>
+	<string>10CE20C6-B309-4389-B30E-CBA422287940</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1144,11 +1141,11 @@
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>489586565.84063202</real>
+	<real>490942937.43133199</real>
 	<key>NoSyncTimeOfLastPromo</key>
-	<real>466602763.327353</real>
+	<real>477920352.63111001</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>489081592.51412702</real>
+	<real>490942916.17760903</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -1197,7 +1194,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/q/dotfiles/.iterm2_profile</string>
+	<string>/Users/qg/dotfiles/.iterm2_profile</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnClose</key>
@@ -1213,15 +1210,17 @@
 	<key>SUAutomaticallyUpdate</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
-	<false/>
+	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=35</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=23</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-10-19T02:12:46Z</date>
+	<date>2016-10-17T12:07:28Z</date>
+	<key>SUSkippedVersion</key>
+	<string>3.0.4</string>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -1246,6 +1245,8 @@
 	<integer>10</integer>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<true/>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1470151936</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -1269,6 +1270,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.4</string>
+	<string>3.0.10</string>
 </dict>
 </plist>

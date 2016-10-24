@@ -18,12 +18,19 @@ Plug 'ervandew/supertab' " tab auto completion
 Plug 'ludovicchabant/vim-gutentags' " ctags generation
 Plug 'tpope/vim-surround' " braces etc.
 Plug 'schickling/vim-bufonly' " braces etc.
+<<<<<<< HEAD
 Plug 'tmhedberg/SimpylFold'
 Plug 'vim-scripts/indentpython.vim' " python indent
 Plug 'Valloric/YouCompleteMe' " python autocomplete
 Plug 'scrooloose/syntastic' " python lint
 Plug 'nvie/vim-flake8'
 Plug 'dkprice/vim-easygrep'
+=======
+Plug 'tpope/vim-fugitive'
+
+
+
+>>>>>>> 9ff63044a3b3ac7e826622bc78c8b66e3cd74e02
 call plug#end()
 
 set runtimepath+=~/dotfiles

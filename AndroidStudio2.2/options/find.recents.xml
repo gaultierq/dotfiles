@@ -1,47 +1,55 @@
 <application>
   <component name="FindRecents">
     <findStrings>
-      <find>ApplicationManager</find>
-      <find>windowController</find>
-      <find>registerController</find>
-      <find>_controllerId_controllerId</find>
-      <find>new Abs</find>
-      <find>_controllerContainer</find>
-      <find>controllerContainer</find>
-      <find>_mainWindowController</find>
-      <find>activi</find>
-      <find>setId</find>
-      <find>mExtras</find>
-      <find>createvi</find>
-      <find>regist</find>
-      <find>det</find>
-      <find>attac</find>
-      <find>log</find>
-      <find>WeakReference</find>
-      <find>getFragments()</find>
-      <find>arguments</find>
-      <find>readControllerIdInternal</find>
-      <find>controller</find>
-      <find>unwr</find>
-      <find>T&gt;</find>
-      <find>REST</find>
-      <find>restored</find>
-      <find>restore</find>
-      <find>updateView</find>
-      <find>sittor</find>
-      <find>format</find>
-      <find>api.babysittor.com/</find>
+      <find>facebook</find>
+      <find>dra</find>
+      <find>mPresenter</find>
+      <find>tool</find>
+      <find>mDrawerLayout</find>
+      <find>setDynamic</find>
+      <find>setDynamicTheme</find>
+      <find>,</find>
+      <find>start</find>
+      <find>RegistrationSaveState</find>
+      <find>OnBackStackChangedListener</find>
+      <find>onBackStackChanged</find>
+      <find>mDateSelected</find>
+      <find>birthdayTxt</find>
+      <find>bind</find>
+      <find>setRetainInstance</find>
+      <find>savedInstanceStatesavedInstanceState</find>
+      <find>savedInstanceState</find>
+      <find>User</find>
+      <find>setFirstnameError</find>
+      <find>user</find>
+      <find>firstNameTxt</find>
+      <find>visib(</find>
+      <find>current</find>
+      <find>presentee</find>
+      <find>mView.</find>
+      <find>presen</find>
+      <find>mCallback</find>
+      <find>regis</find>
+      <find>areeq</find>
     </findStrings>
     <replaceStrings>
       <replace>recollection</replace>
       <replace>QUIZZ_</replace>
+      <replace>2</replace>
+      <replace>3</replace>
       <replace>;</replace>
+      <replace>this</replace>
+      <replace>this.</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$USER_HOME$/projects/MyFreedomGrocerAndroid-2/cam2</dir>
       <dir>$USER_HOME$/projects/MyFreedomGrocerAndroid-2/cam2/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-af</dir>
       <dir>$USER_HOME$/projects/MyFreedomGrocerAndroid-2/app</dir>
       <dir>$USER_HOME$/projects/sittor-android-api/src/main/java/io/swagger/client</dir>
+      <dir>$USER_HOME$/projects/babysittor/sittor-android-api/src/main/java/api</dir>
+      <dir>$USER_HOME$/projects/babysittor/sittor-android/app/src/main/res/values-v21</dir>
+      <dir>$USER_HOME$/projects/babysittor/sittor-android</dir>
+      <dir>$USER_HOME$/projects/babysittor/sittor-android/app</dir>
     </dirStrings>
   </component>
 </application>

@@ -1,5 +1,8 @@
 <application>
   <component name="FindSettings">
+    <option name="customScope" value="Directory '/Users/q/projects/babysittor/sittor-android/app'" />
+    <option name="defaultScopeName" value="Directory '/Users/q/projects/babysittor/sittor-android/app'" />
+    <option name="SEARCH_SCOPE" value="Directory '/Users/q/projects/babysittor/sittor-android/app'" />
     <recentFileMasks>
       <mask>*.properties</mask>
       <mask>*.html</mask>

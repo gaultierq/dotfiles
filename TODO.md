@@ -8,4 +8,5 @@ A list of things to make my dotfiles more awesomer. A ✓  indicates done and cr
 - brew bundle rbenv
 - [TerminalVim.app](http://thepugautomatic.com/2015/02/open-in-iterm-vim-from-finder/)
 - ✓ pre-push brew bundle hook
-
+- vimrc / environment (python, java, bash etc.)
+- YouCompleteMe -> brew install cmake && cd ~/.vim/plugged/YouCompleteMe && ./install.py

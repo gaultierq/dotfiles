@@ -30,6 +30,8 @@
 	<integer>1</integer>
 	<key>Coprocess MRU</key>
 	<array>
+		<string>echo vim /Users/q/projects/babysittor/sittor-android/app/src-gen/main/java/com/babysittor/model/sittor +</string>
+		<string>echo vim /Users/q/projects/babysittor/android-data-binding-recyclerview/recyclerview-binding/src/main/java/net/droidlabs/mvvm/recyclerview/binding/RecyclerViewBindings.java +</string>
 		<string>echo vim /Users/q/projects/babysittor/sittor/api/modules/config/models.py +</string>
 		<string>echo vim /Users/q/projects/Pearldroid/PearlDroid +</string>
 		<string>echo vim /Users/q/Library/Preferences/AndroidStudio2.2 +</string>
@@ -151,7 +153,7 @@
 	<key>HideFromDockAndAppSwitcher</key>
 	<true/>
 	<key>HideMenuBarInFullscreen</key>
-	<true/>
+	<false/>
 	<key>HideScrollbar</key>
 	<false/>
 	<key>HideTab</key>
@@ -226,12 +228,14 @@
 	<string>1200 149 445 271 0 0 1920 1058 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>484 396 606 456 0 0 1440 877 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 139 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>269 173 796 474 0 0 1440 877 </string>
+	<string>269 181 796 474 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>154 474 592 584 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 900 0 0 1440 877 </string>
+	<string>0 0 1440 878 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>667 305 586 452 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 2</key>

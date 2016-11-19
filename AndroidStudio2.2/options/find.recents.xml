@@ -1,45 +1,68 @@
 <application>
   <component name="FindRecents">
     <findStrings>
-      <find>facebook</find>
-      <find>dra</find>
-      <find>mPresenter</find>
-      <find>tool</find>
-      <find>mDrawerLayout</find>
-      <find>setDynamic</find>
-      <find>setDynamicTheme</find>
-      <find>,</find>
-      <find>start</find>
-      <find>RegistrationSaveState</find>
-      <find>OnBackStackChangedListener</find>
-      <find>onBackStackChanged</find>
-      <find>mDateSelected</find>
-      <find>birthdayTxt</find>
-      <find>bind</find>
-      <find>setRetainInstance</find>
-      <find>savedInstanceStatesavedInstanceState</find>
-      <find>savedInstanceState</find>
+      <find>model</find>
+      <find>loadClass</find>
+      <find>loadcl</find>
+      <find>write</find>
+      <find>writeAccessorsOld</find>
+      <find>toMethod</find>
+      <find>Child</find>
       <find>User</find>
-      <find>setFirstnameError</find>
       <find>user</find>
-      <find>firstNameTxt</find>
-      <find>visib(</find>
-      <find>current</find>
-      <find>presentee</find>
-      <find>mView.</find>
-      <find>presen</find>
-      <find>mCallback</find>
-      <find>regis</find>
-      <find>areeq</find>
+      <find>UserLolBind</find>
+      <find>test</find>
+      <find>json</find>
+      <find>androidtestCom</find>
+      <find>sourceSets</find>
+      <find>parse</find>
+      <find>date</find>
+      <find>boolean</find>
+      <find>ENUM</find>
+      <find>list</find>
+      <find>godpa</find>
+      <find>pending_godparents</find>
+      <find>package babysittor</find>
+      <find>UserNew</find>
+      <find>com.babysittor.model.UserNew</find>
+      <find>userdata</find>
+      <find>coucou</find>
+      <find>ParcelConverter</find>
+      <find>coucout</find>
+      <find>converter</find>
+      <find>convert</find>
     </findStrings>
     <replaceStrings>
-      <replace>recollection</replace>
-      <replace>QUIZZ_</replace>
-      <replace>2</replace>
-      <replace>3</replace>
-      <replace>;</replace>
-      <replace>this</replace>
-      <replace>this.</replace>
+      <replace>v</replace>
+      <replace>BindableString v</replace>
+      <replace>userv.</replace>
+      <replace>user.v</replace>
+      <replace>ChildData</replace>
+      <replace>AddAChild</replace>
+      <replace>pictures</replace>
+      <replace>picture</replace>
+      <replace>24.2.1</replace>
+      <replace>//Intercom.client()</replace>
+      <replace>imageUrl</replace>
+      <replace>friend</replace>
+      <replace>facebookFriends</replace>
+      <replace>OpenSans-Semibold</replace>
+      <replace>package com.babysittor.model;</replace>
+      <replace>com.babysittor.model.</replace>
+      <replace>package com.babysittor;</replace>
+      <replace>import com.babysittor.</replace>
+      <replace>UserServiceRx</replace>
+      <replace>UserLolBind</replace>
+      <replace>UserNew</replace>
+      <replace>read</replace>
+      <replace>PictureNew</replace>
+      <replace>AddressNew</replace>
+      <replace>ChildNew</replace>
+      <replace>Picture</replace>
+      <replace>Child</replace>
+      <replace>UserData</replace>
+      <replace>package com.babysittor</replace>
+      <replace>com.babysittor.model.UserData</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$USER_HOME$/projects/MyFreedomGrocerAndroid-2/cam2</dir>
@@ -49,6 +72,8 @@
       <dir>$USER_HOME$/projects/babysittor/sittor-android-api/src/main/java/api</dir>
       <dir>$USER_HOME$/projects/babysittor/sittor-android/app/src/main/res/values-v21</dir>
       <dir>$USER_HOME$/projects/babysittor/sittor-android</dir>
+      <dir>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.parceler/parceler-api/1.1.5/23114b381811fd7c8e7aeeef4b845453c4a16a1d/parceler-api-1.1.5.jar</dir>
+      <dir>$USER_HOME$/projects/babysittor/sittor-android/app/src/main/java/com/babysittor/util</dir>
       <dir>$USER_HOME$/projects/babysittor/sittor-android/app</dir>
     </dirStrings>
   </component>

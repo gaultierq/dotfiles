@@ -1,7 +1,13 @@
 <application>
   <component name="WindowStateApplicationService">
-    <state x="0" y="23" width="1440" height="873" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" />
-    <state x="0" y="23" width="1440" height="873" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900" />
-    <state x="0" y="23" width="1440" height="873" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" />
+    <state x="100" y="123" width="1240" height="673" key="DiffContextDialog" />
+    <state x="100" y="123" width="1240" height="673" key="DiffContextDialog/0.0.1440.900" />
+    <state x="100" y="123" width="1240" height="673" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" />
+    <state x="0" y="23" width="1440" height="873" key="com.intellij.history.integration.ui.views.FileHistoryDialog" />
+    <state x="0" y="23" width="1440" height="873" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900" />
+    <state x="0" y="23" width="1440" height="873" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" />
+    <state x="100" y="123" width="1240" height="673" key="dock-window-1" />
+    <state x="100" y="123" width="1240" height="673" key="dock-window-1/0.0.1440.900" />
+    <state x="100" y="123" width="1240" height="673" key="dock-window-1/0.0.1440.900@0.0.1440.900" />
   </component>
 </application>

@@ -22,7 +22,7 @@
         <option name="window" value="0" />
       </ViewImpl>
       <TabImpl>
-        <option name="rightProportion" value="0.081259154" />
+        <option name="rightProportion" value="0.12631579" />
       </TabImpl>
       <General />
     </runner>
@@ -127,8 +127,8 @@
       </ViewImpl>
       <TabImpl>
         <option name="displayName" value="Debugger" />
-        <option name="leftProportion" value="0.24304539" />
-        <option name="rightProportion" value="0.04978038" />
+        <option name="leftProportion" value="0.24231333" />
+        <option name="rightProportion" value="0.049048316" />
       </TabImpl>
       <TabImpl>
         <option name="bottomProportion" value="0.0" />

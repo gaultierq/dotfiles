@@ -1,36 +1,36 @@
 <application>
   <component name="FindRecents">
     <findStrings>
-      <find>model</find>
-      <find>loadClass</find>
-      <find>loadcl</find>
-      <find>write</find>
-      <find>writeAccessorsOld</find>
-      <find>toMethod</find>
-      <find>Child</find>
-      <find>User</find>
+      <find>cooki</find>
+      <find>jar</find>
+      <find>cookieJar</find>
+      <find>save</find>
+      <find>friends</find>
+      <find>post</find>
+      <find>auth</find>
+      <find>@POST(&quot;/user/picture&quot;)</find>
+      <find>Toas</find>
+      <find>click</find>
+      <find>face</find>
+      <find>welcome_sub_button</find>
       <find>user</find>
-      <find>UserLolBind</find>
-      <find>test</find>
-      <find>json</find>
-      <find>androidtestCom</find>
-      <find>sourceSets</find>
-      <find>parse</find>
+      <find>HttpLoggingInterceptor</find>
+      <find>LOG_LEVEL</find>
+      <find>10.0.3.2</find>
+      <find>debugNeedCreate</find>
+      <find>j</find>
+      <find>joda</find>
+      <find>method</find>
+      <find>loremEmail</find>
+      <find>isPar</find>
       <find>date</find>
-      <find>boolean</find>
-      <find>ENUM</find>
-      <find>list</find>
-      <find>godpa</find>
-      <find>pending_godparents</find>
-      <find>package babysittor</find>
-      <find>UserNew</find>
-      <find>com.babysittor.model.UserNew</find>
-      <find>userdata</find>
-      <find>coucou</find>
-      <find>ParcelConverter</find>
-      <find>coucout</find>
-      <find>converter</find>
-      <find>convert</find>
+      <find>DATE</find>
+      <find>insc</find>
+      <find>user.picture</find>
+      <find>.picture</find>
+      <find>picture</find>
+      <find>debugUser</find>
+      <find>prefs</find>
     </findStrings>
     <replaceStrings>
       <replace>v</replace>
@@ -75,6 +75,7 @@
       <dir>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.parceler/parceler-api/1.1.5/23114b381811fd7c8e7aeeef4b845453c4a16a1d/parceler-api-1.1.5.jar</dir>
       <dir>$USER_HOME$/projects/babysittor/sittor-android/app/src/main/java/com/babysittor/util</dir>
       <dir>$USER_HOME$/projects/babysittor/sittor-android/app</dir>
+      <dir>$USER_HOME$/projects/babysittor/sittor-android/app/src</dir>
     </dirStrings>
   </component>
 </application>

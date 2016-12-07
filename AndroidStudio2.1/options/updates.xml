@@ -9,7 +9,6 @@
       <item value="AI-1-milestone" />
       <item value="AI-1-beta" />
       <item value="AI-1-release" />
-      <item value="AI-0-beta" />
     </knownUpdateChannels>
     <enabledExternalComponentSources>
       <item value="Android SDK" />
@@ -22,7 +21,7 @@
         <entry key="Android SDK" value="Stable Channel" />
       </map>
     </option>
-    <option name="LAST_TIME_CHECKED" value="1462791531153" />
-    <option name="LAST_BUILD_CHECKED" value="AI-141.2456560" />
+    <option name="LAST_TIME_CHECKED" value="1479732788697" />
+    <option name="LAST_BUILD_CHECKED" value="AI-143.2915827" />
   </component>
 </application>

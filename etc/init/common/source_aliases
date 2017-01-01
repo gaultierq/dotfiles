@@ -39,3 +39,5 @@ alias t1='t -L 1'
 alias t2='t -L 2'
 alias t3='t -L 3'
 alias v='vim'
+
+alias gs='git st'

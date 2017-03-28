@@ -15,7 +15,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'joonty/vim-phpqa'
 Plug 'shawncplus/phpcomplete.vim'
 Plug 'ervandew/supertab' " tab auto completion
-Plug 'ludovicchabant/vim-gutentags' " ctags generation
+" Plug 'ludovicchabant/vim-gutentags' " ctags generation
 Plug 'tpope/vim-surround' " braces etc.
 Plug 'schickling/vim-bufonly' " braces etc.
 Plug 'tmhedberg/SimpylFold'

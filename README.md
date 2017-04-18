@@ -11,7 +11,7 @@ curl -sL https://git.io/viqoU | bash
 curl -sL https://git.io/viqoU | bash -s - --packages
 ```
 
-### Copied from / using
+### Strongly inspired by:
 https://github.com/b4b4r07/dotfiles/  
 https://github.com/mscoutermarsh/dotfiles  
 https://github.com/Homebrew/homebrew-bundle

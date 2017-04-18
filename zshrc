@@ -75,7 +75,7 @@ if [ -d ~/.zplug ]; then
 	export ZPLUG_HOME=~/.zplug
 	source $ZPLUG_HOME/init.zsh
 
-	zplug "b4b4r07/enhancd", use:init.sh
+	#zplug "b4b4r07/enhancd", use:init.sh
 
     if ! zplug check --verbose; then
         printf "Install? [y/N]: "

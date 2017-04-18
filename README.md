@@ -16,6 +16,3 @@ https://github.com/b4b4r07/dotfiles/
 https://github.com/mscoutermarsh/dotfiles  
 https://github.com/Homebrew/homebrew-bundle
 https://github.com/thoughtbot/rcm
-
-
-a

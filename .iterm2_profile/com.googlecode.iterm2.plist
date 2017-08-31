@@ -30,16 +30,7 @@
 	<integer>1</integer>
 	<key>Coprocess MRU</key>
 	<array>
-		<string>echo vim /Users/qg/projects/babysittor/sittor/env/lib/python2.7/site-packages/flask_login/utils.py +</string>
-		<string>echo vim /Users/q/projects/babysittor/sittor-android/app/src-gen/main/java/com/babysittor/model/sittor +</string>
-		<string>echo vim /Users/q/projects/babysittor/android-data-binding-recyclerview/recyclerview-binding/src/main/java/net/droidlabs/mvvm/recyclerview/binding/RecyclerViewBindings.java +</string>
-		<string>echo vim /Users/q/projects/babysittor/sittor/api/modules/config/models.py +</string>
-		<string>echo vim /Users/q/projects/Pearldroid/PearlDroid +</string>
-		<string>echo vim /Users/q/Library/Preferences/AndroidStudio2.2 +</string>
-		<string>echo vim /Users/qg/projects/babysittor/bbs_android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml +184</string>
-		<string>echo vim /Users/qg/projects/babysittor/bbs_android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml +</string>
-		<string>echo vim /Users/qg/projects/babysittor/bbs_android/app/src/debug/google-services.json +</string>
-		<string>echo vim /Users/qg/hts-log.txt +</string>
+		<string>echo vim /Users/qg/projects/tooldr/app/models/.note.rb.swp +</string>
 	</array>
 	<key>CopyLastNewline</key>
 	<true/>
@@ -224,17 +215,13 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>269 110 924 485 0 0 1440 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>269 139 606 456 0 0 1440 877 </string>
+	<string>217 106 606 456 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-<<<<<<< HEAD
-	<string>269 143 918 512 0 0 1440 877 </string>
-=======
-	<string>227 256 937 465 0 0 1280 777 </string>
->>>>>>> f35970245027af98e2de66253804f63100726a8a
+	<string>227 253 796 473 0 0 1280 777 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 110 1280 667 0 0 1280 777 </string>
+	<string>0 0 1280 778 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -481,7 +468,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>Recycle</string>
+			<string>No</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Disable Printing</key>
@@ -1229,7 +1216,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-11-23T09:29:44Z</date>
+	<date>2017-08-26T08:09:03Z</date>
 	<key>SUSkippedVersion</key>
 	<string>3.0.4</string>
 	<key>SavePasteHistory</key>
@@ -1237,6 +1224,8 @@
 	<key>Show Toolbelt</key>
 	<true/>
 	<key>ShowBookmarkName</key>
+	<false/>
+	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>

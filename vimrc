@@ -15,7 +15,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'joonty/vim-phpqa'
 Plug 'shawncplus/phpcomplete.vim'
 Plug 'ervandew/supertab' " tab auto completion
-" Plug 'ludovicchabant/vim-gutentags' " ctags generation
+Plug 'ludovicchabant/vim-gutentags' " ctags generation
 Plug 'tpope/vim-surround' " braces etc.
 Plug 'schickling/vim-bufonly' " braces etc.
 Plug 'tmhedberg/SimpylFold'
@@ -25,6 +25,16 @@ Plug 'scrooloose/syntastic' " python lint
 Plug 'nvie/vim-flake8'
 Plug 'dkprice/vim-easygrep'
 Plug 'tpope/vim-fugitive'
+Plug 'tomlion/vim-solidity'
+Plug 'vim-ruby/vim-ruby'
+Plug 'ecomba/vim-ruby-refactoring'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-rbenv'
+Plug 'tpope/vim-bundler'
+Plug 'honza/vim-snippets'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
 
 call plug#end()
 
@@ -165,7 +175,7 @@ nnoremap <C-H> <C-W><C-H>
 set foldmethod=indent
 set foldlevel=99
 " Enable folding with the spacebar
-nnoremap <space> za
+" nnoremap <space> za
 
 
 " PEP8 standarts (python)

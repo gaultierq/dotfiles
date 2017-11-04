@@ -168,7 +168,7 @@ defaults write com.apple.dock autohide-time-modifier -float 0
 defaults write com.apple.dock autohide-delay -float 0
 
 # showing and hiding Mission Control, command+numbers
-defaults wri# opening and closing windows and popovers
+# defaults write opening and closing windows and popovers
 defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
 
 # smooth scrolling
@@ -213,7 +213,7 @@ defaults write com.apple.finder DisableAllAnimations -bool true
 
 # sending messages and opening windows for replies
 defaults write com.apple.Mail DisableSendAnimations -bool true
-defaults write com.apple.Mail DisableReplyAnimations -bool truete com.apple.dock expose-animation-duration -float 0
+defaults write com.apple.Mail DisableReplyAnimations -bool true
 
 # showing and hiding Launchpad
 defaults write com.apple.dock springboard-show-duration -float 0

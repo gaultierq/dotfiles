@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# RBENV_DIR="$HOME/.rbenv"
+RBENV_DIR="$HOME/.rbenv"
 
-# if [ ! -d $RBENV_DIR ]; then
-# 	return;
-# fi
+if [ ! -d $RBENV_DIR ]; then
+	return;
+fi
 
 # export PATH="$RBENV_DIR/shims:${PATH}"
 # export RBENV_SHELL=zsh

@@ -663,7 +663,7 @@ install_zplug() {
 	if [ ! -d ~/.zplug ]; then
 		e_newline
 		e_header "Installing zplug"
-		curl -sL zplug.sh/installer | zsh
+		curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 	fi
 }
 

@@ -8,3 +8,20 @@ Host baan
 Host dev1
 	HostName 92.222.67.134  
 	User qg
+
+#build-bot account
+Host github.com
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/id_rsa_qg
+
+#gaultierq account
+Host github.com
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/id_rsa_qg
+
+Host heroku.com
+	HostName heroku.com
+	User git
+	IdentityFile ~/.ssh/id_rsa_qg

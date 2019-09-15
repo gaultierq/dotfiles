@@ -3,7 +3,7 @@
 call plug#begin()
 
 Plug 'tpope/vim-sensible'
-Plug 'bash-support.vim'
+" Plug 'bash-support.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}

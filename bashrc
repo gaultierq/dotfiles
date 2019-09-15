@@ -74,5 +74,3 @@
 #  	# ("update_dotfiles" 1>> $DOT_FILES/install.log &) # parenthesis for quietness
 #  	update_dotfiles
 #  fi
-
-cd /Users/qg/projects/babysittor/bbs_android

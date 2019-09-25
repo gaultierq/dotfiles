@@ -699,13 +699,14 @@ else
         
         echo "$dotfiles_logo"
 		
-    
-    	if contains "$@" "--packages"; then
-        	install_packages
-    	else
-			:
-    	fi
+
         install_dotfiles "$@"
+
+        if contains "$@" "--packages"; then
+            install_packages
+        else
+            :
+        fi
 
 		install_vim_plugins	
 

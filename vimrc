@@ -58,7 +58,7 @@ let g:solarized_underline =   1
 let g:solarized_italic    =   1
 let g:solarized_contrast  =   "high" | "normal"|   "high" or "low"
 let g:solarized_visibility=   "high" | "normal"|   "high" or "low"
-colorscheme solarized
+silent! colorscheme solarized
 
 " activate mouse
 set mouse=a
@@ -215,7 +215,7 @@ if 'VIRTUAL_ENV' in os.environ:
   execfile(activate_this, dict(__file__=activate_this))
 EOF
 
-" nince python
+" nice python
 let python_highlight_all=1
 syntax on
 

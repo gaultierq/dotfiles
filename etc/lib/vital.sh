@@ -655,7 +655,7 @@ install_vim_plugins() {
 		
 		e_done
 	fi
-	#vim +PlugInstall
+	vim +PlugInstall +qall
 }
 
 # plugins installed on login

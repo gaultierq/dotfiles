@@ -12,6 +12,7 @@ htop \
 curl \
 openvpn \
 unzip \
+vim-gtk \
 wget && 
 
 is_exists() {
@@ -24,14 +25,15 @@ sudo apt-get -y --force-yes install zsh
 sudo chsh -s "$(command -v zsh)" "${USER}"
 
 
-if is_exists "vim"; then
-	echo "vim installed"
-else
-	echo "Installing vim from source"
-	mkdir tmp && cd /tmp && git clone https://github.com/vim/vim.git && cd vim
-	./configure --enable-pythoninterp --prefix=/usr
-	make && sudo make install
-fi
+# following is compiling vim to work with python. But it can be long especially on raspberry
+# if is_exists "vim"; then
+# 	echo "vim installed"
+# else
+# 	echo "Installing vim from source"
+# 	mkdir tmp && cd /tmp && git clone https://github.com/vim/vim.git && cd vim
+# 	./configure --enable-pythoninterp --prefix=/usr
+# 	make && sudo make install
+# fi
 
 # cleaning unused dependencies
 echo "cleaning..."

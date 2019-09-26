@@ -25,7 +25,7 @@ sudo chsh -s "$(command -v zsh)" "${USER}"
 
 
 if is_exists "vim"; then
-	:
+	echo "vim installed"
 else
 	echo "Installing vim from source"
 	mkdir tmp && cd /tmp && git clone https://github.com/vim/vim.git && cd vim
@@ -34,5 +34,6 @@ else
 fi
 
 # cleaning unused dependencies
+echo "cleaning..."
 sudo apt-get autoremove -y --force-yes
 sudo -k

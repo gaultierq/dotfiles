@@ -155,5 +155,9 @@ if [ ! -z ${WELCOME_FOLDER+x} ] && [ -d $WELCOME_FOLDER ]; then
 fi
 
 
-LC_CTYPE=en_US.UTF-8
-LC_ALL=en_US.UTF-8
+# TODO remove warning
+# (optional) enable missing locales
+# sudo nano /etc/locale.gen
+
+# then regenerate
+# sudo locale-gen

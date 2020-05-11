@@ -25,3 +25,13 @@ Host heroku.com
 	HostName heroku.com
 	User git
 	IdentityFile ~/.ssh/id_rsa_qg
+
+Host gitlab.com
+    HostName gitlab.com
+    User git
+    IdentityFile ~/.ssh/qg_gitlab_rsa
+
+Host gitlab.csi-remy.pro
+    HostName gitlab.csi-remy.pro
+    User git
+    IdentityFile ~/.ssh/qg_gitlab_rsa

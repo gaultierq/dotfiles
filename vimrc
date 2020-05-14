@@ -114,7 +114,7 @@ if $TERM_PROGRAM =~ "iTerm.app"
 endif
 
 " guten-tags & ctags management
-let g:gutentags_tagfile = ".tags"
+let g:gutentags_ctags_tagfile= ".tags"
 
 " rm search highligth
 " nnoremap <esc> :noh<return><esc>

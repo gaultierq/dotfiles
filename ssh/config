@@ -35,3 +35,8 @@ Host gitlab.csi-remy.pro
     HostName gitlab.csi-remy.pro
     User git
     IdentityFile ~/.ssh/qg_gitlab_rsa
+
+Host cpanel.luxavie.fr
+    HostName cpanel.luxavie.fr
+    User luxavie
+    IdentityFile ~/.ssh/id_rsa_luxavie

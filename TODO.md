@@ -3,6 +3,7 @@ A list of things to make my dotfiles more awesomer. A ✓  indicates done and cr
 
 [Write .md s] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
+- rm zsh from install_packages. and make oh-my-zsh dependant on the success of the installation
 - auto-update on login
 - [RSS Reader](https://github.com/swanson/stringer)
 - brew bundle rbenv

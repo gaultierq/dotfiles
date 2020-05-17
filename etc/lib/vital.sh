@@ -708,10 +708,17 @@ else
             :
         fi
 
-		install_vim_plugins	
+        if contains "$@" "--vim-plugins"; then
+            install_vim_plugins
+        else
+            :
+        fi
 
-		
-		install_zplug
+        if contains "$@" "--z-plugins"; then
+            install_zplug
+        else
+            :
+        fi		
 
 
         # Restart shell if specified "bash -c $(curl -L {URL})"

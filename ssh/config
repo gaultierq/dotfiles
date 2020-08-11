@@ -40,6 +40,26 @@ Host raspberrypi
     User pi
     IdentityFile ~/.ssh/id_rsa_qg
 
+Host mobstaging 193.70.86.29
+    HostName 193.70.86.29
+    User ubuntu
+    IdentityFile ~/.ssh/mobapi/ansible_deploy
+
 Host ssh.cluster028.hosting.ovh.net
     User canonio
     IdentityFile ~/.ssh/id_rsa_qg
+
+Host mobprod 104.155.30.218
+    HostName 104.155.30.218
+    User mobuser
+    IdentityFile ~/.ssh/mobapi/ansible_deploy
+
+Host 192.168.1.143 rpi_hmbt
+    HostName 192.168.1.143
+    User pi
+    IdentityFile ~/.ssh/mobapi/mobapi_rpi
+
+Host mobhealth 34.78.180.68
+    HostName 34.78.180.68
+    User mobhealth
+    IdentityFile ~/.ssh/mobapi/mobhealth_rsa

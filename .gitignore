@@ -6,3 +6,5 @@ tmux.conf
 *.local
 
 .DS_Store
+
+.vagrant/

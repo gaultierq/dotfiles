@@ -53,13 +53,17 @@ ZSH_THEME="pygmalion"
 # Add wisely, as too many plugins slow down shell startup.
 
 # plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
-plugins=(git colored-man-pages colorize github jira vagrant virtualenv pip python brew osx)
+plugins=(git colored-man-pages colorize github jira vagrant virtualenv pip python brew osx docker docker-compose history-substring-search)
 
 # User configuration
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 source $ZSH/oh-my-zsh.sh
+
+
+bindkey "^[[A" history-substring-search-up
+bindkey "^[[B" history-substring-search-down
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -90,10 +94,10 @@ if [ -d ~/.zplug ]; then
 
 	zplug load 
 	# zplug check returns true if the given repository exists
-	if zplug check b4b4r07/enhancd; then
-		# setting if enhancd is available
-		export ENHANCD_FILTER=fzf-tmux
-	fi
+	# if zplug check b4b4r07/enhancd; then
+	# 	# setting if enhancd is available
+	# 	export ENHANCD_FILTER=fzf-tmux
+	# fi
 fi
 
 fpath=(/usr/local/share/zsh-completions $fpath)
@@ -125,6 +129,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 # else
 #     export DOTPATH="${0:A:t}"
 # fi
+
 
 # # DOTPATH environment variable specifies the location of dotfiles.
 # # On Unix, the value is a colon-separated string. On Windows,
@@ -161,3 +166,9 @@ fi
 
 # then regenerate
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/qg/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/qg/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/qg/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/qg/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

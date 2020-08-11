@@ -18,7 +18,8 @@ function source_profile() {
 }
 
 function edit_dotfiles() {
-	subl $DOT_FILES
+	cd $DOT_FILES
+	subl .
 }
 
 function log {

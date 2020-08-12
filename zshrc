@@ -100,7 +100,7 @@ if [ -d ~/.zplug ]; then
 	# fi
 fi
 
-fpath=(/usr/local/share/zsh-completions $fpath)
+#fpath=(/usr/local/share/zsh-completions $fpath)
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

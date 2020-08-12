@@ -7,9 +7,8 @@ build-essential \
 sudo
 
 
-WORKDIR  /opt/app
+WORKDIR  /opt/app/dotfiles
 
-COPY ./etc/lib/vital.sh /opt/app/vital.sh
-COPY entrypoint.sh /opt/app/entrypoint.sh
+COPY . /opt/app/dotfiles
 
-ENTRYPOINT ./entrypoint.sh
+CMD export DOTPATH=$(pwd) && cat ./etc/lib/vital.sh | bash -s - --zsh

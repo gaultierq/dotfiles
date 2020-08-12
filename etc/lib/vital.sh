@@ -511,14 +511,15 @@ dotfiles_download() {
         :
     else
         if is_exists "git"; then
-            # --recursive equals to ...
-            # git submodule init
-            # git submodule update
             if [ -d "$DOTPATH" ]; then
-				cd $DOTPATH
-                log_info "Updating existing dotfiles repo: $DOTPATH"
-                git pull 
-				cd -
+                if [[ $(git diff --stat) != '' ]]; then
+                    log_info "dotfile directory is dirty. Skipping update"
+                else
+                    cd $DOTPATH
+                    log_info "Updating existing dotfiles repo: $DOTPATH"
+                    git pull 
+                    cd -
+                fi
             else
                 git clone --recursive "https://github.com/gaultierq/dotfiles" "$DOTPATH"
             fi
@@ -605,21 +606,33 @@ run_all() {
     done
 }
 
-install_packages() {
+# these are needed for this script to work properly
+install_essentials() {
     e_newline
-    e_header "Installing missing packages"
+    e_header "Installing essentials"
 
     os_detect
     if is_empty $PLATFORM; then
         e_failure "Platform not detected"
     fi
-    run_all "$DOTPATH/etc/init/common"
-    run_all "$DOTPATH/etc/init/$PLATFORM"
+    bash "$DOTPATH/etc/init/$PLATFORM/install_essentials.sh"
 }
+
+install_zsh() {
+    e_newline
+    e_header "Installing ZSH"
+
+    os_detect
+    if is_empty $PLATFORM; then
+        e_failure "Platform not detected"
+    fi
+    bash "$DOTPATH/etc/init/$PLATFORM/install_zsh.sh"
+}
+
 
 link_dotfiles() {
     # platform dependant tmux.conf
-    ln -s "$DOTPATH/etc/init/$PLATFORM/tmux.conf" "$DOTPATH/tmux.conf"
+    # ln -s "$DOTPATH/etc/init/$PLATFORM/tmux.conf" "$DOTPATH/tmux.conf"
 
     # Using rcm to link all dotfiles
     env RCRC=$DOTPATH/rcrc rcup -vf
@@ -645,28 +658,6 @@ install_dotfiles() {
     return 0
 }
 
-install_vim_plugins() {
-	local plug_dir="~/.vim/autoload/plug.vim"
-	if [ ! -d $plug_dir ]; then
-		e_newline
-		e_header "Installing plug vim"
-		curl -sfLo ~/.vim/autoload/plug.vim --create-dirs \
-			https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-		
-		e_done
-	fi
-	vim +PlugInstall +qall
-}
-
-# plugins installed on login
-install_zplug() {	
-	if [ ! -d ~/.zplug ]; then
-		e_newline
-		e_header "Installing zplug"
-		curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
-	fi
-}
-
 
 # sourced from .bashrc and .zshrc 
 if echo "$-" | grep -q "i"; then # interactive shell
@@ -676,10 +667,7 @@ if echo "$-" | grep -q "i"; then # interactive shell
 
     : return
 else
-    # three patterns
-    # -> cat a.sh | bash
-    # -> bash -c "$(cat a.sh)"
-    # -> bash a.sh
+    # three patterns `cat a.sh | bash`, `bash -c "$(cat a.sh)"`, `bash a.sh`
 
     # -> bash a.sh
     if [ "$0" = "${BASH_SOURCE:-}" ]; then
@@ -689,43 +677,23 @@ else
     # -> cat a.sh | bash
     # -> bash -c "$(cat a.sh)"
     if [ -n "${BASH_EXECUTION_STRING:-}" ] || [ -p /dev/stdin ]; then
-# why ?
-#         # if already vitalized, skip to run install_all
-#         if [ "${VITALIZED:=0}" = 1 ]; then
-#             exit
-#         fi
-# 
-#         trap "e_error 'terminated'; exit 1" INT ERR
         
         echo "$dotfiles_logo"
-		
 
+        install_essentials
+		
         install_dotfiles "$@"
 
-        if contains "$@" "--packages"; then
-            install_packages
-        else
-            :
+        if contains "$@" "--zsh"; then
+            install_zsh
         fi
-
-        if contains "$@" "--vim-plugins"; then
-            install_vim_plugins
-        else
-            :
-        fi
-
-        if contains "$@" "--z-plugins"; then
-            install_zplug
-        else
-            :
-        fi		
 
 
         # Restart shell if specified "bash -c $(curl -L {URL})"
         # not restart:
         #   curl -L {URL} | bash
         if [ -p /dev/stdin ]; then
-            e_warning "Rebooting your shell can be a good idea."
+            e_done "Rebooting your shell can be a good idea."
         else
             e_newline
             e_arrow "Restarting your shell..."

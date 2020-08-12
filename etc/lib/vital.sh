@@ -642,12 +642,6 @@ link_dotfiles() {
 # A script for the file named "install"
 install_dotfiles() {
 
-    # 1. Download the repository
-    # ==> downloading
-    #
-    # Priority: git > curl > wget
-    dotfiles_download &&
-
     # 2. Install RCM
     install_rcm &&
 
@@ -682,6 +676,8 @@ else
 
         install_essentials
 		
+        dotfiles_download
+
         if contains "$@" "--zsh"; then
             install_zsh
         fi

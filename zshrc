@@ -92,7 +92,7 @@ if [ -d ~/.zplug ]; then
         fi
     fi
 
-	zplug load 
+	# zplug load 
 	# zplug check returns true if the given repository exists
 	# if zplug check b4b4r07/enhancd; then
 	# 	# setting if enhancd is available

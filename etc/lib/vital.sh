@@ -682,12 +682,11 @@ else
 
         install_essentials
 		
-        install_dotfiles "$@"
-
         if contains "$@" "--zsh"; then
             install_zsh
         fi
-
+        
+        install_dotfiles "$@"
 
         # Restart shell if specified "bash -c $(curl -L {URL})"
         # not restart:

@@ -1,8 +1,14 @@
 #!/bin/bash
 
+
 export NVM_DIR="$HOME/.nvm"
+export PATH="$NVM_DIR/versions/node/$(<$NVM_DIR/alias/default)/bin:$PATH"
+
 
 function source_nvm() {
 	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 	[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 }
+
+# https://github.com/nvm-sh/nvm/issues/1277
+alias nvm="unalias nvm; source_nvm; nvm $@"

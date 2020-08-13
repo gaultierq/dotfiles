@@ -96,6 +96,10 @@ function d-aws-cli-fn {
            amazon/aws-cli:latest $1 $2 $3
 }
 
+function dsa-fn {
+    docker stop $(docker ps -aq)
+}
+
 alias daws=d-aws-cli-fn
 alias dc=dc-fn
 alias dcu="docker-compose up -d"
@@ -114,4 +118,4 @@ alias drmid=drmid-fn
 alias drun=drun-fn
 alias dsp="docker system prune --all"
 alias dsr=dsr-fn
-alias dsa="docker stop $(docker ps -aq)"
+alias dsa=dsa-fn

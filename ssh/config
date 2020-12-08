@@ -63,3 +63,11 @@ Host mobhealth 34.78.180.68
     HostName 34.78.180.68
     User mobhealth
     IdentityFile ~/.ssh/mobapi/mobhealth_rsa
+
+Host fdstaging 35.187.113.87
+    HostName 35.187.113.87
+    User fdbot-staging
+    IdentityFile ~/.ssh/fd_bot/gcp_staging
+
+
+

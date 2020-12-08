@@ -15,7 +15,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'joonty/vim-phpqa'
 Plug 'shawncplus/phpcomplete.vim'
 Plug 'ervandew/supertab' " tab auto completion
-Plug 'ludovicchabant/vim-gutentags' " ctags generation
+" Plug 'ludovicchabant/vim-gutentags' " ctags generation
 Plug 'tpope/vim-surround' " braces etc.
 Plug 'schickling/vim-bufonly' " braces etc.
 Plug 'tmhedberg/SimpylFold'
@@ -114,7 +114,7 @@ if $TERM_PROGRAM =~ "iTerm.app"
 endif
 
 " guten-tags & ctags management
-let g:gutentags_ctags_tagfile= ".tags"
+" let g:gutentags_ctags_tagfile= ".tags"
 
 " rm search highligth
 " nnoremap <esc> :noh<return><esc>

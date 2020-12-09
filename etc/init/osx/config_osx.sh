@@ -1,4 +1,4 @@
-set -e
+
 # Ask for the administrator password upfront
 sudo -v
 
@@ -231,4 +231,3 @@ defaults write com.apple.Mail DisableSendAnimations -bool true
 defaults write com.apple.Mail DisableReplyAnimations -bool true
 
 sudo -k
-set +e

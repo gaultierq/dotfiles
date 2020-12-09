@@ -1,7 +1,9 @@
-#!/bin/bash -e
+#!/bin/bash
 
+set -e
+sudo -k
 
-brew cask install iterm2
+brew install --cask iterm2
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 zsh --version

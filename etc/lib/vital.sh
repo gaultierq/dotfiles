@@ -526,7 +526,8 @@ dotfiles_download() {
         elif is_exists "curl" || is_exists "wget"; then
             # curl or wget
             e_failure "Not supported yet. Install git."
-            
+            exit 1
+
             local tarball="https://github.com/b4b4r07/dotfiles/archive/master.tar.gz"
             if is_exists "curl"; then
                 curl -L "$tarball"
@@ -677,9 +678,9 @@ else
         
         echo "$dotfiles_logo"
 
-        install_essentials
-		
         dotfiles_download
+
+        install_essentials
 
         if contains "$@" "--zsh"; then
             install_zsh

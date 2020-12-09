@@ -6,15 +6,18 @@ xcode-select --install >> /dev/null
 
 set -e
 
-sudo -v
+
 
 
 if [[ ! "$(type -P brew)" ]]; then
+
 	echo "Installing Homebrew"
+	sudo -v
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	sudo -k
 fi
 
-sudo -k
+
 
 echo "brew update and upgrade..."
 brew update && brew upgrade

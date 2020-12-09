@@ -593,7 +593,7 @@ install_rcm() {
 
 run_all_matching() {
     # shellcheck disable=SC2102
-    for i in "$1"
+    for i in $1
     do
         if [ -f "$i" ]; then
             log_info "$(e_arrow "$(basename "$i")")"

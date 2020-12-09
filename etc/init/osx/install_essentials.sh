@@ -1,8 +1,10 @@
 #!/bin/bash
 
-set -e
 
-xcode-select --install
+
+xcode-select --install >> /dev/null
+
+set -e
 
 sudo -v
 

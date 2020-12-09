@@ -615,7 +615,10 @@ install_essentials() {
     if is_empty $PLATFORM; then
         e_failure "Platform not detected"
     fi
-    bash "$DOTPATH/etc/init/$PLATFORM/install_essentials.sh"
+    bash "$DOTPATH/etc/init/$PLATFORM/install_essentials.sh" || 
+    e_failure "Could not install essentials"
+
+    e_success "Essentials installed"
 }
 
 install_zsh() {

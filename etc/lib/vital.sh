@@ -590,11 +590,21 @@ install_rcm() {
     e_newline && e_done "RCM installed"
 }
 
-run_all() {
-    [ -d $1 ] || e_failure "not a directory: $1" 
+configure() {
+    e_newline
+    e_header "Configuring platform"
+    os_detect
+    if is_empty $PLATFORM; then
+        e_failure "Platform not detected"
+    fi
 
+    run_all_matching "$DOTPATH/etc/init/$PLATFORM/config*.sh"
+    e_success "Configured"
+}
+
+run_all() {
     # shellcheck disable=SC2102
-    for i in "$1"/*.sh
+    for i in "$1"
     do
         if [ -f "$i" ]; then
             log_info "$(e_arrow "$(basename "$i")")"
@@ -687,6 +697,8 @@ else
         fi
         
         install_dotfiles "$@"
+
+        configure
 
         # Restart shell if specified "bash -c $(curl -L {URL})"
         # not restart:

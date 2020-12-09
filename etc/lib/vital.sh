@@ -591,10 +591,11 @@ install_rcm() {
 }
 
 
-run_all_matching() {
+run_sh_matching() {
     # shellcheck disable=SC2102
-    for i in $1
+    for i in $1*.sh
     do
+        echo $i
         if [ -f "$i" ]; then
             log_info "$(e_arrow "$(basename "$i")")"
             if [ "${DEBUG:-}" != 1 ]; then
@@ -615,7 +616,7 @@ configure() {
         e_failure "Platform not detected"
     fi
 
-    run_all_matching $DOTPATH/etc/init/$PLATFORM/config*.sh
+    run_sh_matching $DOTPATH/etc/init/$PLATFORM/config
     e_success "Configured"
 }
 

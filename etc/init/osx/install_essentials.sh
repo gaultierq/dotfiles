@@ -2,7 +2,7 @@
 
 set -e
 
-xcode-select —-install
+xcode-select --install
 
 sudo -v
 

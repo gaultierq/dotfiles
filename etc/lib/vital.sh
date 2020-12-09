@@ -615,7 +615,7 @@ configure() {
         e_failure "Platform not detected"
     fi
 
-    run_all_matching "$DOTPATH/etc/init/$PLATFORM/config*.sh"
+    run_all_matching $DOTPATH/etc/init/$PLATFORM/config*.sh
     e_success "Configured"
 }
 

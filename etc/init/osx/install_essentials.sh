@@ -2,6 +2,9 @@
 
 set -e
 
+sudo -v
+
+
 if [[ ! "$(type -P brew)" ]]; then
 	echo "Installing Homebrew"
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -16,3 +19,5 @@ if ! brew bundle check; then
 	brew bundle	
 fi
 cd -
+
+sudo -k

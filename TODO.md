@@ -15,5 +15,7 @@ A list of things to make my dotfiles more awesomer. A ✓  indicates done and cr
 
 
 Installation sur un nouveau mac
-[ ] no git, but still going through step (ex: "Installing RCM...")
-[ ] Homebrew is missing
+[x] no git, but still going through step (ex: "Installing RCM...")
+[x] Homebrew is missing
+[ ] Split osx essentials & packages
+[ ] adoptoenjdk, torbrowser, horndis failed

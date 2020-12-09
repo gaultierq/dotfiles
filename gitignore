@@ -8,3 +8,6 @@
 .tags
 
 .idea
+
+# TODO: version this file
+Brewfile.lock.json

@@ -13,3 +13,7 @@ A list of things to make my dotfiles more awesomer. A ✓  indicates done and cr
 [ ] vimrc / environment (python, java, bash etc.)
 [ ] YouCompleteMe -> brew install cmake && cd ~/.vim/plugged/YouCompleteMe && ./install.py
 
+
+Installation sur un nouveau mac
+[ ] no git, but still going through step (ex: "Installing RCM...")
+[ ] Homebrew is missing

@@ -19,7 +19,7 @@ Plug 'ervandew/supertab' " tab auto completion
 Plug 'tpope/vim-surround' " braces etc.
 Plug 'schickling/vim-bufonly' " braces etc.
 Plug 'tmhedberg/SimpylFold'
-Plug 'vim-scripts/indentpython.vim' " python indent
+Plug 'vim-scriptsindentpython.vim' " python indent
 Plug 'Valloric/YouCompleteMe' " python autocomplete
 Plug 'scrooloose/syntastic' " python lint
 Plug 'nvie/vim-flake8'

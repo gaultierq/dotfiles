@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 if [[ ! "$(type -P brew)" ]]; then
 	echo "Installing Homebrew"

@@ -590,19 +590,8 @@ install_rcm() {
     e_newline && e_done "RCM installed"
 }
 
-configure() {
-    e_newline
-    e_header "Configuring platform"
-    os_detect
-    if is_empty $PLATFORM; then
-        e_failure "Platform not detected"
-    fi
 
-    run_all_matching "$DOTPATH/etc/init/$PLATFORM/config*.sh"
-    e_success "Configured"
-}
-
-run_all() {
+run_all_matching() {
     # shellcheck disable=SC2102
     for i in "$1"
     do
@@ -615,6 +604,19 @@ run_all() {
             continue
         fi
     done
+}
+
+
+configure() {
+    e_newline
+    e_header "Configuring platform"
+    os_detect
+    if is_empty $PLATFORM; then
+        e_failure "Platform not detected"
+    fi
+
+    run_all_matching "$DOTPATH/etc/init/$PLATFORM/config*.sh"
+    e_success "Configured"
 }
 
 # these are needed for this script to work properly

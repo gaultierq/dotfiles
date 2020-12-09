@@ -14,6 +14,8 @@ if [[ ! "$(type -P brew)" ]]; then
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+sudo -k
+
 echo "brew update and upgrade..."
 brew update && brew upgrade
 
@@ -24,4 +26,3 @@ if ! brew bundle check; then
 fi
 cd -
 
-sudo -k

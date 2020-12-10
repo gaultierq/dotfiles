@@ -1,2 +1,2 @@
-EXCLUDES="source_vital"
+EXCLUDES=""
 DOTFILES_DIRS="$HOME/dotfiles/rc"

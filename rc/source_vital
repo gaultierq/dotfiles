@@ -1,4 +1,5 @@
 #!/bash/sh -e
+echo "sourcing vital"
 
 # It is necessary for the setting of DOTPATH
 [ -f ~/.path ] && . ~/.path

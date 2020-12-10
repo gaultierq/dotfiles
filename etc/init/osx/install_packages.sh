@@ -19,4 +19,3 @@ if ! brew bundle check; then
 	brew bundle	
 fi
 cd -
-

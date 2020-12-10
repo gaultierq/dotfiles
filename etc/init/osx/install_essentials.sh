@@ -1,13 +1,8 @@
 #!/bin/bash
 
-
-
 xcode-select --install >> /dev/null
 
 set -e
-
-
-
 
 if [[ ! "$(type -P brew)" ]]; then
 
@@ -17,15 +12,4 @@ if [[ ! "$(type -P brew)" ]]; then
 	sudo -k
 fi
 
-
-
-echo "brew update and upgrade..."
-brew update && brew upgrade
-
-cd $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-if ! brew bundle check; then
-	echo "Installing Homebrew missing packages"
-	brew bundle	
-fi
-cd -
-
+HOMEBREW_NO_AUTO_UPDATE=1 brew install git curl htop tree rsync unzip wget

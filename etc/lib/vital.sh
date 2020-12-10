@@ -635,6 +635,22 @@ install_essentials() {
     e_success "Essentials installed"
 }
 
+# these is a longer step, installing all tools
+install_packages() {
+    e_newline
+    e_header "Installing packages"
+
+    os_detect
+    if is_empty $PLATFORM; then
+        e_failure "Platform not detected"
+    fi
+    bash "$DOTPATH/etc/init/$PLATFORM/install_packages.sh" || 
+    e_failure "Could not install packages"
+
+    e_success "Essentials packages"
+}
+
+
 install_zsh() {
     e_newline
     e_header "Installing ZSH"
@@ -697,6 +713,10 @@ else
 
         if contains "$@" "--zsh"; then
             install_zsh
+        fi
+
+        if contains "$@" "--packages"; then
+            install_packages
         fi
         
         install_dotfiles "$@"

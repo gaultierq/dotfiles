@@ -16,7 +16,7 @@
   st = status
 #  up = !git fetch origin && git rebase origin/master
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore_global
   autocrlf = input
 [merge]
 #  ff = only
@@ -43,7 +43,7 @@
 [credential]
 
 [hub]
-protocol = https
+	protocol = ssh
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

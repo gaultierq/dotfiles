@@ -103,6 +103,7 @@ function dsa-fn {
 alias daws=d-aws-cli-fn
 alias dc=dc-fn
 alias dcu="docker-compose up -d"
+alias dcul="docker-compose up -d && docker-compose logs -f"
 alias dcd="docker-compose down"
 alias dcr=dcr-fn
 alias dex=dex-fn

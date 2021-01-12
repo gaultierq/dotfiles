@@ -1,15 +1,6 @@
 Host *
   ServerAliveInterval 240
 
-Host baan
-	HostName 198.252.101.230 
-    User baanbang
-
-Host dev1
-	HostName 92.222.67.134  
-	User qg
-
-#build-bot account
 Host github.com
 	HostName github.com
 	User git
@@ -31,15 +22,6 @@ Host gitlab.com
     User git
     IdentityFile ~/.ssh/qg_gitlab_rsa
 
-Host gitlab.csi-remy.pro
-    HostName gitlab.csi-remy.pro
-    User git
-    IdentityFile ~/.ssh/qg_gitlab_rsa
-
-Host raspberrypi
-    User pi
-    IdentityFile ~/.ssh/id_rsa_qg
-
 Host mobstaging 193.70.86.29
     HostName 193.70.86.29
     User ubuntu
@@ -53,11 +35,6 @@ Host mobprod 104.155.30.218
     HostName 104.155.30.218
     User mobuser
     IdentityFile ~/.ssh/mobapi/ansible_deploy
-
-Host 192.168.1.143 rpi_hmbt
-    HostName 192.168.1.143
-    User pi
-    IdentityFile ~/.ssh/mobapi/mobapi_rpi
 
 Host mobhealth 34.78.180.68
     HostName 34.78.180.68

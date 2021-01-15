@@ -10,7 +10,8 @@ htop \
 curl \
 openvpn \
 unzip \
-wget
+wget \
+tmux
 
 
 # cleaning unused dependencies

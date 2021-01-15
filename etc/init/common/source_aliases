@@ -21,7 +21,7 @@ alias du="du -h -d 1"
 
 
 # history
-alias h="history | grep "
+alias h="history | peco "
 
 # update the world
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup'

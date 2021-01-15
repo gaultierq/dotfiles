@@ -1,0 +1,7 @@
+alias tls='tmux ls'
+
+function tk-fn() {
+    tmux kill-session -t $1
+}
+
+alias tk="tk-fn"

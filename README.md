@@ -21,3 +21,7 @@ https://github.com/thoughtbot/rcm
 zsh
 zplug A next-generation plugin manager for zsh 
 framework for managing your zsh configuration
+
+### cheatsheet
+
+search with `ag fun ~/dir`

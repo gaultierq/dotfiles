@@ -1,4 +1,10 @@
 
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 "set runtimepath+=~/dotfiles
 call plug#begin()
 
@@ -19,7 +25,7 @@ Plug 'ervandew/supertab' " tab auto completion
 Plug 'tpope/vim-surround' " braces etc.
 Plug 'schickling/vim-bufonly' " braces etc.
 Plug 'tmhedberg/SimpylFold'
-Plug 'vim-scriptsindentpython.vim' " python indent
+" Plug 'vim-scriptsindentpython.vim' " python indent
 Plug 'Valloric/YouCompleteMe' " python autocomplete
 Plug 'scrooloose/syntastic' " python lint
 Plug 'nvie/vim-flake8'
@@ -47,6 +53,9 @@ set encoding=utf-8
 
 " let netrw be a tree
 let g:netrw_liststyle=3
+
+" remove warning for snipMate
+let g:snipMate = { 'snippet_version' : 1 }
 
 syntax enable
 set background=dark

@@ -11,7 +11,8 @@ curl \
 openvpn \
 unzip \
 wget \
-tmux
+tmux \
+silversearcher-ag
 
 
 # cleaning unused dependencies

@@ -22,3 +22,7 @@ if ! HOMEBREW_NO_AUTO_UPDATE=1 brew bundle --file essentials.Brewfile check; the
 	HOMEBREW_NO_AUTO_UPDATE=1 brew bundle	--file essentials.Brewfile
 fi
 cd -
+
+# installing zplug
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+

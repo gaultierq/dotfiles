@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# todo make it dynamic
+local __shell="zsh"
+export PATH="$HOME/.basher/bin:$PATH"
+eval "$(basher init - ${__shell})" # replace `bash` with `zsh` if you use zsh

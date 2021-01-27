@@ -72,18 +72,17 @@ bindkey "^[[B" history-substring-search-down
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='nano'
-  export VISUAL='nano'
+  export EDITOR='vim'
+  export VISUAL='vim'
 else
-  export EDITOR='nano'
-  export VISUAL='nano'
+  export EDITOR='vim'
+  export VISUAL='vim'
 fi
 
 if [ -d ~/.zplug ]; then
 	export ZPLUG_HOME=~/.zplug
 	source $ZPLUG_HOME/init.zsh
-
-	#zplug "b4b4r07/enhancd", use:init.sh
+	zplug "b4b4r07/enhancd", use:init.sh
 
     if ! zplug check --verbose; then
         printf "Install? [y/N]: "
@@ -94,12 +93,12 @@ if [ -d ~/.zplug ]; then
         fi
     fi
 
-	# zplug load 
+	zplug load 
 	# zplug check returns true if the given repository exists
-	# if zplug check b4b4r07/enhancd; then
-	# 	# setting if enhancd is available
-	# 	export ENHANCD_FILTER=fzf-tmux
-	# fi
+	if zplug check b4b4r07/enhancd; then
+ 	# setting if enhancd is available
+	 	export ENHANCD_FILTER=fzf-tmux
+	 fi
 fi
 
 #fpath=(/usr/local/share/zsh-completions $fpath)
@@ -167,7 +166,7 @@ fi
 # sudo nano /etc/locale.gen
 
 # then regenerate
-
+# TODO: move this jenv stuff somewhere else
 eval export PATH="/Users/qg/.jenv/shims:${PATH}"
 export JENV_SHELL=zsh
 export JENV_LOADED=1
@@ -189,3 +188,5 @@ jenv() {
     command jenv "$command" "$@";;
   esac
 }
+
+ [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

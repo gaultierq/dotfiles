@@ -45,6 +45,7 @@ alias v='vim'
 
 alias gs='git st'
 alias gl='git l'
+alias gdh='git diff HEAD'
 
 function gro-fn {
     cd $(git rev-parse --show-toplevel)

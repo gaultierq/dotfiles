@@ -19,19 +19,19 @@ Plug 'tpope/vim-markdown'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'joonty/vim-phpqa'
-Plug 'shawncplus/phpcomplete.vim'
+" Plug 'shawncplus/phpcomplete.vim'
 Plug 'ervandew/supertab' " tab auto completion
-" Plug 'ludovicchabant/vim-gutentags' " ctags generation
 Plug 'tpope/vim-surround' " braces etc.
 Plug 'schickling/vim-bufonly' " braces etc.
 Plug 'tmhedberg/SimpylFold'
 " Plug 'vim-scriptsindentpython.vim' " python indent
-Plug 'Valloric/YouCompleteMe' " python autocomplete
+" Plug 'Valloric/YouCompleteMe' " python autocomplete
+Plug 'ycm-core/YouCompleteMe'
 Plug 'scrooloose/syntastic' " python lint
 Plug 'nvie/vim-flake8'
 Plug 'dkprice/vim-easygrep'
 Plug 'tpope/vim-fugitive'
-Plug 'tomlion/vim-solidity'
+" Plug 'tomlion/vim-solidity'
 Plug 'vim-ruby/vim-ruby'
 Plug 'ecomba/vim-ruby-refactoring'
 Plug 'tpope/vim-rails'
@@ -41,8 +41,20 @@ Plug 'honza/vim-snippets'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
-
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-endwise'
+Plug 'dense-analysis/ale'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'unkiwii/vim-nerdtree-sync'
+Plug 'tpope/vim-abolish'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'jistr/vim-nerdtree-tabs'
 call plug#end()
+
+let g:deoplete#enable_at_startup = 1
+let g:NERDTreeHighlightCursorline = 1
+let g:nerdtree_sync_cursorline = 1
 
 set runtimepath+=~/dotfiles
 runtime! etc/init/vim/**.vim
@@ -56,6 +68,35 @@ let g:netrw_liststyle=3
 
 " remove warning for snipMate
 let g:snipMate = { 'snippet_version' : 1 }
+
+" configure linters here
+let g:ale_linters = {
+      \   'ruby': ['standardrb', 'rubocop'],
+      \   'python': ['flake8', 'pylint'],
+      \   'javascript': ['eslint'],
+      \}
+let g:ale_fix_on_save = 1
+" display linter warnings in status bar
+function! LinterStatus() abort
+  let l:counts = ale#statusline#Count(bufnr(''))
+
+  let l:all_errors = l:counts.error + l:counts.style_error
+  let l:all_non_errors = l:counts.total - l:all_errors
+
+  return l:counts.total == 0 ? '✨ all good ✨' : printf(
+        \   '😞 %dW %dE',
+        \   all_non_errors,
+        \   all_errors
+        \)
+endfunction
+
+set statusline=
+set statusline+=%m
+set statusline+=\ %f
+set statusline+=%=
+set statusline+=\ %{LinterStatus()}
+
+
 
 syntax enable
 set background=dark
@@ -88,8 +129,7 @@ set number
 " start NerdTree when vim starts
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-" open nerd tree
-map <C-n> :NERDTreeToggle<CR>
+
 
 " inserts new lines
 map <Enter> o<ESC>
@@ -123,7 +163,8 @@ if $TERM_PROGRAM =~ "iTerm.app"
 endif
 
 " guten-tags & ctags management
-" let g:gutentags_ctags_tagfile= ".tags"
+ let g:gutentags_ctags_tagfile= ".tags"
+"
 
 " rm search highligth
 " nnoremap <esc> :noh<return><esc>
@@ -138,9 +179,12 @@ noremap <Right> <NOP>
 noremap 4 :BufOnly<CR>
 
 "nerdtree reveal in tree
-nmap ,n :NERDTreeFind<CR>
+nmap <leader>r :NERDTreeFind<CR>
 "toggle nerdtree
 nmap ,m :NERDTreeToggle<CR>
+" open nerd tree
+map <C-n> :NERDTreeToggle<CR>
+
 
 let &titlestring = $USER . "@" . hostname() . " " . expand("%:p")
 if &term == "screen"
@@ -233,3 +277,21 @@ syntax on
 let g:EasyGrepRecursive=1
 let g:EasyGrepIgnoreCase=1 
 let g:EasyGrepHidden=1
+
+
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+endif
+
+" https://github.com/kien/ctrlp.vim/issues/646
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
+    \ 'AcceptSelection("t")': ['<cr>'],
+    \ }
+
+let g:nerdtree_tabs_open_on_console_startup=1
+" Navigating tabs
+nmap <leader>[ :tabprevious<CR>
+nmap <leader>] :tabnext<CR>
+
+

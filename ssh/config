@@ -22,10 +22,6 @@ Host gitlab.com
     User git
     IdentityFile ~/.ssh/qg_gitlab_rsa
 
-Host mobstaging 193.70.86.29
-    HostName 193.70.86.29
-    User ubuntu
-    IdentityFile ~/.ssh/mobapi/ansible_deploy
 
 Host ssh.cluster028.hosting.ovh.net
     User canonio
@@ -35,6 +31,11 @@ Host mobprod 104.155.30.218
     HostName 104.155.30.218
     User mobuser
     IdentityFile ~/.ssh/mobapi/ansible_deploy
+
+Host mobstaging 35.195.175.215 
+    HostName 35.195.175.215 
+    User mobuser_staging
+    IdentityFile ~/.ssh/mobapi/mobuser_staging_rsa
 
 Host mobhealth 34.78.180.68
     HostName 34.78.180.68

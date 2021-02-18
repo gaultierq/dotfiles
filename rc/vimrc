@@ -10,7 +10,7 @@ call plug#begin()
 
 Plug 'tpope/vim-sensible'
 " Plug 'bash-support.vim'
-Plug 'kien/ctrlp.vim'
+"Plug 'kien/ctrlp.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plug 'scrooloose/nerdcommenter'
@@ -28,7 +28,7 @@ Plug 'tmhedberg/SimpylFold'
 " Plug 'Valloric/YouCompleteMe' " python autocomplete
 Plug 'ycm-core/YouCompleteMe'
 Plug 'scrooloose/syntastic' " python lint
-Plug 'nvie/vim-flake8'
+Plug 'nvie/vim-flake8' "Flake8, a static syntax and style checker for
 Plug 'dkprice/vim-easygrep'
 Plug 'tpope/vim-fugitive'
 " Plug 'tomlion/vim-solidity'
@@ -46,20 +46,42 @@ Plug 'tpope/vim-endwise'
 Plug 'dense-analysis/ale'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'unkiwii/vim-nerdtree-sync'
-Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-abolish' "search and replace with case
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'jistr/vim-nerdtree-tabs'
+Plug 'arcticicestudio/nord-vim'
+Plug 'morhetz/gruvbox'
+Plug 'ngmy/vim-rubocop'
+Plug 'bkad/CamelCaseMotion'
+Plug 'pangloss/vim-javascript'    " JavaScript support
+Plug 'leafgarland/typescript-vim' " TypeScript syntax
+Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
+Plug 'jparise/vim-graphql'        " GraphQL syntax
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
+" Leader key is SPACE, I find it the best
+let mapleader = " "
+set lazyredraw " Don’t update screen during macro and script execution.
+set updatetime=300 "time before swap file is written to disk"
+" Source Vim configuration file and install plugins
+nnoremap <silent><leader>1 :source ~/.vimrc \| :PlugInstall<CR>
+
+" Nerdtree configuration
 let g:deoplete#enable_at_startup = 1
 let g:NERDTreeHighlightCursorline = 1
 let g:nerdtree_sync_cursorline = 1
 
 set runtimepath+=~/dotfiles
 runtime! etc/init/vim/**.vim
-
+" Allow copy and paste from system clipboard
 set clipboard=unnamed
+
+set ignorecase " Ignore case when searching
+set smartcase  " When searching try to be smart about cases
+set nohlsearch " Don't highlight search term
+set incsearch  " Jumping search
 
 set encoding=utf-8
 
@@ -100,7 +122,7 @@ set statusline+=\ %{LinterStatus()}
 
 syntax enable
 set background=dark
-" let g:solarized_termcolors=256
+ let g:solarized_termcolors=256
 let g:solarized_termtrans =   1
 let g:solarized_degrade   =   0
 let g:solarized_bold      =   1
@@ -109,7 +131,8 @@ let g:solarized_italic    =   1
 let g:solarized_contrast  =   "high" | "normal"|   "high" or "low"
 let g:solarized_visibility=   "high" | "normal"|   "high" or "low"
 silent! colorscheme solarized
-
+"colorscheme nord
+"autocmd vimenter * ++nested colorscheme gruvbox
 " activate mouse
 set mouse=a
 
@@ -129,7 +152,8 @@ set number
 " start NerdTree when vim starts
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
+let NERDTreeShowHidden=1
+let NERDTreeIgnore = ['\.pyc$', '\.swp']
 
 " inserts new lines
 map <Enter> o<ESC>
@@ -290,8 +314,62 @@ let g:ctrlp_prompt_mappings = {
     \ }
 
 let g:nerdtree_tabs_open_on_console_startup=1
+let g:ctrlp_show_hidden = 1
 " Navigating tabs
 nmap <leader>[ :tabprevious<CR>
 nmap <leader>] :tabnext<CR>
 
+" Alt-right/left to navigate forward/backward in the tags stack
+map <C-H> <C-T>
+map <C-L> <C-]>
 
+" MacVim Touch Bar support
+" ========================
+" Since version 8.0 (I think), MacVim natively supports the macOS touch bar. By default it just contains 
+" one button to toggle fullscreen mode. To add some more useful buttons, just copy this into your .vimrc
+"
+" More details about the syntax can be found here: https://github.com/macvim-dev/macvim/blob/master/runtime/doc/gui_mac.txt
+" For a list of touch bar image names, see https://developer.apple.com/design/human-interface-guidelines/macos/touch-bar/touch-bar-icons-and-images/
+
+
+" Toggle NerdTree
+an icon=NSTouchBarSidebarTemplate TouchBar.NerdTree :NERDTreeToggle<CR> 
+
+an TouchBar.-flexspace2- <Nop>
+
+" List buffers
+an icon=NSTouchBarListViewTemplate TouchBar.ListBuffers :ls<CR>
+" Delete buffer
+an icon=NSTouchBarDeleteTemplate TouchBar.Delete :bd<CR>
+
+an TouchBar.-Sep- <Nop> 
+
+" Previous buffer
+an icon=NSTouchBarGoBackTemplate TouchBar.GoBack :bp<CR>
+" Next buffer
+an icon=NSTouchBarGoForwardTemplate TouchBar.GoForward :bn<CR>
+anoremenu 1.1 TouchBar.-flexspace- <Nop>
+tlnoremenu 1.1 TouchBar.-flexspace- <Nop>
+
+
+" Rubocop integration
+let g:vimrubocop_keymap = 0
+nmap <Leader>r :RuboCop<CR>
+map <Leader>j :co.<CR>
+
+let g:coc_global_extensions = [ 'coc-tsserver' ]
+
+nnoremap <C-g> :Ag<Cr>
+nnoremap <C-p> :GFiles<Cr>
+" CoC extensions
+let g:coc_global_extensions = ['coc-solargraph', 'coc-tsserver', 'coc-json']
+
+" Add CoC Prettier if prettier is installed
+if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
+  let g:coc_global_extensions += ['coc-prettier']
+endif
+
+" Add CoC ESLint if ESLint is installed
+if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
+  let g:coc_global_extensions += ['coc-eslint']
+endif

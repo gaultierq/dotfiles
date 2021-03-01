@@ -1,3 +1,26 @@
+
+
+" That was in vimrc before
+" Cocvim configuration, only on local machine
+let g:coc_global_extensions = [ 'coc-tsserver' ]
+
+nnoremap <C-g> :Ag<Cr>
+nnoremap <C-p> :GFiles<Cr>
+" CoC extensions
+let g:coc_global_extensions = ['coc-solargraph', 'coc-tsserver', 'coc-json']
+
+" Add CoC Prettier if prettier is installed
+if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
+  let g:coc_global_extensions += ['coc-prettier']
+endif
+
+" Add CoC ESLint if ESLint is installed
+if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
+  let g:coc_global_extensions += ['coc-eslint']
+endif
+
+
+
 " TextEdit might fail if hidden is not set.
 set hidden
 

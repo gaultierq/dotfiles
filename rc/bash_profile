@@ -2,4 +2,3 @@
 
 [ -f ~/.bashrc ] && . ~/.bashrc 
 
-source /Users/qg/.config/broot/launcher/bash/br

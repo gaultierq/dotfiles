@@ -346,33 +346,39 @@ nmap <leader>] :tabnext<CR>
 map <C-H> <C-T>
 map <C-L> <C-]>
 
-" MacVim Touch Bar support
-" ========================
-" Since version 8.0 (I think), MacVim natively supports the macOS touch bar. By default it just contains 
-" one button to toggle fullscreen mode. To add some more useful buttons, just copy this into your .vimrc
-"
-" More details about the syntax can be found here: https://github.com/macvim-dev/macvim/blob/master/runtime/doc/gui_mac.txt
-" For a list of touch bar image names, see https://developer.apple.com/design/human-interface-guidelines/macos/touch-bar/touch-bar-icons-and-images/
+
+if has("gui_running")
+	" MacVim Touch Bar support
+	" ========================
+	" Since version 8.0 (I think), MacVim natively supports the macOS touch bar. By default it just contains 
+	" one button to toggle fullscreen mode. To add some more useful buttons, just copy this into your .vimrc
+	"
+	" More details about the syntax can be found here: https://github.com/macvim-dev/macvim/blob/master/runtime/doc/gui_mac.txt
+	" For a list of touch bar image names, see https://developer.apple.com/design/human-interface-guidelines/macos/touch-bar/touch-bar-icons-and-images/
 
 
-" Toggle NerdTree
-an icon=NSTouchBarSidebarTemplate TouchBar.NerdTree :NERDTreeToggle<CR> 
+	" Toggle NerdTree
+	an icon=NSTouchBarSidebarTemplate TouchBar.NerdTree :NERDTreeToggle<CR> 
 
-an TouchBar.-flexspace2- <Nop>
+	an TouchBar.-flexspace2- <Nop>
 
-" List buffers
-an icon=NSTouchBarListViewTemplate TouchBar.ListBuffers :ls<CR>
-" Delete buffer
-an icon=NSTouchBarDeleteTemplate TouchBar.Delete :bd<CR>
+	" List buffers
+	an icon=NSTouchBarListViewTemplate TouchBar.ListBuffers :ls<CR>
+	" Delete buffer
+	an icon=NSTouchBarDeleteTemplate TouchBar.Delete :bd<CR>
 
-an TouchBar.-Sep- <Nop> 
+	an TouchBar.-Sep- <Nop> 
 
-" Previous buffer
-an icon=NSTouchBarGoBackTemplate TouchBar.GoBack :bp<CR>
-" Next buffer
-an icon=NSTouchBarGoForwardTemplate TouchBar.GoForward :bn<CR>
-anoremenu 1.1 TouchBar.-flexspace- <Nop>
-tlnoremenu 1.1 TouchBar.-flexspace- <Nop>
+	" Previous buffer
+	an icon=NSTouchBarGoBackTemplate TouchBar.GoBack :bp<CR>
+	" Next buffer
+	an icon=NSTouchBarGoForwardTemplate TouchBar.GoForward :bn<CR>
+	anoremenu 1.1 TouchBar.-flexspace- <Nop>
+	tlnoremenu 1.1 TouchBar.-flexspace- <Nop>
+
+endif
+
+
 
 
 " Rubocop integration

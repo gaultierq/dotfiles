@@ -191,4 +191,3 @@ jenv() {
 
  [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
-source /Users/qg/.config/broot/launcher/bash/br

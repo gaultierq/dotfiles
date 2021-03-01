@@ -1,0 +1,9 @@
+#!/bin/sh
+
+
+
+if [ ! -d "~/.config/broot/" ]; then
+	return;
+fi
+
+source ~/.config/broot/launcher/bash/br

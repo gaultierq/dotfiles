@@ -6,4 +6,3 @@
 [ -f "$DOTPATH/etc/lib/login_source.sh" ] && . "$DOTPATH/etc/lib/login_source.sh"
 
 
-source /Users/qg/.config/broot/launcher/bash/br

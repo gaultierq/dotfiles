@@ -32,8 +32,8 @@ Host mobprod 104.155.30.218
     User mobuser
     IdentityFile ~/.ssh/mobapi/ansible_deploy
 
-Host mobstaging 35.195.175.215 
-    HostName 35.195.175.215 
+Host mobstaging 35.195.181.138
+    HostName 35.195.181.138
     User mobuser_staging
     IdentityFile ~/.ssh/mobapi/mobuser_staging_rsa
 
@@ -42,8 +42,8 @@ Host mobhealth 34.78.180.68
     User mobhealth
     IdentityFile ~/.ssh/mobapi/mobhealth_rsa
 
-Host fdstaging 35.187.113.87
-    HostName 35.187.113.87
+Host fdstaging 35.210.188.166 
+    HostName 35.210.188.166
     User fdbot-staging
     IdentityFile ~/.ssh/fd_bot/gcp_staging
 

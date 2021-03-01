@@ -8,6 +8,7 @@ endif
 "set runtimepath+=~/dotfiles
 call plug#begin()
 
+"Plug 'ervandew/supertab' " tab auto completion
 Plug 'tpope/vim-sensible'
 " Plug 'bash-support.vim'
 "Plug 'kien/ctrlp.vim'
@@ -20,15 +21,14 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'joonty/vim-phpqa'
 " Plug 'shawncplus/phpcomplete.vim'
-Plug 'ervandew/supertab' " tab auto completion
 Plug 'tpope/vim-surround' " braces etc.
 Plug 'schickling/vim-bufonly' " braces etc.
 Plug 'tmhedberg/SimpylFold'
 " Plug 'vim-scriptsindentpython.vim' " python indent
 " Plug 'Valloric/YouCompleteMe' " python autocomplete
-Plug 'ycm-core/YouCompleteMe'
+"Plug 'ycm-core/YouCompleteMe'
 Plug 'scrooloose/syntastic' " python lint
-Plug 'nvie/vim-flake8' "Flake8, a static syntax and style checker for
+"Plug 'nvie/vim-flake8' "Flake8, a static syntax and style checker for
 Plug 'dkprice/vim-easygrep'
 Plug 'tpope/vim-fugitive'
 " Plug 'tomlion/vim-solidity'
@@ -40,7 +40,7 @@ Plug 'tpope/vim-bundler'
 Plug 'honza/vim-snippets'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
-Plug 'garbas/vim-snipmate'
+"Plug 'garbas/vimsnipmate'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-endwise'
 Plug 'dense-analysis/ale'
@@ -59,14 +59,25 @@ Plug 'leafgarland/typescript-vim' " TypeScript syntax
 Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
 Plug 'jparise/vim-graphql'        " GraphQL syntax
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'airblade/vim-rooter'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
+
+"source ~/.vim/custom/*.vim
 
 " Leader key is SPACE, I find it the best
 let mapleader = " "
 set lazyredraw " Don’t update screen during macro and script execution.
 set updatetime=300 "time before swap file is written to disk"
+" Faster saving and exiting
+nnoremap <silent><leader>w :w!<CR>
+nnoremap <silent><leader>q :q!<CR>
+nnoremap <silent><leader>x :x<CR>
+" Open Vim configuration file for editing
+nnoremap <silent><leader>2 :e ~/.vimrc<CR>
 " Source Vim configuration file and install plugins
 nnoremap <silent><leader>1 :source ~/.vimrc \| :PlugInstall<CR>
+
 
 " Nerdtree configuration
 let g:deoplete#enable_at_startup = 1
@@ -89,7 +100,7 @@ set encoding=utf-8
 let g:netrw_liststyle=3
 
 " remove warning for snipMate
-let g:snipMate = { 'snippet_version' : 1 }
+"let g:snipMate = { 'snippet_version' : 1 }
 
 " configure linters here
 let g:ale_linters = {
@@ -131,7 +142,17 @@ let g:solarized_italic    =   1
 let g:solarized_contrast  =   "high" | "normal"|   "high" or "low"
 let g:solarized_visibility=   "high" | "normal"|   "high" or "low"
 silent! colorscheme solarized
-"colorscheme nord
+if has("gui_running")
+  syntax on
+  set hlsearch
+  colorscheme nord
+  set bs=2 " backspace
+  set ai " auto indent
+  set ruler " lines colonne
+  set guifont=Hack\ Nerd\ Font:h14
+endif
+
+autocmd! GUIEnter * set vb t_vb=
 "autocmd vimenter * ++nested colorscheme gruvbox
 " activate mouse
 set mouse=a
@@ -152,10 +173,12 @@ set number
 " start NerdTree when vim starts
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd VimEnter * NERDTree | wincmd p
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$', '\.swp']
 
 " inserts new lines
+"
 map <Enter> o<ESC>
 map <S-Enter> O<ESC>
 
@@ -278,8 +301,8 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 
 " python Auto-complete
-let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"let g:ycm_autoclose_preview_window_after_completion=1
+"map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 
 ""python with virtualenv support
@@ -354,9 +377,9 @@ tlnoremenu 1.1 TouchBar.-flexspace- <Nop>
 
 " Rubocop integration
 let g:vimrubocop_keymap = 0
-nmap <Leader>r :RuboCop<CR>
-map <Leader>j :co.<CR>
-
+"nmap <Leader>r :RuboCop<CR>
+"duplicate a line without adding it to the register
+map <Leader>j :co.<CR> 
 let g:coc_global_extensions = [ 'coc-tsserver' ]
 
 nnoremap <C-g> :Ag<Cr>
@@ -373,3 +396,39 @@ endif
 if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
   let g:coc_global_extensions += ['coc-eslint']
 endif
+
+" Camelcase configuration
+let g:camelcasemotion_key = '<leader>'
+map <silent> w <Plug>CamelCaseMotion_w
+map <silent> b <Plug>CamelCaseMotion_b
+map <silent> e <Plug>CamelCaseMotion_e
+map <silent> ge <Plug>CamelCaseMotion_ge
+sunmap w
+sunmap b
+sunmap e
+sunmap ge
+
+" Coc configuration
+" Some servers have issues with backup files, see #649.
+set nobackup
+set nowritebackup
+
+" Give more space for displaying messages.
+set cmdheight=2
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+
+" Automatically save the session when leaving Vim
+"autocmd! VimLeave * mksession
+" Automatically load the session when entering vim
+"autocmd! VimEnter * source ./Session.vim
+"
+set noswapfile
+
+" start scrolling when near buffer hedges
+set scrolloff=10
+
+" avoid line break
+set wrapmargin=0
+set textwidth=0
+

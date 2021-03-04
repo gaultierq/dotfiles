@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if command -v basher &> /dev/null
+if [ -d "$HOME/.basher" ] 
 then
 	local __shell="zsh"
 	export PATH="$HOME/.basher/bin:$PATH"

@@ -169,39 +169,19 @@ syntax enable
 
 " display line numbers
 set number
-" set foldcolumn=3
-" set nuw=6
-
-" start NerdTree when vim starts
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd VimEnter * NERDTree | wincmd p
-let NERDTreeShowHidden=1
-let NERDTreeIgnore = ['\.pyc$', '\.swp']
 
 " inserts new lines
-"
 map <Enter> o<ESC>
 map <S-Enter> O<ESC>
 
-" Tab navigation (broken)
-"map  <C-l> :tabn<CR>
-"map  <C-h> :tabp<CR>
-"map  <C-n> :tabnew<CR>
-"map  <C-Right> :tabn<CR>
-"map  <C-Left> :tabp<CR>
+nnoremap <C-g> :Ag<Cr>
+nnoremap <C-p> :GFiles<Cr>
 
 " SuperTab recommended settings (no explanation...)
 let g:SuperTabDefaultCompletionType = ""
 
 set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4 
 
-" [TEST]: spaces in nno => insert mode
-"nnoremap <space> i<space>
-"nnoremap <tab> i<tab>
-"nnoremap <BS> i<BS>
-
-set incsearch "incremental search
 set hlsearch "highlight search
 
 
@@ -227,14 +207,7 @@ noremap <Right> <NOP>
 "set foldmethod=indent
 noremap 4 :BufOnly<CR>
 
-"nerdtree reveal in tree
-nmap <leader>r :NERDTreeFind<CR>
-"toggle nerdtree
-nmap ,m :NERDTreeToggle<CR>
-" open nerd tree
-map <C-n> :NERDTreeToggle<CR>
-
-
+" status line
 let &titlestring = $USER . "@" . hostname() . " " . expand("%:p")
 if &term == "screen"
   set t_ts=^[k
@@ -243,22 +216,6 @@ endif
 if &term == "screen" || &term == "xterm"
   set title
 endif
-
-
-" <<< quit vim if last buffer
-autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
-
-" Close all open buffers on entering a window if the only
-" buffer that's left is the NERDTree buffer
-function! s:CloseIfOnlyNerdTreeLeft()
-  if exists("t:NERDTreeBufName")
-    if bufwinnr(t:NERDTreeBufName) != -1
-      if winnr("$") == 1
-        q
-      endif
-    endif
-  endif
-endfunction
 
 
 " >>> quit vim if last buffer
@@ -302,21 +259,7 @@ highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 
-" python Auto-complete
-"let g:ycm_autoclose_preview_window_after_completion=1
-"map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
-
-""python with virtualenv support
-""TODO :disabled because it fails on install
-"py << EOF
-"import os
-"import sys
-"if 'VIRTUAL_ENV' in os.environ:
-"  project_base_dir = os.environ['VIRTUAL_ENV']
-"  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-"  execfile(activate_this, dict(__file__=activate_this))
-"EOF
 
 " nice python
 let python_highlight_all=1
@@ -338,7 +281,6 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("t")': ['<cr>'],
     \ }
 
-let g:nerdtree_tabs_open_on_console_startup=1
 let g:ctrlp_show_hidden = 1
 " Navigating tabs
 nmap <leader>[ :tabprevious<CR>
@@ -408,10 +350,6 @@ sunmap ge
 set nobackup
 set nowritebackup
 
-" Give more space for displaying messages.
-set cmdheight=2
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
 
 " Automatically save the session when leaving Vim
 "autocmd! VimLeave * mksession
@@ -435,3 +373,5 @@ inoremap ∆ <Esc>:m .+1<CR>==gi
 inoremap ˚ <Esc>:m .-2<CR>==gi
 vnoremap ∆ :m '>+1<CR>gv=gv
 vnoremap ˚ :m '<-2<CR>gv=gv
+
+command! Q :q

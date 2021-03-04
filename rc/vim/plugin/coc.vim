@@ -4,8 +4,6 @@
 " Cocvim configuration, only on local machine
 let g:coc_global_extensions = [ 'coc-tsserver' ]
 
-nnoremap <C-g> :Ag<Cr>
-nnoremap <C-p> :GFiles<Cr>
 " CoC extensions
 let g:coc_global_extensions = ['coc-solargraph', 'coc-tsserver', 'coc-json']
 

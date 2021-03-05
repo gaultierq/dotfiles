@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ ! -d "~/.jenv" ]; then
+if [ ! -d "$HOME/.jenv" ]; then
 	return;
 fi
 

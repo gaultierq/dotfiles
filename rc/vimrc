@@ -13,7 +13,7 @@ Plug 'tpope/vim-sensible'
 " Plug 'bash-support.vim'
 "Plug 'kien/ctrlp.vim'
 Plug 'altercation/vim-colors-solarized'
-Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+"Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plug 'scrooloose/nerdcommenter'
 Plug 'stanangeloff/php.vim'
 Plug 'tpope/vim-markdown'
@@ -51,7 +51,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'arcticicestudio/nord-vim'
-Plug 'morhetz/gruvbox'
+"Plug 'morhetz/gruvbox'
 Plug 'ngmy/vim-rubocop'
 Plug 'bkad/CamelCaseMotion'
 Plug 'pangloss/vim-javascript'    " JavaScript support
@@ -60,6 +60,9 @@ Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
 Plug 'jparise/vim-graphql'        " GraphQL syntax
 Plug 'airblade/vim-rooter'
 Plug 'ryanoasis/vim-devicons'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'airblade/vim-gitgutter'
 if executable('node')
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 endif
@@ -130,7 +133,7 @@ set statusline+=%m
 set statusline+=\ %f
 set statusline+=%=
 set statusline+=\ %{LinterStatus()}
-
+set laststatus=2
 
 
 syntax enable
@@ -171,11 +174,14 @@ syntax enable
 set number
 
 " inserts new lines
-map <Enter> o<ESC>
-map <S-Enter> O<ESC>
+"map <Enter> o<ESC>
+"map <S-Enter> O<ESC>
 
-nnoremap <C-g> :Ag<Cr>
-nnoremap <C-p> :GFiles<Cr>
+nnoremap <C-h> :Ag<Cr>
+nnoremap <C-p> :GFiles --cached --others --exclude-standard<cr>
+
+" todo: probably better
+"let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 " SuperTab recommended settings (no explanation...)
 let g:SuperTabDefaultCompletionType = ""
@@ -208,7 +214,7 @@ noremap <Right> <NOP>
 noremap 4 :BufOnly<CR>
 
 " status line
-let &titlestring = $USER . "@" . hostname() . " " . expand("%:p")
+"let &titlestring = $USER . "@" . hostname() . " " . expand("%:p")
 if &term == "screen"
   set t_ts=^[k
   set t_fs=^[\
@@ -222,12 +228,10 @@ endif
 
 
 "split navigations
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-"
-"
+"nnoremap <C-J> <C-W><C-J>
+"nnoremap <C-K> <C-W><C-K>
+"nnoremap <C-L> <C-W><C-L>
+"nnoremap <C-H> <C-W><C-H>
 
 
 " Enable folding
@@ -287,8 +291,8 @@ nmap <leader>[ :tabprevious<CR>
 nmap <leader>] :tabnext<CR>
 
 " Alt-right/left to navigate forward/backward in the tags stack
-map <C-H> <C-T>
-map <C-L> <C-]>
+"map <C-H> <C-T>
+"map <C-L> <C-]>
 
 
 if has("gui_running")
@@ -327,7 +331,7 @@ endif
 
 " Rubocop integration
 let g:vimrubocop_keymap = 0
-"nmap <Leader>r :RuboCop<CR>
+nmap <Leader>r :RuboCop -a<CR>
 "duplicate a line without adding it to the register
 map <Leader>j :co.<CR>
 
@@ -375,3 +379,26 @@ vnoremap ∆ :m '>+1<CR>gv=gv
 vnoremap ˚ :m '<-2<CR>gv=gv
 
 command! Q :q
+
+
+" from: https://developpaper.com/integrated-usage-of-vim-and-fuzzy-search-artifact-fzf-from-simple-to-advanced/
+" Augmenting Ag command using fzf#vim#with_preview function
+"   * fzf#vim#with_preview([[options], preview window, [toggle keys...]])
+"     * For syntax-highlighting, Ruby and any of the following tools are required:
+"       - Highlight: http://www.andre-simon.de/doku/highlight/en/highlight.php
+"       - CodeRay: http://coderay.rubychan.de/
+"       - Rouge: https://github.com/jneen/rouge
+"
+"   :Ag  - Start fzf with hidden preview window that can be enabled with "?" key
+"   :Ag! - Start fzf in fullscreen and display the preview window above
+command! -bang -nargs=* Ag
+  \ call fzf#vim#ag(<q-args>,
+  \                 <bang>0 ? fzf#vim#with_preview('up:60%')
+  \                         : fzf#vim#with_preview('right:50%:hidden', '?'),
+  \                 <bang>0)g>0)
+
+
+" Prettier 
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)

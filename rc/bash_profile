@@ -1,3 +1,4 @@
+source ~/.profile
 #!/bin/sh -e
 
 [ -f ~/.bashrc ] && . ~/.bashrc 

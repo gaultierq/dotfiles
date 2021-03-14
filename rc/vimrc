@@ -11,27 +11,18 @@ call plug#begin()
 "Plug 'ervandew/supertab' " tab auto completion
 Plug 'tpope/vim-sensible'
 " Plug 'bash-support.vim'
-"Plug 'kien/ctrlp.vim'
 Plug 'altercation/vim-colors-solarized'
-"Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plug 'scrooloose/nerdcommenter'
 Plug 'stanangeloff/php.vim'
 Plug 'tpope/vim-markdown'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'joonty/vim-phpqa'
-" Plug 'shawncplus/phpcomplete.vim'
 Plug 'tpope/vim-surround' " braces etc.
 Plug 'schickling/vim-bufonly' " braces etc.
 Plug 'tmhedberg/SimpylFold'
-" Plug 'vim-scriptsindentpython.vim' " python indent
-" Plug 'Valloric/YouCompleteMe' " python autocomplete
-"Plug 'ycm-core/YouCompleteMe'
 Plug 'scrooloose/syntastic' " python lint
-"Plug 'nvie/vim-flake8' "Flake8, a static syntax and style checker for
 Plug 'dkprice/vim-easygrep'
 Plug 'tpope/vim-fugitive'
-" Plug 'tomlion/vim-solidity'
 Plug 'vim-ruby/vim-ruby'
 Plug 'ecomba/vim-ruby-refactoring'
 Plug 'tpope/vim-rails'
@@ -40,7 +31,6 @@ Plug 'tpope/vim-bundler'
 Plug 'honza/vim-snippets'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
-"Plug 'garbas/vimsnipmate'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-endwise'
 Plug 'dense-analysis/ale'
@@ -52,7 +42,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'arcticicestudio/nord-vim'
 "Plug 'morhetz/gruvbox'
-Plug 'ngmy/vim-rubocop'
+Plug 'ngmy/vim-rubocop', { 'on':  'Rubocop' }
 Plug 'bkad/CamelCaseMotion'
 Plug 'pangloss/vim-javascript'    " JavaScript support
 Plug 'leafgarland/typescript-vim' " TypeScript syntax
@@ -63,10 +53,30 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
+Plug 'mbbill/undotree'
+Plug 'tpope/vim-repeat'
+Plug '907th/vim-auto-save'
+Plug 'zigius/vim-auto-save-git-hook'
+Plug 'mhinz/vim-startify'
 if executable('node')
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 endif
+
 call plug#end()
+
+
+
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
 
 "source ~/.vim/custom/*.vim
 
@@ -75,7 +85,7 @@ let mapleader = " "
 set lazyredraw " Don’t update screen during macro and script execution.
 set updatetime=300 "time before swap file is written to disk"
 " Faster saving and exiting
-nnoremap <silent><leader>w :w!<CR>
+nnoremap <leader>w :w!<CR>
 nnoremap <silent><leader>q :q!<CR>
 nnoremap <silent><leader>x :x<CR>
 " Open Vim configuration file for editing
@@ -205,10 +215,10 @@ endif
 " nnoremap <esc> :noh<return><esc>
 
 " hard mode
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+"noremap <Up> <NOP>
+"noremap <Down> <NOP>
+"noremap <Left> <NOP>
+"noremap <Right> <NOP>
 
 "set foldmethod=indent
 noremap 4 :BufOnly<CR>
@@ -331,7 +341,7 @@ endif
 
 " Rubocop integration
 let g:vimrubocop_keymap = 0
-nmap <Leader>r :RuboCop -a<CR>
+nmap <Leader>R :RuboCop -a<CR>
 "duplicate a line without adding it to the register
 map <Leader>j :co.<CR>
 
@@ -363,7 +373,7 @@ set nowritebackup
 set noswapfile
 
 " start scrolling when near buffer hedges
-set scrolloff=10
+"set scrolloff=10
 
 " avoid line break
 set wrapmargin=0
@@ -402,3 +412,24 @@ command! -bang -nargs=* Ag
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
+nmap " ysiw"
+nmap ' ysiw'
+
+" i dont want to open files in nerdtree buffer 
+au BufEnter * if bufname('#') =~ 'NERD_tree' && bufname('%') !~ 'NERD_tree' && winnr('$') > 1 | b# | exe "normal! \<c-w>\<c-w>" | :blast | endif
+
+
+" shift + move to select stuff
+nmap <S-Up> v<Up>
+nmap <S-Down> v<Down>
+nmap <S-Left> v<Left>
+nmap <S-Right> v<Right>
+vmap <S-Up> <Up>
+vmap <S-Down> <Down>
+vmap <S-Left> <Left>
+vmap <S-Right> <Right>
+
+set nowrap
+
+let g:auto_save = 1
+let g:auto_save_silent = 1  " do not display the auto-save notification

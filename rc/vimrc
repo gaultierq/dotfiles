@@ -61,7 +61,13 @@ Plug 'mhinz/vim-startify'
 if executable('node')
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 endif
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
 
+" (Optional) Multi-entry selection UI.
+Plug 'junegunn/fzf'
 call plug#end()
 
 

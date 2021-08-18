@@ -1,6 +1,4 @@
 {
   "codeLens.enable": true,
-  "solargraph.useBundler": true,
-  "solargraph.trace.server": "verbose",
-  "solargraph.logLevel": "debug"
+  "eslint.autoFixOnSave": true
 }

@@ -1,5 +1,5 @@
 #!/bin/sh -e
 
-for f in $DOTPATH/etc/init/*/source_*; do
+for f in $DOTPATH/etc/init/*/login_source_*; do
 	[ -f $f ] && . $f
 done

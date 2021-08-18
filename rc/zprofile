@@ -1,2 +1,6 @@
+
+[ -f ~/.source_vital ] && . ~/.source_vital
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+[ -f "$DOTPATH/etc/lib/profile_source.sh" ] && . "$DOTPATH/etc/lib/profile_source.sh"

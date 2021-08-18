@@ -1,5 +1,4 @@
-source ~/.profile
-#!/bin/sh -e
+#!/bin/sh 
 
-[ -f ~/.bashrc ] && . ~/.bashrc 
+#[ -f ~/.bashrc ] && . ~/.bashrc 
 

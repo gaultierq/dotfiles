@@ -32,8 +32,8 @@ Host mobprod 104.155.30.218
     User mobuser
     IdentityFile ~/.ssh/mobapi/ansible_deploy
 
-Host mobstaging 35.195.181.138
-    HostName 35.195.181.138
+Host mobstaging 34.76.136.196
+    HostName 34.76.136.196
     User mobuser_staging
     IdentityFile ~/.ssh/mobapi/mobuser_staging_rsa
 
@@ -48,4 +48,15 @@ Host fdstaging 35.210.188.166
     IdentityFile ~/.ssh/fd_bot/gcp_staging
 
 
+Host reg_prod 152.228.213.124
+    HostName 152.228.213.124
+    User debian
+    IdentityFile ~/.ssh/reg3
+
+
+
+Host gitlab.jump.local
+    HostName gitlab.jump.local
+    User git
+    IdentityFile ~/.ssh/id_jump_qg2
 

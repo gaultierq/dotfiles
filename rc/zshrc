@@ -1,4 +1,6 @@
 #!/bin/zsh -e
+# start of zsh login profiling
+ zmodload zsh/zprof
 
 ZSH_DISABLE_COMPFIX=true
 
@@ -9,7 +11,7 @@ export ZSH=~/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="pygmalion"
+ZSH_THEME="jreese"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -34,7 +36,7 @@ ZSH_THEME="pygmalion"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -65,8 +67,11 @@ setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history 
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
+export NVM_AUTO_USE=true
+export NVM_LAZY_LOAD=true
+
 # plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
-plugins=(git colored-man-pages colorize github jira vagrant virtualenv pip python brew osx docker docker-compose history-substring-search rails yarn)
+plugins=(git colored-man-pages colorize zsh-nvm github brew osx docker docker-compose history-substring-search rails yarn taskwarrior git-extra-commands)
 # User configuration
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
@@ -89,29 +94,7 @@ else
   export VISUAL='vim'
 fi
 
-if [ -d ~/.zplug ]; then
-	export ZPLUG_HOME=~/.zplug
-	source $ZPLUG_HOME/init.zsh
-	#zplug "b4b4r07/enhancd", use:init.sh
-
-    if ! zplug check --verbose; then
-        printf "Install? [y/N]: "
-        if read -q; then
-            echo; zplug install
-        else
-            echo
-        fi
-    fi
-
-	zplug load 
-	# zplug check returns true if the given repository exists
-	if zplug check b4b4r07/enhancd; then
- 	# setting if enhancd is available
-	 	export ENHANCD_FILTER=fzf-tmux
-	 fi
-fi
-
-#fpath=(/usr/local/share/zsh-completions $fpath)
+# fpath=(/usr/local/share/zsh-completions $fpath)
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -166,10 +149,6 @@ fi
 # sourcing my own functions and exports etc.
 [ -f "$DOTPATH/etc/lib/login_source.sh" ] && . "$DOTPATH/etc/lib/login_source.sh"
 
-if [ ! -z ${WELCOME_FOLDER+x} ] && [ -d $WELCOME_FOLDER ]; then
-	cd $WELCOME_FOLDER 
-fi
-
 
 # TODO remove warning
 # (optional) enable missing locales
@@ -183,3 +162,8 @@ fi
 # Complete $PWD/bin if it exists. Good for bundler with binstubs
 zstyle -e ':completion:*' command-path \
   '[[ -d $PWD/bin ]] && reply=($PWD/bin $path)'
+
+# zstyle -e ':completion:*' command-path '[[ -d $PWD/bin ]] && reply=( "$PWD/bin" "${(@)path}" )'
+
+# end of zsh init profiling
+ # zprof

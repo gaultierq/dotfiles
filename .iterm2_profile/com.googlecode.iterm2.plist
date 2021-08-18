@@ -24,7 +24,26 @@
 	<integer>1</integer>
 	<key>Coprocess MRU</key>
 	<array>
-		<string>echo vim /Users/qg/projects/tooldr/app/models/.note.rb.swp +</string>
+		<string>echo less  /Users/qg/projects/mobility/mobapi/config/application.rb +7</string>
+		<string>echo less  /Users/qg/projects/mobility/mobapi/db/migrate/20210728161730_make_tours_transatable.rb +</string>
+		<string>echo less  /Users/qg/projects/mobility/mobapi/app/views/api/v1/tours/_api_v1_tour.json.jbuilder +</string>
+		<string>echo less  /Users/qg/projects/delir0/delir/db/migrate/20210725130238_add_guests_count_to_rental.rb +</string>
+		<string>echo less  /Users/qg/projects/delir0/delir/node_modules/lightgallery.js/dist/css/lightgallery.css +</string>
+		<string>echo less  /Users/qg/projects/delir0/delir/app/models/area.rb +31</string>
+		<string>echo less  /Users/qg/projects/delir0/delir/db/migrate/20210724150755_add_lat_lng_index_on_homes.rb +</string>
+		<string>echo less  /Users/qg/projects/delir0/delir/.idrl/tmp/all_json/parse_613.json +</string>
+		<string>echo less  /Users/qg/projects/delir0/delir/.idrl/tmp/all_json/parse_866.json +</string>
+		<string>echo less  /Users/qg/projects/delir0/delir/.idrl/tmp/all_json/parse_629.json +</string>
+		<string>echo less  /Users/qg/projects/mobility/mobapi/db/schema.rb +</string>
+		<string>echo less  /Users/qg/projects/mobility/mobapi/db/migrate/20210721152957_create_join_table_hotels_tours.rb +</string>
+		<string>echo vim /Users/qg/projects/mobility/mobapi/config/routes.rb +</string>
+		<string>echo vim /Users/qg/projects/mobility/mobapi/app/helpers/api +</string>
+		<string>echo vim /Users/qg/projects/mobility/mobapi/test/fixtures/tours.yml +</string>
+		<string>echo vim /Users/qg/projects/instamed/Instamed-app/src/navigators/AppNavigator.tsx +</string>
+		<string>echo vim /Users/qg/projects/instamed/Instamed-app/src/Hooks/useProfile.ts +</string>
+		<string>echo vim /Users/qg/projects/instamed/Instamed-app/src/Screens/patientFolder/phones/PhoneForm.tsx +</string>
+		<string>echo vim /Users/qg/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/awesome_nested_set-3.4.0/lib/awesome_nested_set/model/movable.rb +131</string>
+		<string>echo vim /Users/qg/projects/delir0/delir/db/seeds.rb +24</string>
 	</array>
 	<key>CopyLastNewline</key>
 	<true/>
@@ -496,413 +515,427 @@
 			</array>
 			<key>Keyboard Map</key>
 			<dict>
-				<key>0x2a-0x200000</key>
+				<key>0x2a-0x200000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string>*</string>
 				</dict>
-				<key>0x2b-0x200000</key>
+				<key>0x2b-0x200000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string>+</string>
 				</dict>
-				<key>0x2d-0x200000</key>
+				<key>0x2d-0x200000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string>-</string>
 				</dict>
-				<key>0x2d-0x40000</key>
+				<key>0x2d-0x40000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x1f</string>
 				</dict>
-				<key>0x2e-0x200000</key>
+				<key>0x2e-0x200000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string>.</string>
 				</dict>
-				<key>0x2f-0x200000</key>
+				<key>0x2f-0x200000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string>/</string>
 				</dict>
-				<key>0x3-0x200000</key>
+				<key>0x3-0x200000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0xd</string>
 				</dict>
-				<key>0x30-0x200000</key>
+				<key>0x30-0x200000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string>0</string>
 				</dict>
-				<key>0x31-0x200000</key>
+				<key>0x31-0x200000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string>1</string>
 				</dict>
-				<key>0x32-0x200000</key>
+				<key>0x32-0x200000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string>2</string>
 				</dict>
-				<key>0x32-0x40000</key>
+				<key>0x32-0x40000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x00</string>
 				</dict>
-				<key>0x33-0x200000</key>
+				<key>0x33-0x200000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string>3</string>
 				</dict>
-				<key>0x33-0x40000</key>
+				<key>0x33-0x40000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x1b</string>
 				</dict>
-				<key>0x34-0x200000</key>
+				<key>0x34-0x200000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string>4</string>
 				</dict>
-				<key>0x34-0x40000</key>
+				<key>0x34-0x40000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x1c</string>
 				</dict>
-				<key>0x35-0x200000</key>
+				<key>0x35-0x200000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string>5</string>
 				</dict>
-				<key>0x35-0x40000</key>
+				<key>0x35-0x40000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x1d</string>
 				</dict>
-				<key>0x36-0x200000</key>
+				<key>0x36-0x200000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string>6</string>
 				</dict>
-				<key>0x36-0x40000</key>
+				<key>0x36-0x40000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x1e</string>
 				</dict>
-				<key>0x37-0x200000</key>
+				<key>0x37-0x200000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string>7</string>
 				</dict>
-				<key>0x37-0x40000</key>
+				<key>0x37-0x40000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x1f</string>
 				</dict>
-				<key>0x38-0x200000</key>
+				<key>0x38-0x200000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string>8</string>
 				</dict>
-				<key>0x38-0x40000</key>
+				<key>0x38-0x40000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x7f</string>
 				</dict>
-				<key>0x39-0x200000</key>
+				<key>0x39-0x200000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string>9</string>
 				</dict>
-				<key>0x7f-0x80000</key>
+				<key>0x7f-0x100000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
-					<string>0x01b 0x08</string>
+					<string>0x15</string>
 				</dict>
-				<key>0xf700-0x220000</key>
+				<key>0x7f-0x80000-0x0</key>
+				<dict>
+					<key>Action</key>
+					<integer>11</integer>
+					<key>Text</key>
+					<string>0x1b 0x7f</string>
+				</dict>
+				<key>0xf700-0x220000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;2A</string>
 				</dict>
-				<key>0xf700-0x240000</key>
+				<key>0xf700-0x240000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;5A</string>
 				</dict>
-				<key>0xf700-0x260000</key>
+				<key>0xf700-0x260000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;6A</string>
 				</dict>
-				<key>0xf701-0x220000</key>
+				<key>0xf701-0x220000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;2B</string>
 				</dict>
-				<key>0xf701-0x240000</key>
+				<key>0xf701-0x240000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;5B</string>
 				</dict>
-				<key>0xf701-0x260000</key>
+				<key>0xf701-0x260000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;6B</string>
 				</dict>
-				<key>0xf702-0x220000</key>
+				<key>0xf702-0x220000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;2D</string>
 				</dict>
-				<key>0xf702-0x240000</key>
+				<key>0xf702-0x240000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;5D</string>
 				</dict>
-				<key>0xf702-0x260000</key>
+				<key>0xf702-0x260000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;6D</string>
 				</dict>
-				<key>0xf702-0x280000</key>
+				<key>0xf702-0x280000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>b</string>
 				</dict>
-				<key>0xf702-0x300000</key>
+				<key>0xf702-0x300000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
-					<string>0x01</string>
+					<string>0x1</string>
 				</dict>
-				<key>0xf703-0x220000</key>
+				<key>0xf703-0x220000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;2C</string>
 				</dict>
-				<key>0xf703-0x240000</key>
+				<key>0xf703-0x240000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;5C</string>
 				</dict>
-				<key>0xf703-0x260000</key>
+				<key>0xf703-0x260000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;6C</string>
 				</dict>
-				<key>0xf703-0x280000</key>
+				<key>0xf703-0x280000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>f</string>
 				</dict>
-				<key>0xf703-0x300000</key>
+				<key>0xf703-0x300000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
-					<string>0x05</string>
+					<string>0x5</string>
 				</dict>
-				<key>0xf704-0x20000</key>
+				<key>0xf704-0x20000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;2P</string>
 				</dict>
-				<key>0xf705-0x20000</key>
+				<key>0xf705-0x20000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;2Q</string>
 				</dict>
-				<key>0xf706-0x20000</key>
+				<key>0xf706-0x20000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;2R</string>
 				</dict>
-				<key>0xf707-0x20000</key>
+				<key>0xf707-0x20000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;2S</string>
 				</dict>
-				<key>0xf708-0x20000</key>
+				<key>0xf708-0x20000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[15;2~</string>
 				</dict>
-				<key>0xf709-0x20000</key>
+				<key>0xf709-0x20000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[17;2~</string>
 				</dict>
-				<key>0xf70a-0x20000</key>
+				<key>0xf70a-0x20000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[18;2~</string>
 				</dict>
-				<key>0xf70b-0x20000</key>
+				<key>0xf70b-0x20000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[19;2~</string>
 				</dict>
-				<key>0xf70c-0x20000</key>
+				<key>0xf70c-0x20000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[20;2~</string>
 				</dict>
-				<key>0xf70d-0x20000</key>
+				<key>0xf70d-0x20000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[21;2~</string>
 				</dict>
-				<key>0xf70e-0x20000</key>
+				<key>0xf70e-0x20000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[23;2~</string>
 				</dict>
-				<key>0xf70f-0x20000</key>
+				<key>0xf70f-0x20000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[24;2~</string>
 				</dict>
-				<key>0xf728-0x80000</key>
+				<key>0xf728-0x0-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
-					<string>0x01b 0x64</string>
+					<string>0x4</string>
 				</dict>
-				<key>0xf729-0x20000</key>
+				<key>0xf728-0x80000-0x0</key>
+				<dict>
+					<key>Action</key>
+					<integer>10</integer>
+					<key>Text</key>
+					<string>d</string>
+				</dict>
+				<key>0xf729-0x20000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;2H</string>
 				</dict>
-				<key>0xf729-0x40000</key>
+				<key>0xf729-0x40000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;5H</string>
 				</dict>
-				<key>0xf72b-0x20000</key>
+				<key>0xf72b-0x20000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;2F</string>
 				</dict>
-				<key>0xf72b-0x40000</key>
+				<key>0xf72b-0x40000-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;5F</string>
 				</dict>
-				<key>0xf739-0x0</key>
+				<key>0xf739-0x0-0x0</key>
 				<dict>
 					<key>Action</key>
 					<integer>13</integer>
@@ -980,7 +1013,7 @@
 				<key>editor</key>
 				<string>com.github.atom</string>
 				<key>text</key>
-				<string>echo vim \1 +\2</string>
+				<string>echo less  \1 +\2</string>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>

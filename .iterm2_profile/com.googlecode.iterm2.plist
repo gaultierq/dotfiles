@@ -24,26 +24,26 @@
 	<integer>1</integer>
 	<key>Coprocess MRU</key>
 	<array>
-		<string>echo less  /Users/qg/projects/mobility/mobapi/config/application.rb +7</string>
-		<string>echo less  /Users/qg/projects/mobility/mobapi/db/migrate/20210728161730_make_tours_transatable.rb +</string>
-		<string>echo less  /Users/qg/projects/mobility/mobapi/app/views/api/v1/tours/_api_v1_tour.json.jbuilder +</string>
-		<string>echo less  /Users/qg/projects/delir0/delir/db/migrate/20210725130238_add_guests_count_to_rental.rb +</string>
-		<string>echo less  /Users/qg/projects/delir0/delir/node_modules/lightgallery.js/dist/css/lightgallery.css +</string>
-		<string>echo less  /Users/qg/projects/delir0/delir/app/models/area.rb +31</string>
-		<string>echo less  /Users/qg/projects/delir0/delir/db/migrate/20210724150755_add_lat_lng_index_on_homes.rb +</string>
-		<string>echo less  /Users/qg/projects/delir0/delir/.idrl/tmp/all_json/parse_613.json +</string>
-		<string>echo less  /Users/qg/projects/delir0/delir/.idrl/tmp/all_json/parse_866.json +</string>
-		<string>echo less  /Users/qg/projects/delir0/delir/.idrl/tmp/all_json/parse_629.json +</string>
-		<string>echo less  /Users/qg/projects/mobility/mobapi/db/schema.rb +</string>
-		<string>echo less  /Users/qg/projects/mobility/mobapi/db/migrate/20210721152957_create_join_table_hotels_tours.rb +</string>
-		<string>echo vim /Users/qg/projects/mobility/mobapi/config/routes.rb +</string>
-		<string>echo vim /Users/qg/projects/mobility/mobapi/app/helpers/api +</string>
-		<string>echo vim /Users/qg/projects/mobility/mobapi/test/fixtures/tours.yml +</string>
-		<string>echo vim /Users/qg/projects/instamed/Instamed-app/src/navigators/AppNavigator.tsx +</string>
-		<string>echo vim /Users/qg/projects/instamed/Instamed-app/src/Hooks/useProfile.ts +</string>
-		<string>echo vim /Users/qg/projects/instamed/Instamed-app/src/Screens/patientFolder/phones/PhoneForm.tsx +</string>
-		<string>echo vim /Users/qg/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/awesome_nested_set-3.4.0/lib/awesome_nested_set/model/movable.rb +131</string>
-		<string>echo vim /Users/qg/projects/delir0/delir/db/seeds.rb +24</string>
+		<string>echo " code -r -g /Users/qg/projects/delir0/delir/tmp/capybara/failures_r_spec_example_groups_welcome_page_shows_search_result_426.png:"</string>
+		<string>echo " code -r -g /Users/qg/projects/delir0/delir/tmp/capybara/failures_r_spec_example_groups_welcome_page_shows_the_welcome_page_532.png:"</string>
+		<string>echo " code -r -g /Users/qg/projects/instamed/Instamed-app/bin/e2e/run-e2e-android-local.sh:"</string>
+		<string>echo " code -r -g /Users/qg/projects/delir0/delir/app/views/admin/nodes/index.html.slim:"</string>
+		<string>echo " code -r -g /Users/qg/projects/instamed/Instamed-app/node_modules/@react-navigation/stack/src/views/KeyboardManager.tsx:"</string>
+		<string>echo " code -r -g /Users/qg/projects/delir0/delir/Gemfile.lock:"</string>
+		<string>echo " code -r -g /Users/qg/projects/delir0/delir/Gemfile:"</string>
+		<string>echo " code -r -g /Users/qg/projects/delir0/delir/app/javascript:"</string>
+		<string>echo " code -r -g /Users/qg/projects/delir0/delir/spec/models/nodes_spec.rb:96"</string>
+		<string>echo " code -r -g /Users/qg/projects/delir0/delir/spec/routing/pages_spec.rb:28"</string>
+		<string>echo " code -r -g /Users/qg/projects/delir0/delir/tmp/capybara/failures_r_spec_example_groups_alexandria_changing_language_should_redirect_to_the_right_url_564.png:"</string>
+		<string>echo " code -r -g /Users/qg/projects/delir0/delir/spec/routing/pages_spec.rb:17"</string>
+		<string>echo " code -r -g /Users/qg/projects/delir0/delir/tmp/capybara/failures_r_spec_example_groups_alexandria_renders_about_694.png:"</string>
+		<string>echo " code -r -g /Users/qg/projects/jump/jump-root/jumpserver/JumpServer-ear:"</string>
+		<string>echo " code -r -g /Users/qg/projects/jump/jump-root/jump-web-react-client/src/domain/back/ao/editBlockedAo/ComplianceTable.tsx:"</string>
+		<string>echo " code -r -g /Users/qg/projects/instamed/Instamed-app/android/app/build/outputs/apk/releaseStaging/app-releaseStaging.apk:"</string>
+		<string>echo " code -r -g /Users/qg/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/friendly_id-5.4.2/lib/friendly_id/base.rb:259"</string>
+		<string>echo " code -r -g /Users/qg/projects/delir0/delir/tmp/capybara/failures_r_spec_example_groups_welcome_page_shows_the_welcome_page_750.png:"</string>
+		<string>echo " code -r -g /Users/qg/projects/delir0/delir/db/schema.rb:"</string>
+		<string>echo " code -r -g /Users/qg/projects/delir0/delir/lib/constraints:"</string>
 	</array>
 	<key>CopyLastNewline</key>
 	<true/>
@@ -1009,11 +1009,11 @@
 			<key>Semantic History</key>
 			<dict>
 				<key>action</key>
-				<string>coprocess</string>
+				<string>best editor</string>
 				<key>editor</key>
 				<string>com.github.atom</string>
 				<key>text</key>
-				<string>echo less  \1 +\2</string>
+				<string>echo " code -r -g \1:\2"</string>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -1214,7 +1214,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>

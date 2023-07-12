@@ -7,4 +7,5 @@ tmux.conf
 
 .DS_Store
 
-.vagrant/
+.vagrant
+.history

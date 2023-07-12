@@ -2,5 +2,9 @@
 [ -f ~/.source_vital ] && . ~/.source_vital
 
 export PATH="$HOME/.rbenv/bin:$PATH"
+# https://stackoverflow.com/questions/52671926/rails-may-have-been-in-progress-in-another-thread-when-fork-was-called
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+
 eval "$(rbenv init -)"
 [ -f "$DOTPATH/etc/lib/profile_source.sh" ] && . "$DOTPATH/etc/lib/profile_source.sh"

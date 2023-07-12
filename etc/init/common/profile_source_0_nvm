@@ -1,4 +1,4 @@
-#!/bin/bash
+# #!/bin/bash
 # export NVM_DIR="$HOME/.nvm"
 
 # nvm_default_version=$NVM_DIR/alias/default

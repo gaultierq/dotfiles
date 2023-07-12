@@ -1,0 +1,44 @@
+{
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.welcome.enabled": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "solargraph.transport": "stdio",
+    "solargraph.formatting": true,
+    "solargraph.diagnostics": true,
+    "solargraph.references": true,
+    "workbench.iconTheme": "vscode-icons",
+    "search.exclude": {
+        "**/.tags": true,
+        "**/.git": true,
+        "**/.idea": true,
+        ".node-gyp": true,
+        ".docker-sync": true,
+        ".history": true,
+        "**/vite-test": true,
+    },
+    "ruby.rubocop.onSave": true,
+    "editor.formatOnSave": true,
+    "[ruby]": {
+        "editor.defaultFormatter": "misogi.ruby-rubocop"
+    },
+    "workbench.editor.limit.value": 6,
+    "editor.codeActionsOnSave": {
+        // For ESLint
+        "source.fixAll.eslint": true,
+        // For TSLint
+        "source.fixAll.tslint": true,
+        // For Stylelint
+        "source.fixAll.stylelint": true
+    },
+    "eslint.rules.customizations": [
+        {
+            "rule": "*",
+            "severity": "warn"
+        },
+    ],
+    "css.validate": false,
+    "workbench.colorTheme": "Dracula Soft",
+    "editor.scrollBeyondLastLine": false
+}

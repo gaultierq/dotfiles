@@ -229,5 +229,6 @@ defaults write com.apple.finder DisableAllAnimations -bool true
 # sending messages and opening windows for replies
 defaults write com.apple.Mail DisableSendAnimations -bool true
 defaults write com.apple.Mail DisableReplyAnimations -bool true
+defaults write com.apple.dock static-only -bool true
 
 sudo -k

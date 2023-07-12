@@ -74,6 +74,7 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
+Plug 'slim-template/vim-slim'
 call plug#end()
 
 let g:ctrlp_map = '<c-p>'

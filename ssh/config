@@ -27,33 +27,6 @@ Host ssh.cluster028.hosting.ovh.net
     User canonio
     IdentityFile ~/.ssh/id_rsa_qg
 
-Host mobprod 104.155.30.218
-    HostName 104.155.30.218
-    User mobuser
-    IdentityFile ~/.ssh/mobapi/ansible_deploy
-
-Host mobstaging 34.76.136.196
-    HostName 34.76.136.196
-    User mobuser_staging
-    IdentityFile ~/.ssh/mobapi/mobuser_staging_rsa
-
-Host mobhealth 34.78.180.68
-    HostName 34.78.180.68
-    User mobhealth
-    IdentityFile ~/.ssh/mobapi/mobhealth_rsa
-
-Host fdstaging 35.210.188.166 
-    HostName 35.210.188.166
-    User fdbot-staging
-    IdentityFile ~/.ssh/fd_bot/gcp_staging
-
-
-Host reg_prod 152.228.213.124
-    HostName 152.228.213.124
-    User debian
-    IdentityFile ~/.ssh/reg3
-
-
 
 Host gitlab.jump.local
     HostName gitlab.jump.local

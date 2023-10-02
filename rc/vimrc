@@ -42,7 +42,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'arcticicestudio/nord-vim'
 "Plug 'morhetz/gruvbox'
-Plug 'ngmy/vim-rubocop', { 'on':  'Rubocop' }
+Plug 'ngmy/vim-rubocop'
 Plug 'bkad/CamelCaseMotion'
 Plug 'pangloss/vim-javascript'    " JavaScript support
 Plug 'leafgarland/typescript-vim' " TypeScript syntax
@@ -108,10 +108,11 @@ nnoremap <silent><leader>2 :e ~/.vimrc<CR>
 nnoremap <silent><leader>1 :source ~/.vimrc \| :PlugInstall<CR>
 
 
-" Nerdtree configuration
+" Nerdtree configuratio/
 let g:deoplete#enable_at_startup = 1
 let g:NERDTreeHighlightCursorline = 1
-let g:nerdtree_sync_cursorline = 1
+let g:NERDTreeWinSize = 40
+"let g:nerdtree_sync_cursorline = 1
 
 set runtimepath+=~/dotfiles
 runtime! etc/init/vim/**.vim
@@ -162,8 +163,9 @@ set laststatus=2
 
 syntax enable
 set background=dark
- let g:solarized_termcolors=256
-let g:solarized_termtrans =   1
+let g:solarized_termcolors=256
+"set t_Co=256
+let g:solarized_termtrans =   1 " This gets rid of the grey background
 let g:solarized_degrade   =   0
 let g:solarized_bold      =   1
 let g:solarized_underline =   1
@@ -174,6 +176,7 @@ silent! colorscheme solarized
 if has("gui_running")
   syntax on
   set hlsearch
+
   colorscheme nord
   set bs=2 " backspace
   set ai " auto indent
@@ -299,8 +302,14 @@ let g:EasyGrepIgnoreCase=1
 let g:EasyGrepHidden=1
 
 
+let g:ctrlp_root_markers = ['.git', 'package.json', 'Gemfile']
+
 if executable('ag')
-  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+  "let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+    " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  let g:ctrlp_use_caching = 0
+  "let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 endif
 
 " https://github.com/kien/ctrlp.vim/issues/646
@@ -356,6 +365,8 @@ endif
 " Rubocop integration
 let g:vimrubocop_keymap = 0
 nmap <Leader>R :RuboCop -a<CR>
+
+
 "duplicate a line without adding it to the register
 map <Leader>j :co.<CR>
 
@@ -405,6 +416,14 @@ vnoremap ˚ :m '<-2<CR>gv=gv
 command! Q :q
 
 
+" This is the default option:
+"   - Preview window on the right with 50% width
+"   - CTRL-/ will toggle preview window.
+" - Note that this array is passed as arguments to fzf#vim#with_preview function.
+" - To learn more about preview window options, see `--preview-window` section of `man fzf`.
+let g:fzf_preview_window = ['right,50%', 'ctrl-/']
+
+
 " from: https://developpaper.com/integrated-usage-of-vim-and-fuzzy-search-artifact-fzf-from-simple-to-advanced/
 " Augmenting Ag command using fzf#vim#with_preview function
 "   * fzf#vim#with_preview([[options], preview window, [toggle keys...]])
@@ -430,7 +449,7 @@ nmap " ysiw"
 nmap ' ysiw'
 
 " i dont want to open files in nerdtree buffer 
-au BufEnter * if bufname('#') =~ 'NERD_tree' && bufname('%') !~ 'NERD_tree' && winnr('$') > 1 | b# | exe "normal! \<c-w>\<c-w>" | :blast | endif
+"au BufEnter * if bufname('#') =~ 'NERD_tree' && bufname('%') !~ 'NERD_tree' && winnr('$') > 1 | b# | exe "normal! \<c-w>\<c-w>" | :blast | endif
 
 
 " shift + move to select stuff
@@ -447,3 +466,5 @@ set nowrap
 
 let g:auto_save = 1
 let g:auto_save_silent = 1  " do not display the auto-save notification
+
+let g:rooter_patterns = ['.git', '.envrc', 'package.json']

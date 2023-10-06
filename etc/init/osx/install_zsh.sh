@@ -2,6 +2,7 @@
 
 set -e
 sudo -k
+echo "installing zsh..."
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew install --cask iterm2
 HOMEBREW_NO_AUTO_UPDATE=1 brew install zsh

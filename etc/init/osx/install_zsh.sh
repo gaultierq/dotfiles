@@ -15,8 +15,8 @@ then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
-
-upgrade_oh_my_zsh
+#  how ?
+# upgrade_oh_my_zsh
 
 echo "installing oh-my-zsh plugins..."
 git clone https://github.com/unixorn/git-extra-commands.git $ZSH_CUSTOM/plugins/git-extra-commands

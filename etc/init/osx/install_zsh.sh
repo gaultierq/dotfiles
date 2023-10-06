@@ -19,4 +19,4 @@ fi
 # upgrade_oh_my_zsh
 
 echo "installing oh-my-zsh plugins..."
-git clone https://github.com/unixorn/git-extra-commands.git $ZSH_CUSTOM/plugins/git-extra-commands
+git clone https://github.com/unixorn/git-extra-commands.git ~/.oh-my-zsh/plugins/git-extra-commands

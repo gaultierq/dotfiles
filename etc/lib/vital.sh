@@ -710,7 +710,7 @@ else
         dotfiles_download
 
         install_essentials
-
+        e_done "Essentials installed"
         if contains "$@" "--zsh"; then
             install_zsh
         fi
@@ -718,7 +718,7 @@ else
         if contains "$@" "--packages"; then
             install_packages
         fi
-        
+        e_header "Installing dotfiles"
         install_dotfiles "$@"
 
         configure

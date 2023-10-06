@@ -32,7 +32,7 @@ defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 ###############################################################################
 
 # Disable local Time Machine snapshots
-sudo tmutil disablelocal
+# sudo tmutil disablelocal
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #

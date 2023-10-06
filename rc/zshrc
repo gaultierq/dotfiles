@@ -71,7 +71,8 @@ export NVM_AUTO_USE=true
 export NVM_LAZY_LOAD=true
 
 # plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
-plugins=(git colored-man-pages fastlane colorize github brew macos docker docker-compose history-substring-search yarn git-extra-commands)
+# TODO: add fastlane 
+plugins=(git colored-man-pages colorize github brew macos docker docker-compose history-substring-search yarn git-extra-commands)
 # User configuration
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"

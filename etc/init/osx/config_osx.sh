@@ -231,4 +231,6 @@ defaults write com.apple.Mail DisableSendAnimations -bool true
 defaults write com.apple.Mail DisableReplyAnimations -bool true
 defaults write com.apple.dock static-only -bool true
 
+defaults write com.apple.Finder AppleShowAllFiles true
+
 sudo -k

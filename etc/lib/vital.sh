@@ -650,6 +650,19 @@ install_packages() {
     e_success "Essentials packages"
 }
 
+install_ssh_keys() {
+    e_newline
+    e_header "Installing ssh keys"
+
+    os_detect
+    if is_empty $PLATFORM; then
+        e_failure "Platform not detected"
+    fi
+    bash "$DOTPATH/etc/init/$PLATFORM/install_ssh_keys.sh" || 
+    e_failure "Could not install ssh keys"
+
+    e_success "Ssh keys installed"
+}
 
 install_zsh() {
     e_newline

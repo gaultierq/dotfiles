@@ -711,6 +711,7 @@ else
 
         install_essentials
         e_done "Essentials installed"
+
         if contains "$@" "--zsh"; then
             install_zsh
         fi
@@ -718,6 +719,13 @@ else
         if contains "$@" "--packages"; then
             install_packages
         fi
+
+
+        if contains "$@" "--ssh"; then
+            install_ssh_keys
+        fi
+		
+
         e_header "Installing dotfiles"
         install_dotfiles "$@"
 

@@ -28,8 +28,4 @@ Host ssh.cluster028.hosting.ovh.net
     IdentityFile ~/.ssh/id_rsa_qg
 
 
-Host gitlab.jump.local
-    HostName gitlab.jump.local
-    User git
-    IdentityFile ~/.ssh/id_jump_qg2
 

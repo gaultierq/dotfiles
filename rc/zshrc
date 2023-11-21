@@ -2,6 +2,10 @@
 # start of zsh login profiling
  #zmodload zsh/zprof
 
+source ~/dotfiles/antigen.zsh
+
+antigen init ~/.antigenrc
+
 ZSH_DISABLE_COMPFIX=true
 
 # Path to your oh-my-zsh installation.
@@ -154,15 +158,6 @@ eval "$(direnv hook zsh)"
 
 # sourcing my own functions and exports etc.
 [ -f "$DOTPATH/etc/lib/login_source.sh" ] && . "$DOTPATH/etc/lib/login_source.sh"
-
-
-# TODO remove warning
-# (optional) enable missing locales
-# sudo nano /etc/locale.gen
-
-# then regenerate
-
- [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 
 # Complete $PWD/bin if it exists. Good for bundler with binstubs

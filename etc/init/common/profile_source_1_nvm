@@ -10,9 +10,9 @@
  fi
 
  function source_nvm() {
-	 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 	   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
  }
 
  # https://github.com/nvm-sh/nvm/issues/1277
- alias nvm="unalias nvm; source_nvm; nvm $@"
+ # alias nvm="unalias nvm; source_nvm; nvm $@"

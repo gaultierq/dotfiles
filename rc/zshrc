@@ -104,6 +104,9 @@ fi
 eval "$(direnv hook zsh)"
 
 
+eval "$(atuin init zsh)"
+
+
 # fpath=(/usr/local/share/zsh-completions $fpath)
 
 # Compilation flags

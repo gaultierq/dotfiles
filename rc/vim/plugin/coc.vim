@@ -1,7 +1,7 @@
 
 
 
-" CoC extensions
+" CoC extension
 let g:coc_global_extensions = ['coc-solargraph', 'coc-tsserver', 'coc-json']
 
 " Add CoC Prettier if prettier is installed

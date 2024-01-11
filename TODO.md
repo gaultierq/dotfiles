@@ -14,8 +14,17 @@ A list of things to make my dotfiles more awesomer. A ✓  indicates done and cr
 [ ] YouCompleteMe -> brew install cmake && cd ~/.vim/plugged/YouCompleteMe && ./install.py
 
 
-Installation sur un nouveau mac
+### Installation sur un nouveau mac
 [x] no git, but still going through step (ex: "Installing RCM...")
 [x] Homebrew is missing
 [ ] Split osx essentials & packages
 [ ] adoptoenjdk, torbrowser, horndis failed
+
+### What I had to do for vim to work
+- PlugInstall
+- install a recent node for cocvim
+- install fonts so it's nicely displayed in NERDTree
+```
+brew tap homebrew/cask-fonts
+brew install font-hack-nerd-font
+```

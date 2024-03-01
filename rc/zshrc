@@ -74,7 +74,7 @@ setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history 
 export NVM_AUTO_USE=true
 export NVM_LAZY_LOAD=true
 
-# plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
+
 # TODO: add fastlane 
 plugins=(git colored-man-pages colorize github brew macos docker docker-compose history-substring-search yarn git-extra-commands)
 # User configuration
@@ -84,78 +84,18 @@ plugins=(git colored-man-pages colorize github brew macos docker docker-compose 
 source $ZSH/oh-my-zsh.sh
 
 
-bindkey "^[[A" history-substring-search-up
-bindkey "^[[B" history-substring-search-down
+# bindkey "^[[A" history-substring-search-up
+# bindkey "^[[B" history-substring-search-down
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-  export VISUAL='vim'
-else
-  export EDITOR='vim'
-  export VISUAL='vim'
-fi
+export EDITOR='vim'
+export VISUAL='vim'
 
 # https://direnv.net/docs/hook.html
 # load the current ./bin directory in the path. can be dangerous
-eval "$(direnv hook zsh)"
-
-
-eval "$(atuin init zsh)"
-
-
-# fpath=(/usr/local/share/zsh-completions $fpath)
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# sourcing
-
-#umask 022
-#limit coredumpsize 0
-#bindkey -d
-
-# # It is necessary for the setting of DOTPATH
-# if [[ -f ~/.path ]]; then
-#     . ~/.path
-# else
-#     export DOTPATH="${0:A:t}"
-# fi
-
-
-# # DOTPATH environment variable specifies the location of dotfiles.
-# # On Unix, the value is a colon-separated string. On Windows,
-# # it is not yet supported.
-# # DOTPATH must be set to run make init, make test and shell script library
-# # outside the standard dotfiles tree.
-# if [[ -z $DOTPATH ]]; then
-#     echo "$fg[red]cannot start ZSH, \$DOTPATH not set$reset_color" 1>&2
-#     return 1
-# fi
-
-# # Vital
-# # vital.sh script is most important file in this dotfiles.
-# # This is because it is used as installation of dotfiles chiefly and as shell
-# # script library vital.sh that provides most basic and important functions.
-# # As a matter of fact, vital.sh is a symbolic link to install, and this script
-# # change its behavior depending on the way to have been called.
-# export VITAL_PATH="$DOTPATH/etc/lib/vital.sh"
-# [ -f $VITAL_PATH ] && . "$VITAL_PATH"
 
 [ -f ~/.source_vital ] && . ~/.source_vital
 
@@ -166,6 +106,11 @@ eval "$(atuin init zsh)"
 # Complete $PWD/bin if it exists. Good for bundler with binstubs
 zstyle -e ':completion:*' command-path \
   '[[ -d $PWD/bin ]] && reply=($PWD/bin $path)'
+
+
+eval "$(direnv hook zsh)"
+
+eval "$(atuin init zsh --disable-up-arrow)"
 
 # zstyle -e ':completion:*' command-path '[[ -d $PWD/bin ]] && reply=( "$PWD/bin" "${(@)path}" )'
 

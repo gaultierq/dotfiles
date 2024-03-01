@@ -7,3 +7,5 @@
 rails-utilities/
 .history/
 .qgbin/
+.direnv/
+.actrc

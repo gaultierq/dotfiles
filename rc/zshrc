@@ -133,3 +133,8 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+#export ZLE_RPROMPT_INDENT=0
+#export POWERLEVEL9K_LEGACY_ICON_SPACING=true
+

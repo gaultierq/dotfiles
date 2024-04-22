@@ -1,5 +1,6 @@
 #!/bin/sh
 
+#  A package manager for shell scripts.
 if [ -d "$HOME/.basher" ] 
 then
 	local __shell="zsh"

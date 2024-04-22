@@ -9,3 +9,4 @@ rails-utilities/
 .qgbin/
 .direnv/
 .actrc
+vendor/

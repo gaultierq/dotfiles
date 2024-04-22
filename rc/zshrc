@@ -6,6 +6,7 @@ source ~/dotfiles/antigen.zsh
 
 antigen init ~/.antigenrc
 
+#If for some reason you don’t want to change the permissions you can set ZSH_DISABLE_COMPFIX=true in your zshrc file. 
 ZSH_DISABLE_COMPFIX=true
 
 # Path to your oh-my-zsh installation.
@@ -71,8 +72,6 @@ setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history 
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-export NVM_AUTO_USE=true
-export NVM_LAZY_LOAD=true
 
 
 # TODO: add fastlane 
@@ -110,9 +109,14 @@ zstyle -e ':completion:*' command-path \
 
 eval "$(direnv hook zsh)"
 
+#✨ Magical shell history 
 eval "$(atuin init zsh --disable-up-arrow)"
 
 # zstyle -e ':completion:*' command-path '[[ -d $PWD/bin ]] && reply=( "$PWD/bin" "${(@)path}" )'
 
 # end of zsh init profiling
   #zprof
+
+# sdk man: java version manager; THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

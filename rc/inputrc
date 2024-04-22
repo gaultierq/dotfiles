@@ -1,6 +1,8 @@
-## arrow up
+#Settings that are in the .inputrc file affect all programs that use the GNU readline library, not just bash. 
+#Think of the .inputrc file as being a configuration file for GNU Readline similar to how .bashrc is a configuration file for bash
+# arrow up
 "\e[A":history-search-backward
-## arrow down
+# arrow down
 "\e[B":history-search-forward
 
 

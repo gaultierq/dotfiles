@@ -6,7 +6,8 @@
   aa = add --all
   ap = add --patch
   ca = commit --amend
-  d = diff --color-words
+  d = difftool
+  ;d = diff --color-words
   ci = commit -v
   co = checkout
   l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ch) %C(bold blue)<%an>%Creset' --abbrev-commit
@@ -19,7 +20,7 @@
 #  up = !git fetch origin && git rebase origin/master
 [core]
 	excludesfile = ~/.gitignore_global
-  autocrlf = input
+	autocrlf = input
 [merge]
 #  ff = only
 [include]
@@ -30,7 +31,8 @@
 	name = Quentin Gaultier
 	email = quentin.gaultier@gmail.com
 [diff]
-	tool = vimdiff
+	;tool = vimdiff
+	tool = difftastic
 [difftool "Kaleidoscope"]
   cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool "Kaleidoscope"]
@@ -39,6 +41,12 @@
 [difftool "sourcetree"]
 	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
 	path = 
+[difftool]
+	prompt = false
+[difftool "difftastic"]
+        cmd = difft "$LOCAL" "$REMOTE"
+[pager]
+        difftool = true
 [mergetool "sourcetree"]
 	cmd = /usr/local/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true

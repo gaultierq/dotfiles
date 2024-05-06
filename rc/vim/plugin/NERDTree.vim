@@ -1,7 +1,12 @@
 " start NerdTree when vim starts
 autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd VimEnter * NERDTree | wincmd p
+
+if !has('nvim')
+  "something for neovim
+  autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+  autocmd VimEnter * NERDTree | wincmd p
+endif
+
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$', '\.swp']
 

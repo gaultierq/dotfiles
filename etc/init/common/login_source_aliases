@@ -52,3 +52,6 @@ function gro-fn {
 
 alias gro=gro-fn
 
+alias dot_alias='v ${DOTPATH}/etc/init/common/login_source_aliases'
+
+alias ghpr='gh pr view -w'

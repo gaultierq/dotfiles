@@ -10,3 +10,4 @@ rails-utilities/
 .direnv/
 .actrc
 vendor/
+ngrok.yml

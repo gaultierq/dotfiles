@@ -121,6 +121,7 @@ eval "$(direnv hook zsh)"
 
 #✨ Magical shell history 
 eval "$(atuin init zsh --disable-up-arrow)"
+# eval "$(atuin init zsh)"
 
 # zstyle -e ':completion:*' command-path '[[ -d $PWD/bin ]] && reply=( "$PWD/bin" "${(@)path}" )'
 
@@ -138,3 +139,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 #export ZLE_RPROMPT_INDENT=0
 #export POWERLEVEL9K_LEGACY_ICON_SPACING=true
 
+
+# Created by `pipx` on 2024-09-03 07:06:45
+export PATH="$PATH:/Users/q/.local/bin"

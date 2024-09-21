@@ -1,0 +1,23 @@
+Host *
+  IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
+Host www1
+  User root
+  Hostname 164.92.176.238
+  AddKeysToAgent no
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+
+Host db1
+  User root
+  Hostname 178.128.206.123
+  AddKeysToAgent no
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+
+Host worker1
+  User root
+  Hostname 178.128.206.0
+  AddKeysToAgent no
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null

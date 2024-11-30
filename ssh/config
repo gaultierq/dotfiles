@@ -23,10 +23,8 @@ Host gitlab.com
     IdentityFile ~/.ssh/qg_gitlab_rsa
 
 
-Host ssh.cluster028.hosting.ovh.net
-    User canonio
-    IdentityFile ~/.ssh/id_rsa_qg
-
+Host delir-staging
+    HostName 192.168.1.42
 
 Host *
 	IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"

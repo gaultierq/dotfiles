@@ -21,3 +21,34 @@ Host worker1
   AddKeysToAgent no
   StrictHostKeyChecking no
   UserKnownHostsFile /dev/null
+
+
+Host homelab.canonic.fr
+  User q
+  Port 2225
+  IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
+
+Host myiledere.ovh
+  User root
+  Port 2242
+  IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
+Host myiledere.rentals
+  User root
+  Hostname 82.67.137.97
+  Port 2211
+  IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
+
+Host builder.canonic.fr
+  User root
+  Port 22132
+  IdentityFile ~/.ssh/docker_builder_ed25519
+
+
+Host teeptrak.gate.prod
+  User deployer
+  Hostname tt05.teeptrak.net 
+  Port 34000
+

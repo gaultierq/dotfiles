@@ -20,10 +20,10 @@ alias df="df -h"
 alias du="du -h -d 1"
 
 # history
-alias h="history | peco "
+alias h="history | grep "
 
 # update the world
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup'
+# alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup'
 
 # other
 alias path='echo -e ${PATH//:/\\n}'
@@ -42,9 +42,11 @@ alias t2='t -L 2'
 alias t3='t -L 3'
 alias v='nvim'
 
+# git related alias
 alias gs='git st'
 alias gl='git l'
 alias gdh='git diff HEAD'
+alias gfm='git fetch origin master:master'
 
 function gro-fn {
 	cd $(git rev-parse --show-toplevel)

@@ -100,8 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 # https://direnv.net/docs/hook.html
 # load the current ./bin directory in the path. can be dangerous
@@ -111,6 +111,9 @@ export VISUAL='vim'
 # sourcing my own functions and exports etc.
 [ -f "$DOTPATH/etc/lib/login_source.sh" ] && . "$DOTPATH/etc/lib/login_source.sh"
 
+for f in $DOTPATH/etc/zsh/login_source_*; do
+  source $f
+done
 
 # Complete $PWD/bin if it exists. Good for bundler with binstubs
 zstyle -e ':completion:*' command-path \
@@ -142,3 +145,14 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # Created by `pipx` on 2024-09-03 07:06:45
 export PATH="$PATH:/Users/q/.local/bin"
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+export HOMEBREW_NO_INSTALL_CLEANUP=1
+export HOMEBREW_NO_AUTO_UPDATE=1
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform

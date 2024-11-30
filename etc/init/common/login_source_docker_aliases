@@ -120,3 +120,4 @@ alias drun=drun-fn
 alias dsp="docker system prune --all"
 alias dsr=dsr-fn
 alias dsa=dsa-fn
+alias dlbi="docker images -q --format='{{.ID}}' | head -1"

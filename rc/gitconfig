@@ -61,6 +61,7 @@
 	process = git-lfs filter-process
 [merge]
 	tool = vimdiff
+	ff = only
 [credential]
 	helper = osxkeychain
 [status]
@@ -71,3 +72,5 @@
 	defaultBranch = main
 [rebase]
 	updateRefs = true
+[advice]
+	diverging = false

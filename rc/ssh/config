@@ -1,26 +1,6 @@
 Host *
   IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 
-Host www1
-  User root
-  Hostname 164.92.176.238
-  AddKeysToAgent no
-  StrictHostKeyChecking no
-  UserKnownHostsFile /dev/null
-
-Host db1
-  User root
-  Hostname 178.128.206.123
-  AddKeysToAgent no
-  StrictHostKeyChecking no
-  UserKnownHostsFile /dev/null
-
-Host worker1
-  User root
-  Hostname 178.128.206.0
-  AddKeysToAgent no
-  StrictHostKeyChecking no
-  UserKnownHostsFile /dev/null
 
 
 Host homelab.canonic.fr
@@ -39,6 +19,19 @@ Host myiledere.rentals
   Hostname 82.67.137.97
   Port 2211
   IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
+Host fat-blog
+  User root
+  Hostname 82.67.137.97
+  Port 22127
+  IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
+Host gaultier.dev
+  User root
+  Hostname 82.67.137.97
+  Port 22128
+  IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
 
 
 Host builder.canonic.fr

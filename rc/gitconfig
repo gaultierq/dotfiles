@@ -11,12 +11,10 @@
   ci = commit -v
   co = checkout
   l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ch) %C(bold blue)<%an>%Creset' --abbrev-commit
-#  create-branch = !sh -c 'git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1' -
-#  delete-branch = !sh -c 'git push origin :refs/heads/$1 && git remote prune origin && git branch -D $1' -
-#  merge-branch = !git checkout master && git merge @{-1}
-#  pr = !hub pull-request
+	# last branches
   lb = !git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf(\"  \\033[33m%s: \\033[37m %s\\033[0m\\n\", substr($2, 1, length($2)-1), $1)}'
   st = status
+	ignore = "!gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ;}; gi"
 #  up = !git fetch origin && git rebase origin/master
 [core]
 	excludesfile = ~/.gitignore_global
@@ -31,13 +29,7 @@
 	name = Quentin Gaultier
 	email = quentin.gaultier@gmail.com
 [diff]
-	;tool = vimdiff
 	tool = difftastic
-[difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-  trustExitCode = true
 [difftool "sourcetree"]
 	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -47,10 +39,6 @@
         cmd = difft "$LOCAL" "$REMOTE"
 [pager]
         difftool = true
-[mergetool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
-[credential]
 
 [hub]
 	protocol = ssh
@@ -62,6 +50,7 @@
 [merge]
 	tool = vimdiff
 	ff = only
+	conflictstyle = diff3
 [credential]
 	helper = osxkeychain
 [status]
@@ -74,3 +63,5 @@
 	updateRefs = true
 [advice]
 	diverging = false
+[mergetool "vimdiff"]
+    cmd = vimdiff22 \"$LOCAL\" \"$MERGED\" \"$REMOTE\"

@@ -3,6 +3,7 @@
 *.swp
 .tags
 .envrc
+mise.local.toml
 .jetbrains.js
 rails-utilities/
 .history/

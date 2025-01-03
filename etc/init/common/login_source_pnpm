@@ -1,5 +1,5 @@
 #!/bin/sh
-echo 'sourcing pnpm autocompletions'
+# echo 'sourcing pnpm autocompletions'
 
 ###-begin-pnpm-completion-###
 if type compdef &>/dev/null; then

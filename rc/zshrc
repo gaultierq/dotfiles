@@ -1,3 +1,5 @@
+#!/bin/zsh -e
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -5,12 +7,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-#!/bin/zsh -e
 # start of zsh login profiling
  #zmodload zsh/zprof
 
+ # Antigen is a lightweight and powerful plugin manager for Zsh
 source ~/dotfiles/antigen.zsh
-
 antigen init ~/.antigenrc
 
 #If for some reason you don’t want to change the permissions you can set ZSH_DISABLE_COMPFIX=true in your zshrc file. 
@@ -85,7 +86,7 @@ setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history 
 
 
 # TODO: add fastlane 
-plugins=(git colored-man-pages colorize github brew macos docker docker-compose history-substring-search yarn git-extra-commands)
+plugins=(git colored-man-pages colorize github brew macos docker docker-compose history-substring-search yarn git-extra-commands mise)
 # User configuration
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
@@ -131,6 +132,7 @@ eval "$(atuin init zsh --disable-up-arrow)"
 # end of zsh init profiling
   #zprof
 
+# does mise work for java ?
 # sdk man: java version manager; THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
@@ -155,4 +157,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 
 autoload -U +X bashcompinit && bashcompinit
+# probably terraform autocompletion (why not oh my zsh plugin?)
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+# activate mise
+eval "$(~/.local/bin/mise activate)"

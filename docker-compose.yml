@@ -1,0 +1,9 @@
+services:
+  dot-container:
+    build: .
+    volumes:
+      - .:/opt/app/dotfiles
+    working_dir: /opt/app
+    stdin_open: true  # Keep STDIN open for interactive mode
+    tty: true         # Allocate a TTY
+    command: /bin/bash  # Start with a shell

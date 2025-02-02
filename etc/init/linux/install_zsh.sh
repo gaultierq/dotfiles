@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 echo "Installing zsh"
-sudo apt-get -y --force-yes install zsh
+sudo apt-get -y install zsh
 sudo chsh -s "$(command -v zsh)" "${USER}"
 
 

@@ -14,3 +14,8 @@ fi
 #export PATH=$PATH:$JAVA_HOME
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+eval "$(atuin init bash)"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

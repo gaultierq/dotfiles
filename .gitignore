@@ -10,3 +10,5 @@ tmux.conf
 .vagrant
 .history
 vendor/
+rcm-*.tar.gz
+rcm-*/

@@ -419,6 +419,7 @@ upper() {
 contains() {
     string="$1"
     substring="$2"
+    echo "DEBUG::: $1  ;  $2"
     if [ "${string#*$substring}" != "$string" ]; then
         return 0    # $substring is in $string
     else
@@ -677,9 +678,6 @@ install_zsh() {
 
 
 link_dotfiles() {
-    # platform dependant tmux.conf
-    # ln -s "$DOTPATH/etc/init/$PLATFORM/tmux.conf" "$DOTPATH/tmux.conf"
-
     # Using rcm to link all dotfiles
     env RCRC=$DOTPATH/rcrc rcup -vf
     e_newline && e_done "Dotfiles created"
@@ -689,10 +687,11 @@ link_dotfiles() {
 install_dotfiles() {
 
     # 2. Install RCM
-    install_rcm &&
+    install_rcm
 
+    echo "linking dotfiles"
     # 3. linking all dot files
-    link_dotfiles &&
+    link_dotfiles
 
 
     return 0
@@ -721,28 +720,33 @@ else
         echo "$dotfiles_logo"
 
         dotfiles_download
+        configure
+        install_essentials        
 
-        install_essentials
         e_done "Essentials installed"
 
-        if contains "$@" "--zsh"; then
+        if contains "$*" "--zsh"; then
             install_zsh
         fi
 
-        if contains "$@" "--packages"; then
+        if contains "$*" "--packages"; then
             install_packages
         fi
 
+        if contains "$*" "--vim"; then
+            e_success "Installing vim"
+            bash "$DOTPATH/etc/init/$PLATFORM/install_vim.sh" || e_failure "Could not install vim"
+            e_done "vim installed"
+        fi
 
-        if contains "$@" "--ssh"; then
+
+        if contains "$*" "--ssh"; then
             install_ssh_keys
         fi
-		
-
+	
+        # This is done at the end to override defaults install rc files
         e_header "Installing dotfiles"
         install_dotfiles "$@"
-
-        configure
 
         # Restart shell if specified "bash -c $(curl -L {URL})"
         # not restart:

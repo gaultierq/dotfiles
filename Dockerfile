@@ -7,8 +7,11 @@ build-essential \
 sudo
 
 
-WORKDIR  /opt/app/dotfiles
+WORKDIR  /opt/app/
 
-COPY . /opt/app/dotfiles
+# COPY . /opt/app/dotfiles
 
-CMD export DOTPATH=$(pwd) && cat ./etc/lib/vital.sh | bash -s - --zsh
+ENV DOTPATH=/opt/app/dotfiles
+# CMD export DOTPATH=$(pwd) && cat ./etc/lib/vital.sh | bash -s - --zsh --vim
+
+CMD /bin/bash

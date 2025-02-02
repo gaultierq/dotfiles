@@ -2,7 +2,7 @@
 
 sudo apt-get update &&
 
-sudo apt-get -y --force-yes install \
+sudo apt-get -y install \
 git \
 tree \
 rsync \
@@ -13,6 +13,10 @@ unzip \
 wget \
 tmux \
 silversearcher-ag
+
+# install fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install --no-key-binding --no-update-rc --no-completion
 
 
 # cleaning unused dependencies

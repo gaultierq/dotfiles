@@ -63,7 +63,7 @@ function drun-fn {
 }
 
 function dcr-fn {
-	docker-compose run $@
+	docker compose run $@
 }
 
 function dsr-fn {
@@ -85,7 +85,7 @@ function dlab {
 }
 
 function dc-fn {
-        docker-compose $*
+        docker compose $*
 }
 
 function d-aws-cli-fn {
@@ -102,9 +102,9 @@ function dsa-fn {
 
 alias daws=d-aws-cli-fn
 alias dc=dc-fn
-alias dcu="docker-compose up -d"
-alias dcul="docker-compose up -d && docker-compose logs -f"
-alias dcd="docker-compose down"
+alias dcu="docker compose up -d"
+alias dcul="docker compose up -d && docker-compose logs -f"
+alias dcd="docker compose down"
 alias dcr=dcr-fn
 alias dex=dex-fn
 alias di=di-fn

@@ -1,22 +1,21 @@
-#!/bin/bash
+#!/bin/bash -e
 
-set -e
-sudo -k
-echo "installing zsh..."
+echo "Installing zsh"
+sudo apt-get -y install zsh
+sudo chsh -s "$(command -v zsh)" "${USER}"
 
-HOMEBREW_NO_AUTO_UPDATE=1 brew install --cask iterm2
-HOMEBREW_NO_AUTO_UPDATE=1 brew install zsh
 
-zsh --version
+echo "Installing oh-my-zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-if [ ! -d "$ZSH" ]
-then
-    echo "installing oh-my-zsh"
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+echo "Installing zplug"
+if [ ! -d ~/.zplug ]; then
+    curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 fi
 
-#  how ?
-# upgrade_oh_my_zsh
+if [ ! -f ~/antigen.zsh ]; then
+    curl -L git.io/antigen > ~/antigen.zsh
+fi
 
-echo "installing oh-my-zsh plugins..."
-git clone https://github.com/unixorn/git-extra-commands.git ~/.oh-my-zsh/plugins/git-extra-commands
+zsh --login -c 'source ~/.zshrc; exit'

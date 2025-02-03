@@ -14,6 +14,7 @@
 #     dcd            : docker-compose down                                 #
 #     dcr            : docker-compose run                                  #
 #     dex <container>: execute a bash shell inside the RUNNING <container> #
+#     dexl           : execute a bash shell inside the latest container    #
 #     di <container> : docker inspect <container>                          #
 #     dim            : docker images                                       #
 #     dip            : IP addresses of all running containers              #
@@ -44,6 +45,14 @@ function dip-fn {
         OUT+=$DOC'\t'$IP'\n'
     done
     echo $OUT|column -t
+}
+
+function dlast-fn {
+  docker ps -ql
+}
+
+function dexl-fn {
+	docker exec -it `dlast-fn` ${1:-bash}
 }
 
 function dex-fn {
@@ -107,6 +116,7 @@ alias dcul="docker compose up -d && docker-compose logs -f"
 alias dcd="docker compose down"
 alias dcr=dcr-fn
 alias dex=dex-fn
+alias dexl=dexl-fn
 alias di=di-fn
 alias dim="docker images"
 alias dip=dip-fn

@@ -13,3 +13,9 @@ echo "Installing zplug"
 if [ ! -d ~/.zplug ]; then
     curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 fi
+
+if [ ! -f ~/antigen.zsh ]; then
+    curl -L git.io/antigen > ~/antigen.zsh
+fi
+
+zsh --login -c 'source ~/.zshrc; exit'

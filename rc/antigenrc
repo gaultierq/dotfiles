@@ -2,7 +2,9 @@
 # Load bundles from the default repo (oh-my-zsh)
 antigen use oh-my-zsh
 antigen bundle git
+antigen bundle unixorn/git-extra-commands@main
 antigen bundle command-not-found
+
 
 # Load bundles from external repos.
 antigen bundle docker
@@ -12,6 +14,8 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen bundle chmouel/kubectl-config-switcher
+
+antigen theme romkatv/powerlevel10k
+
 # Tell Antigen that you're done.
-# antigen theme denysdovhan/spaceship-prompt 
 antigen apply

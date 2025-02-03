@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# fzf
+[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
+
 if [ -x "$(command -v zsh)" ]; then
 	eval "$(fzf --zsh)"
 	# -- Use fd instead of fzf --
@@ -19,7 +22,6 @@ if [ -x "$(command -v zsh)" ]; then
 	_fzf_compgen_dir() {
 	  fd --type=d --hidden --exclude .git . "$1"
 	}
-
 
 
 	# use eza and bat to preview while using fzf

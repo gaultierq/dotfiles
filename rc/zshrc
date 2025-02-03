@@ -10,9 +10,13 @@ fi
 # start of zsh login profiling
  #zmodload zsh/zprof
 
+
  # Antigen is a lightweight and powerful plugin manager for Zsh
-source $DOTPATH/antigen.zsh
-antigen init $HOME/.antigenrc
+if [ $HOME/antigen.zsh ]; then
+  source $HOME/antigen.zsh
+  antigen init $HOME/.antigenrc
+fi
+
 
 #If for some reason you don’t want to change the permissions you can set ZSH_DISABLE_COMPFIX=true in your zshrc file. 
 ZSH_DISABLE_COMPFIX=true
@@ -27,7 +31,7 @@ HOMEBREW_NO_AUTO_UPDATE=1
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -84,9 +88,7 @@ setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history 
 # Add wisely, as too many plugins slow down shell startup.
 
 
-
-# TODO: add fastlane 
-plugins=(git colored-man-pages colorize github brew macos docker docker-compose history-substring-search yarn git-extra-commands mise)
+plugins=(git colored-man-pages colorize github brew macos docker docker-compose history-substring-search yarn mise)
 # User configuration
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
@@ -165,5 +167,5 @@ complete -o nospace -C /opt/homebrew/bin/terraform terraform
 # activate mise
 [[ -f ~/.local/bin/mise ]] && eval "$(~/.local/bin/mise activate)"
 
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# fzf
+[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh

@@ -419,7 +419,7 @@ upper() {
 contains() {
     string="$1"
     substring="$2"
-    echo "DEBUG::: $1  ;  $2"
+    
     if [ "${string#*$substring}" != "$string" ]; then
         return 0    # $substring is in $string
     else
@@ -499,12 +499,6 @@ ________    ________
 '
 
 dotfiles_download() {
-
-    # if [ -d "$DOTPATH" ]; then
-    #     log_fail "$DOTPATH: already exists"
-    #     exit 1
-    # fi
-
     e_newline
     e_header "Downloading dotfiles..."
 
@@ -513,13 +507,13 @@ dotfiles_download() {
     else
         if is_exists "git"; then
             if [ -d "$DOTPATH" ]; then
-                if [[ $(git diff --stat) != '' ]]; then
-                    log_info "dotfile directory is dirty. Skipping update"
-                else
+                if git -C "$DOTPATH" diff --quiet; then
                     cd $DOTPATH
                     log_info "Updating existing dotfiles repo: $DOTPATH"
                     git pull 
                     cd -
+                else
+                    log_info "dotfile directory is dirty. Skipping update"
                 fi
             else
                 git clone --recursive "https://github.com/gaultierq/dotfiles" "$DOTPATH"

@@ -3,12 +3,16 @@
 # dotfiles
 export PATH="$DOTPATH/bin:$PATH"
 
+# neovim (probably)
+export PATH="$PATH:/opt/nvim"
+
 # homebrew
 export PATH="/usr/local/sbin:$PATH"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="$PATH:$HOME/.composer/vendor/bin"
 export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
+
+
+export PATH="$HOME/.local/bin:$PATH"
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8

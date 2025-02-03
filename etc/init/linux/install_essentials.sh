@@ -1,8 +1,10 @@
 #!/bin/bash -e
 
-sudo apt-get update &&
+# minimum setup
 
-sudo apt-get -y install \
+sudo apt update &&
+
+sudo apt install -y  \
 git \
 tree \
 rsync \
@@ -12,12 +14,10 @@ openvpn \
 unzip \
 wget \
 tmux \
-silversearcher-ag
+locales 
 
-# install fzf
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install --no-key-binding --no-update-rc --no-completion
 
+sudo locale-gen en_US.UTF-8
 
 # cleaning unused dependencies
 echo "cleaning..."

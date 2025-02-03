@@ -1,13 +1,10 @@
 Mash up from multiple dotfiles.   
 
 
-### Install my dotfiles with zsh
-```bash
-curl -sL https://git.io/viqoU | bash -s - --zsh
+### Install dotfiles + zsh + vim + package
+```sh
+curl -sL https://git.io/viqoU | bash -s - --zsh --vim --packages
 ```
-
---zsh: install zsh
---packages: install all packages
 
 
 ### Strongly inspired by:

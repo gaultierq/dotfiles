@@ -1,7 +1,9 @@
+
+Include $SSH_CONFIG_FILE
+Include /Users/q/projects/teeptrak/sshconfig
+
 Host *
   IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
-
-
 
 Host homelab.canonic.fr
   User q

@@ -18,3 +18,10 @@ ln -s $(which fdfind) ~/.local/bin/fd
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --no-key-bindings --no-update-rc --no-completion
+
+
+# what should be installed ?
+# - broot ?
+# - lazygit ?
+# - k9s ?
+# - kuebctl ?

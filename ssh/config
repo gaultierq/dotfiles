@@ -6,11 +6,6 @@ Host github.com
 	User git
 	IdentityFile ~/.ssh/id_rsa_qg
 
-#gaultierq account
-Host github.com
-	HostName github.com
-	User git
-	IdentityFile ~/.ssh/id_rsa_qg
 
 Host heroku.com
 	HostName heroku.com
@@ -22,9 +17,6 @@ Host gitlab.com
     User git
     IdentityFile ~/.ssh/qg_gitlab_rsa
 
-
-Host delir-staging
-    HostName 192.168.1.42
 
 Host *
 	IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"

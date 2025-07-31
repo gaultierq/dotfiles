@@ -3,10 +3,6 @@ echo "Installing neovim"
 
 # on outdated debian it doesnt work
 
-# install lazyvim
-[[ ! -d ~/.config/nvim ]] && git clone https://github.com/LazyVim/starter ~/.config/nvim
-rm -rf ~/.config/nvim/.git
-# TODO: my own config
 
 
 # neovim installation hell

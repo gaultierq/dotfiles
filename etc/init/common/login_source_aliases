@@ -40,7 +40,7 @@ alias t='tree -d'
 alias t1='t -L 1'
 alias t2='t -L 2'
 alias t3='t -L 3'
-alias v='nvim'
+alias v='nvim .'
 
 # git related alias
 alias gs='git st'
@@ -49,7 +49,7 @@ alias gdh='git diff HEAD'
 alias gfm='git fetch origin master:master'
 
 function gro-fn {
-	cd $(git rev-parse --show-toplevel)
+  cd $(git rev-parse --show-toplevel)
 }
 
 alias gro=gro-fn
@@ -57,3 +57,16 @@ alias gro=gro-fn
 alias dot_alias='v ${DOTPATH}/etc/init/common/login_source_aliases'
 
 alias ghpr='gh pr view -w'
+
+# eza login_source_aliases
+#
+if command -v eza >/dev/null 2>&1; then
+  alias ls='eza $eza_params'
+  alias l='eza --git-ignore $eza_params'
+  alias ll='eza --all --header --long $eza_params'
+  alias llm='eza --all --header --long --sort=modified $eza_params'
+  alias la='eza -lbhHigUmuSa'
+  alias lx='eza -lbhHigUmuSa@'
+  alias lt='eza --tree $eza_params'
+  alias tree='eza --tree $eza_params'
+fi

@@ -22,29 +22,6 @@
 	<true/>
 	<key>Control</key>
 	<integer>1</integer>
-	<key>Coprocess MRU</key>
-	<array>
-		<string>echo " code -r -g /Users/qg/projects/delir0/delir/tmp/capybara/failures_r_spec_example_groups_welcome_page_shows_search_result_426.png:"</string>
-		<string>echo " code -r -g /Users/qg/projects/delir0/delir/tmp/capybara/failures_r_spec_example_groups_welcome_page_shows_the_welcome_page_532.png:"</string>
-		<string>echo " code -r -g /Users/qg/projects/instamed/Instamed-app/bin/e2e/run-e2e-android-local.sh:"</string>
-		<string>echo " code -r -g /Users/qg/projects/delir0/delir/app/views/admin/nodes/index.html.slim:"</string>
-		<string>echo " code -r -g /Users/qg/projects/instamed/Instamed-app/node_modules/@react-navigation/stack/src/views/KeyboardManager.tsx:"</string>
-		<string>echo " code -r -g /Users/qg/projects/delir0/delir/Gemfile.lock:"</string>
-		<string>echo " code -r -g /Users/qg/projects/delir0/delir/Gemfile:"</string>
-		<string>echo " code -r -g /Users/qg/projects/delir0/delir/app/javascript:"</string>
-		<string>echo " code -r -g /Users/qg/projects/delir0/delir/spec/models/nodes_spec.rb:96"</string>
-		<string>echo " code -r -g /Users/qg/projects/delir0/delir/spec/routing/pages_spec.rb:28"</string>
-		<string>echo " code -r -g /Users/qg/projects/delir0/delir/tmp/capybara/failures_r_spec_example_groups_alexandria_changing_language_should_redirect_to_the_right_url_564.png:"</string>
-		<string>echo " code -r -g /Users/qg/projects/delir0/delir/spec/routing/pages_spec.rb:17"</string>
-		<string>echo " code -r -g /Users/qg/projects/delir0/delir/tmp/capybara/failures_r_spec_example_groups_alexandria_renders_about_694.png:"</string>
-		<string>echo " code -r -g /Users/qg/projects/jump/jump-root/jumpserver/JumpServer-ear:"</string>
-		<string>echo " code -r -g /Users/qg/projects/jump/jump-root/jump-web-react-client/src/domain/back/ao/editBlockedAo/ComplianceTable.tsx:"</string>
-		<string>echo " code -r -g /Users/qg/projects/instamed/Instamed-app/android/app/build/outputs/apk/releaseStaging/app-releaseStaging.apk:"</string>
-		<string>echo " code -r -g /Users/qg/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/friendly_id-5.4.2/lib/friendly_id/base.rb:259"</string>
-		<string>echo " code -r -g /Users/qg/projects/delir0/delir/tmp/capybara/failures_r_spec_example_groups_welcome_page_shows_the_welcome_page_750.png:"</string>
-		<string>echo " code -r -g /Users/qg/projects/delir0/delir/db/schema.rb:"</string>
-		<string>echo " code -r -g /Users/qg/projects/delir0/delir/lib/constraints:"</string>
-	</array>
 	<key>CopyLastNewline</key>
 	<true/>
 	<key>CopySelection</key>
@@ -434,6 +411,19 @@
 			<integer>32</integer>
 			<key>Text</key>
 			<string></string>
+		</dict>
+		<key>0xd-0x20000-0x24</key>
+		<dict>
+			<key>Action</key>
+			<integer>12</integer>
+			<key>Keycode</key>
+			<integer>13</integer>
+			<key>Modifiers</key>
+			<integer>131072</integer>
+			<key>Text</key>
+			<string>\n</string>
+			<key>Version</key>
+			<integer>1</integer>
 		</dict>
 		<key>0xf700-0x300000</key>
 		<dict>

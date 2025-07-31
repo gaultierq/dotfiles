@@ -88,7 +88,7 @@ setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history 
 # Add wisely, as too many plugins slow down shell startup.
 
 
-plugins=(git colored-man-pages colorize github brew macos docker docker-compose history-substring-search yarn mise)
+plugins=(git colored-man-pages colorize github brew macos docker docker-compose history-substring-search mise)
 # User configuration
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"

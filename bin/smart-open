@@ -1,0 +1,78 @@
+#!/bin/bash
+
+set -euo pipefail
+IFS=$'\n\t'
+
+input="$1"
+lineno="${2:-}"
+
+# Parse input for optional line number (e.g. /path/to/file:123)
+if [[ "$input" =~ ^(.*):([0-9]+)$ ]]; then
+  filepath="${BASH_REMATCH[1]}"
+  # lineno="${BASH_REMATCH[2]}"
+else
+  filepath="$input"
+  # lineno=""
+fi
+
+# Resolve full path
+fullpath="$(realpath -- "$filepath" 2>/dev/null || echo "$filepath")"
+
+# Function to open a command in a new iTerm tab
+open_in_new_iterm_tab() {
+  local cmd="$1"
+  osascript <<EOF
+tell application "iTerm"
+  activate
+  tell current window
+    create tab with default profile
+    tell current session
+      write text "$cmd"
+    end tell
+  end tell
+end tell
+EOF
+}
+
+# If directory → open Yazi in new iTerm tab
+if [[ -d "$fullpath" ]]; then
+  open_in_new_iterm_tab "/opt/homebrew/bin/yazi '$fullpath'"
+  exit 0
+fi
+
+# If not a file → error
+if [[ ! -f "$fullpath" ]]; then
+  echo "File not found: $fullpath"
+  exit 1
+fi
+
+# Get app bundle id with duti
+ext="${fullpath##*.}"
+bundle_id="$(/opt/homebrew/bin/duti -x "$ext" | head -1 || true)"
+
+case "$bundle_id" in
+RubyMine.app | com.jetbrains.rubymine | com.jetbrains.rubymine-EAP)
+  ide="/Users/q/dotfiles/bin/rubymine"
+  ;;
+com.jetbrains.webstorm | com.jetbrains.webstorm-EAP)
+  ide="webstorm"
+  ;;
+*)
+  ide=""
+  ;;
+esac
+
+# Open in JetBrains IDE if matched
+if [[ -n "$ide" ]]; then
+  if [[ -n "$lineno" ]]; then
+    "$ide" --line "$lineno" "$fullpath"
+  else
+    "$ide" "$fullpath"
+  fi
+  exit 0
+fi
+
+# Otherwise if a regular file → open in nvim in new iTerm tab
+open_in_new_iterm_tab "nvim +${lineno:-1} '$fullpath'"
+
+exit 0

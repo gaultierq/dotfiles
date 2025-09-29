@@ -144,6 +144,8 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# force ZLE to always redraw on widget changes
+zle_highlight=(special:underline)
 
 #export ZLE_RPROMPT_INDENT=0
 #export POWERLEVEL9K_LEGACY_ICON_SPACING=true
@@ -169,3 +171,52 @@ complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
 # fzf
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
+
+# autoload my project aliases, if any
+autoload -Uz add-zsh-hook
+
+# may be dangerous :(
+load_local_zsh() {
+  if [[ -n "$CHPWD_PATH" ]]; then
+    local f
+    for f in ${(s.:.)CHPWD_PATH}; do
+      [[ -f "$f" ]] && source "$f"
+    done
+  fi
+}
+
+add-zsh-hook chpwd load_local_zsh 
+load_local_zsh 
+
+# helper to set tab color from RGB
+set_tab_color() {
+  local r="$1" g="$2" b="$3"
+
+  if [[ -n "$r" && -n "$g" && -n "$b" ]]; then
+    echo -e "\033]6;1;bg;red;brightness;${r}\a"
+    echo -e "\033]6;1;bg;green;brightness;${g}\a"
+    echo -e "\033]6;1;bg;blue;brightness;${b}\a"
+  else
+    # reset to default
+    echo -e "\033]6;1;bg;red;brightness;0\a"
+    echo -e "\033]6;1;bg;green;brightness;0\a"
+    echo -e "\033]6;1;bg;blue;brightness;0\a"
+  fi
+}
+
+# chpwd hook
+autoload -Uz add-zsh-hook
+apply_tab_color() {
+  if [[ -n "$ITERM2_TAB_COLOR" ]]; then
+    local r g b
+    read r g b <<< "$ITERM2_TAB_COLOR"
+    set_tab_color "$r" "$g" "$b"
+  else
+    set_tab_color  # reset
+  fi
+}
+
+add-zsh-hook chpwd apply_tab_color
+
+# optional: apply immediately on shell start
+apply_tab_color

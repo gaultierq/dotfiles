@@ -12,3 +12,5 @@ rails-utilities/
 .actrc
 vendor/
 ngrok.yml
+*.local.zsh
+.claude/

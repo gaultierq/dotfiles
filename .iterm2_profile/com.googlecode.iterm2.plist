@@ -385,6 +385,8 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>3EF45CD7-2912-431A-BB28-A13BECEE13C9</string>
+	<key>Default Browser Profile Guid</key>
+	<string>7EC18753-1A31-402D-AF0C-B6DFB6A3DF0C</string>
 	<key>DimBackgroundWindows</key>
 	<false/>
 	<key>DimInactiveSplitPanes</key>
@@ -1364,11 +1366,11 @@
 			<key>Semantic History</key>
 			<dict>
 				<key>action</key>
-				<string>best editor</string>
+				<string>command</string>
 				<key>editor</key>
 				<string>com.github.atom</string>
 				<key>text</key>
-				<string>echo " code -r -g \1:\2"</string>
+				<string>~/dotfiles/bin/smart-open \1 \2</string>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>

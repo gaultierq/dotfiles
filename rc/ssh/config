@@ -17,6 +17,12 @@ Host myiledere.ovh
   Port 2242
   IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 
+Host *.homelab
+  ProxyJump homelab.canonic.fr
+  User q
+  IdentityFile ~/.ssh/id_ed25519
+
+
 Host myiledere.rentals
   User root
   Hostname 82.67.137.97
@@ -57,3 +63,11 @@ Host staging.teeptrak.net
   User staging
   Hostname staging.teeptrak.net 
   Port 34100
+
+Host fresh-rss
+  HostName 192.168.88.41
+  User root
+  ProxyJump homelab.canonic.fr
+  IdentitiesOnly yes
+  IdentityFile ~/.ssh/id_rsa
+

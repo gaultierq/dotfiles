@@ -14,3 +14,4 @@ vendor/
 ngrok.yml
 *.local.zsh
 .claude/
+.ssh_config.local

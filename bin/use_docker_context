@@ -1,0 +1,64 @@
+#!/bin/bash
+
+# Check if DOCKER_CONTEXT variable is set
+if [ -z "$DOCKER_CONTEXT" ]; then
+  echo "Error: DOCKER_CONTEXT environment variable is not set"
+  echo "Usage: DOCKER_CONTEXT=<context_name,endpoint> use_docker_context"
+  echo "Example: DOCKER_CONTEXT=fat-blog-ctx,ssh://fat-blog use_docker_context"
+  exit 1
+fi
+
+# Parse DOCKER_CONTEXT format: name,endpoint
+IFS=',' read -r CONTEXT_NAME CONTEXT_ENDPOINT <<<"$DOCKER_CONTEXT"
+
+if [ -z "$CONTEXT_NAME" ] || [ -z "$CONTEXT_ENDPOINT" ]; then
+  echo "Error: DOCKER_CONTEXT must be in format 'name,endpoint'"
+  echo "Example: DOCKER_CONTEXT=fat-blog-ctx,ssh://fat-blog use_docker_context"
+  exit 1
+fi
+
+echo "Context name is $CONTEXT_NAME"
+echo "Context endpoint is $CONTEXT_ENDPOINT"
+
+# Get current docker context to restore later
+ORIGINAL_CONTEXT=$(docker context show 2>/dev/null)
+if [ $? -ne 0 ]; then
+  echo "Error: Failed to get current docker context"
+  exit 1
+fi
+
+# Check if context exists, create if it doesn't
+if ! docker context inspect "$CONTEXT_NAME" >/dev/null 2>&1; then
+  echo "Creating docker context: $CONTEXT_NAME with endpoint: $CONTEXT_ENDPOINT"
+  if ! docker context create "$CONTEXT_NAME" --docker "host=$CONTEXT_ENDPOINT"; then
+    echo "Error: Failed to create docker context '$CONTEXT_NAME'"
+    exit 1
+  fi
+else
+  echo "Docker context '$CONTEXT_NAME' already exists"
+fi
+
+# Switch to the specified docker context
+echo "Switching to docker context: $CONTEXT_NAME"
+if ! docker context use "$CONTEXT_NAME" >/dev/null 2>&1; then
+  echo "Error: Failed to switch to docker context '$CONTEXT_NAME'"
+  echo "Available contexts:"
+  docker context ls
+  exit 1
+fi
+
+echo "Docker context set to: $CONTEXT_NAME"
+echo "Starting new shell session with this context..."
+echo "Type 'exit' to return to original context ($ORIGINAL_CONTEXT)"
+
+# Replace current shell with new shell that will restore context on exit
+exec "$SHELL" -c "
+  # Set up trap to restore context when this shell exits
+  trap 'echo \"Restoring docker context: $ORIGINAL_CONTEXT\"; docker context use \"$ORIGINAL_CONTEXT\" >/dev/null 2>&1' EXIT
+
+  # Modify prompt to show docker context
+  export PS1=\"[docker:$CONTEXT_NAME] \$PS1\"
+
+  # Start an interactive shell
+  exec \"$SHELL\"
+"

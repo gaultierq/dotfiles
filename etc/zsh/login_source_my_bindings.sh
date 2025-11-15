@@ -43,6 +43,16 @@ function gsl() {
   zle reset-prompt
 }
 
+# Function to select and navigate to git worktree
+function gwt() {
+  local worktree
+  worktree=$(git worktree list | awk '{print $1}' | fzf +s --preview='git -C {} log --oneline | head -20')
+  if [[ -n "$worktree" ]]; then
+    cd "$worktree"
+    zle reset-prompt
+  fi
+}
+
 ## Actual widget logic
 # Display Git Prefix help
 function git-prefix-mode() {
@@ -50,13 +60,16 @@ function git-prefix-mode() {
   local saved_cursor=$CURSOR
 
   # Display help message
-  echo -n "\r[Git Mode] Press 'b' for branch switcher"
+  echo -n "\r[Git Mode] Press 'b' for branch switcher, 'w' for worktree"
   read -k key
   echo -n "\r\033[K"  # Clear the message
 
   case "$key" in
     b)
       zle gsl-widget
+      ;;
+    w)
+      zle gwt-widget
       ;;
   esac
 
@@ -68,6 +81,7 @@ function git-prefix-mode() {
 
 # Register widget
 zle -N gsl-widget gsl
+zle -N gwt-widget gwt
 zle -N git-prefix-mode
 bindkey '^G' git-prefix-mode
 

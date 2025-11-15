@@ -61,7 +61,7 @@ alias ghpr='gh pr view -w'
 # eza login_source_aliases
 #
 if command -v eza >/dev/null 2>&1; then
-  alias ls='eza $eza_params'
+  alias ls='eza -lah $eza_params'
   alias l='eza --git-ignore $eza_params'
   alias ll='eza --all --header --long $eza_params'
   alias llm='eza --all --header --long --sort=modified $eza_params'
@@ -70,3 +70,13 @@ if command -v eza >/dev/null 2>&1; then
   alias lt='eza --tree $eza_params'
   alias tree='eza --tree $eza_params'
 fi
+
+tempe() {
+  cd "$(mktemp -d)"
+  chmod -R 0700 .
+  if [[ $# -eq 1 ]]; then
+    \mkdir -p "$1"
+    cd "$1"
+    chmod -R 0700 .
+  fi
+}

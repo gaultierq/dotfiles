@@ -65,3 +65,5 @@
 	diverging = false
 [mergetool "vimdiff"]
     cmd = vimdiff22 \"$LOCAL\" \"$MERGED\" \"$REMOTE\"
+[rerere]
+	enabled = true

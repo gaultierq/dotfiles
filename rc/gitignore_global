@@ -16,3 +16,8 @@ ngrok.yml
 .claude/
 .ssh_config.local
 .specify/
+.ripgreprc
+.ignore
+.mcp.json
+.claude-trace/
+.curlrc

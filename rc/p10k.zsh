@@ -555,6 +555,8 @@
   #######################[ background_jobs: presence of background jobs ]#######################
   # Don't show the number of background jobs.
   typeset -g POWERLEVEL9K_BACKGROUND_JOBS_VERBOSE=false
+  # Custom expansion: show count, or job name if count=1
+  typeset -g POWERLEVEL9K_BACKGROUND_JOBS_CONTENT_EXPANSION='${${P9K_BACKGROUND_JOBS:#1}:+$P9K_BACKGROUND_JOBS}${${P9K_BACKGROUND_JOBS:#[^1]}:+${(z)$(jobs)[(w)2]}}'
   # Background jobs color.
   typeset -g POWERLEVEL9K_BACKGROUND_JOBS_FOREGROUND=70
   # Custom icon.

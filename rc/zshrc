@@ -220,3 +220,6 @@ add-zsh-hook chpwd apply_tab_color
 
 # optional: apply immediately on shell start
 apply_tab_color
+
+# init zoxide
+eval "$(zoxide init --cmd cd zsh)"

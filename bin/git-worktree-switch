@@ -16,8 +16,8 @@ if ! command -v fzf > /dev/null 2>&1; then
   exit 1
 fi
 
-# Select a worktree using fzf
-worktree=$(git worktree list | awk '{print $1}' | fzf +s --preview='git -C {} log --oneline | head -20')
+# Select a worktree using fzf (sorted by zoxide score)
+worktree=$(git worktree list | awk '{print $1}' | while read dir; do score=$(zoxide query -s "$dir" 2>/dev/null | awk '{print $1}'); [ -n "$score" ] && echo "$score $dir"; done | sort -rn | awk '{print $2}' | fzf +s --preview='git -C {} log --oneline | head -20')
 
 if [[ -n "$worktree" ]]; then
   cd "$worktree"

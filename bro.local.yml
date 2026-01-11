@@ -1,0 +1,14 @@
+bindings:
+  root:
+    key: "enter"
+    cmd: cd /Users/q/dotfiles 
+  bro:
+    key: e, b
+    cmd: nvim ./bro.local.yml 
+  mr:
+    key: m, r
+    command: "mr"
+    help: "Navigate to the current branch merge request"
+  zsh_bindings:
+    key: z, b
+    command: nvim ${HOME}/dotfiles/etc/zsh/login_source_my_bindings.sh

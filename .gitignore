@@ -1,7 +1,5 @@
 install.log
 
-# platform dependant
-tmux.conf
 
 *.local
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
-# Git worktree switcher with fzf
-# Usage: git worktree-switch
+# Git worktree printer with fzf
+# Usage: git worktree-print
 
 set -e
 
@@ -43,7 +43,7 @@ else
 fi
 
 # Build branch list with current branch first
-branch_list="* $current_branch (current)"
+branch_list="* * * $current_branch (current)"
 if [[ -n "$recent_branches" ]]; then
   # Add other branches, excluding current branch
   branch_list="$branch_list
@@ -51,7 +51,7 @@ $(echo "$recent_branches" | grep -v "^$current_branch$" | head -20)"
 fi
 
 # Select branch
-selected=$(echo "$branch_list" | fzf +s --preview="git -C $worktree log {} --oneline 2>/dev/null | head -20" | awk '{print $2}')
+selected=$(echo "$branch_list" | fzf +s --preview="git -C $worktree log {} --oneline 2>/dev/null | head -20" | awk '{print $4}')
 
 if [[ -z "$selected" ]]; then
   # No selection, exit
@@ -59,14 +59,9 @@ if [[ -z "$selected" ]]; then
   exit 1
 fi
 
-# Checkout branch if different from current
+# Print worktree and branch (if different from current)
 if [[ "$selected" != "$current_branch" ]]; then
-  if ! git -C "$worktree" checkout "$selected" 2>/dev/null; then
-    echo "Error: Failed to checkout branch '$selected'" >&2
-    exit 1
-  fi
+  printf "%s\t%s\n" "$worktree" "$selected"
+else
+  echo "$worktree"
 fi
-
-# Change to worktree directory
-cd "$worktree"
-exec $SHELL

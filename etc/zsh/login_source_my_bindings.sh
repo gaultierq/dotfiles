@@ -21,6 +21,22 @@ bindkey '^O' open-current-dir-editor
 zle -N kcs-widget kcs
 bindkey '^K' kcs-widget
 
+# Git worktree switcher on Ctrl+G
+git-worktree-switch-widget() {
+  local output worktree branch
+  output=$(git-worktree-print)
+  [[ -z "$output" ]] && return
+
+  worktree=$(echo "$output" | cut -f1)
+  branch=$(echo "$output" | cut -f2)
+
+  cd "$worktree"
+  [[ -n "$branch" ]] && git checkout "$branch" || echo "error while checking out branch"
+  zle reset-prompt
+}
+zle -N git-worktree-switch-widget
+bindkey '^G' git-worktree-switch-widget
+
 #
 # # # Function to select recent branches
 # function gsl() {
